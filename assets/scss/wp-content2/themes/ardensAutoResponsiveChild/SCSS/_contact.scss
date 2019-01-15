@@ -1,0 +1,27 @@
+/* 13.0 Contact Page stylings -------------------------------------------*/
+.contactContent{
+  margin-top: 150px !important;
+}
+.smallMapWrapper{
+  padding: 20px;
+}
+.caldera-grid label{
+  color: $black !important;
+}
+.field_required{
+  color: $primaryColor !important;
+}
+.CF5c3c73e0407dd input[type=text], .CF5c3c73e0407dd input[type=email], #fld_7683514_1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 45px;
+  padding: .7em;
+  border: none;
+  border-bottom: 2px solid #fff;
+  transition: .3s ease all;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(42, 42, 42, 0.4);
+}
+#fld_7683514_1{
+  height: 100px;
+}

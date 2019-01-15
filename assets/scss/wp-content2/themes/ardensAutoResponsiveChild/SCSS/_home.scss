@@ -1,0 +1,318 @@
+/* 10.0 Homepage stylings -------------------------------------------*/
+.heroHeadingWrap{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.shopHero{
+	background-image: url("/assets/scss/wp-content/uploads/2019/01/ardensBuildingLarge.jpg");
+}
+#heroHeading{
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.homeHeading{
+	border-radius: 10px;
+  background-color: rgba(201, 43, 44,.9);
+  position: absolute;
+  bottom: -75px;
+	@include breakpoint(smallScreen){
+		width: 100%;
+		border-radius: 0;
+		background-color: $primaryColor;
+		bottom: -235px;
+	}
+	@include breakpoint(largeMobileScreen){
+		width: 100%;
+		border-radius: 0;
+		background-color: $primaryColor;
+		bottom: -195px;
+	}
+	@include breakpoint(tabletScreen){
+		width: 80%;
+		border-radius: 10px;
+		background-color: rgba(201, 43, 44,.9);
+		bottom: -75px;
+	}
+	@media (min-width: 1250px){
+		width: 60%;
+	}
+}
+.heroHeading{
+	padding: 25px;
+    @include breakpoint(smallScreen){
+      padding: 20px;
+    }
+    @include breakpoint(largeMobileScreen){
+      padding: 25px;
+    }
+}
+#ardensIntro{
+	@include breakpoint(smallScreen){
+		margin-top: 300px;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin-top: 350px;
+	}
+	@include breakpoint(tabletScreen){
+		margin-top: 150px;
+	}
+}
+.cardWrap{
+	margin: 0 auto;
+	@include breakpoint(smallScreen){
+		width: 90%;
+	}
+	@include breakpoint(largeMobileScreen){
+		width: 80%;
+	}
+	@include breakpoint(laptopScreen){
+		width:100%;
+	}
+	@media (min-width: 1250px){
+		width: 90%;
+	}
+}
+.raisedTextBox{
+	box-shadow: 0px 6px 30px rgba(0,0,0,.3);
+	border-radius: 10px;
+	@include breakpoint(smallScreen){
+		margin: 25px 0 25px 0;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin: 25px 0 25px 0;
+	}
+	@include breakpoint(laptopScreen){
+		margin: 0 25px 0 25px;
+	}
+}
+#serviceHook{
+	@media (min-width: 1400px){
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+.serviceFlexContainer{
+	display: flex;
+	justify-content: space-around;
+	@include breakpoint(smallScreen){
+		flex-direction: column;
+	}
+	@include breakpoint(largeMobileScreen){
+		flex-direction: row;
+	}
+}
+.zoomContainerWrapper{
+	@include breakpoint(smallScreen){
+		margin: 0;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin: 0 25px 0 25px;
+	}
+	a{
+		color: $black;
+		text-decoration: none;
+	}
+}
+.zoomContainer{
+	position: relative;
+	z-index: 4;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	transition: .3s ease all;
+	@include breakpoint(smallScreen){
+		height: 250px;
+	}
+	@include breakpoint(largeMobileScreen){
+		height: 190px;
+	}
+	@include breakpoint(tabletScreen){
+		height: 215px;
+	}
+	@media (min-width: 1250px){
+		height: 325px;
+	}
+}
+.zoomContainerLarge{
+	position: relative;
+	z-index: 4;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	transition: .3s ease all;
+	@include breakpoint(smallScreen){
+		height: 300px;
+	}
+	@include breakpoint(largeMobileScreen){
+		height: 185px;
+	}
+	@include breakpoint(tabletScreen){
+		height: 260px;
+	}
+	@include breakpoint(laptopScreen){
+		height: 315px;
+	}
+	@media (min-width: 1250px){
+		height: 450px;
+	}
+}
+.zoomContainer, .zoomContainerLarge{
+	&:hover .zoomImage{
+		transform: scale(1.1,1.1);
+		transition: .3s ease all;
+	}
+}
+.zoomContainer h4, .zoomContainerLarge h4{
+	margin-block-start: 1em;
+}
+.zoomContainer:hover h4, .zoomContainerLarge:hover h4{
+	color: $primaryColor;
+	transition: .3s ease all;
+}
+.zoomImage{
+	position: absolute;
+	z-index: 2;
+	top: 0 ;
+	left: 0;
+	transition: .3s ease all;
+}
+.hiddenMobile{
+	@include breakpoint(largeMobileScreen){
+		display: none;
+	}
+	@include breakpoint(laptopScreen){
+		display: block;
+	}
+}
+.map{
+	position: relative;
+}
+.locationInfo{
+	background-color: rgba(201, 43, 44,.9);
+  height: 450px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+	color: $white;
+	display: flex;
+	align-items: center;
+		@include breakpoint(smallScreen){
+			display: none;
+		}
+		@include breakpoint(largeMobileScreen){
+			width: 40%;
+			right: 0;
+		}
+		@media ( min-width: 1250px ){
+			width: 20%;
+			right: 100px;
+		}
+		a{
+			color: $white;
+		}
+		h5{
+			margin-bottom: 10px;
+		}
+}
+.locationContent{
+	padding: 20px;
+}
+.servicescontent{
+	margin-top: 50px;
+}
+.CTAcontent{
+    @include breakpoint(smallScreen){
+      width: 90%;
+		  margin: 0 auto;
+		  text-align: center;
+		  padding: 20px;
+    }
+    @include breakpoint(largeMobileScreen){
+      width: 90%;
+		  margin: 0 auto;
+		  text-align: center;
+		  padding: 20px;
+    }
+    @include breakpoint(laptopScreen){
+      width: 60%;
+    }
+}
+.siteCTAWrap{
+	position: relative;
+	background-image: url("/assets/scss/wp-content/uploads/2019/01/transmissionWorkCropped.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 50px 0 50px 0;
+		@include breakpoint(smallScreen){
+			height: 450px;
+		}
+		@include breakpoint(largeMobileScreen){
+			height: 400px;
+		}
+    a{
+      text-decoration: none;
+    }
+}
+.CTAWrapOverlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(201, 43, 44,.95);
+	z-index: 999;
+	content: "";
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+#feedback{
+	width: 20%;
+}
+.feedbackButtonWrapper{
+	position: fixed;
+  bottom: 200px;
+  right: -70px;
+  z-index: 9999;
+  transform: rotate(-90deg);
+}
+.feedbackButton{
+	padding: 10px 20px !important;
+}
+.surveyWrapper{
+	background-color: $primaryColor;
+	border-radius: 10px;
+	position: fixed;
+  bottom: 0;
+	right: 0;
+  transform: translateX(100%);
+  z-index: 9999;
+	transition: .3s ease all;
+}
+.surveyContent{
+	a{
+		text-decoration: none;
+	}
+}
+.survey{
+	padding: 20px 10px;
+}
+.surveyClose{
+	position: absolute;
+	right: 20px;
+	padding: 10px;
+	cursor:pointer;
+}
+.surveyOpen{
+	position: fixed;
+	z-index: 9999;
+  transform: translateX(0);
+	transition: .3s ease all;
+}
+.caldera-grid label{
+	font-size: 14px;
+	color: $white !important;
+}

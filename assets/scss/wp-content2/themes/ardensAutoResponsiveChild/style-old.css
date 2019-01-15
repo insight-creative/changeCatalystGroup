@@ -1,0 +1,3661 @@
+/*
+Theme Name: ardensAutoResponsiveChild
+Theme URI: https://seejustincode.com/
+Author: Justin Parsons
+Author URI: https://seejustincode.com/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ardensAutoResponsive
+Template: ardensAutoResponsive
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.1 Extra small devices (phones, 600px and down)
+
+	1.2 Navigation/Header
+
+	1.3 Footer
+
+	1.4 General Body
+
+	1.5 Typography
+
+	1.6 Homepage
+
+	1.7 Buttons
+
+	1.8 Services Page
+
+	1.9 Contact Page
+
+	1.10 Sitemap
+
+	1.11 About Page
+
+	1.12 Materials Page
+
+0.1 Extra extra small devices (phones, 320px and down)
+
+
+2.1 Small devices (portrait tablets and large phones, 600px and up)
+
+	2.2 Navigation/Header
+
+	2.3 Footer
+
+	2.4 General Body
+
+	2.5 Typography
+
+	2.6 Homepage
+
+	2.7 Buttons
+
+	2.8 Services Page
+
+	2.9 Contact Page 
+
+	2.10 sitemap
+
+	2.11 About Page
+
+	2.12 Materials Page
+
+3.1 Medium devices (landscape tablets, 768px and up)
+
+	3.2 Navigation/Header
+
+	3.3 Footer
+
+	3.4 General Body
+
+	3.5 Typography
+
+	3.6 Homepage
+
+	3.7 Buttons
+
+	3.8 Services Page
+
+	3.9 Contact Page
+
+	3.10 sitemap
+
+	3.11 About Page
+
+	3.12 Materials Page
+
+4.1 Large devices (laptops/desktops, 992px and up)
+
+	4.2 Navigation/Header
+
+	4.3 Footer
+
+	4.4 General Body
+
+	4.5 Typography
+
+	4.6 Homepage
+
+	4.7 Buttons
+
+	4.8 Services Page
+
+	4.9 Contact Page
+
+	4.10 sitemap
+
+	4.11 About Page
+
+	4.12 Materials Page
+
+5.1 Extra large devices (large laptops and desktops, 1200px and up)
+
+	5.2 Navigation/Header
+
+	5.3 Footer
+
+	5.4 General Body
+
+	5.5 Typography
+
+	5.6 Homepage
+
+	5.7 Buttons
+
+	5.8 Services Page
+
+	5.9 Contact Page
+
+	5.10 sitemap
+
+	5.11 About Page
+
+	5.12 Materials Page
+
+*/
+/* 1.1 Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+
+	/*1.2 Navigation Responsive-------------------------------------------------------------*/	
+
+	.linkList2{
+
+		display:none;
+
+	}
+
+	.menuButtonWrap{
+
+		display:flex;
+
+		right: 30px;
+
+	}
+
+	.secondaryMenuWrap{
+
+		display: flex;
+
+		justify-content: flex-end;
+
+		align-items: center;
+
+	}
+
+	.secondaryNavigation{
+
+		height: 40px;
+
+		margin: 0 auto;
+
+		width: 100%;
+
+		background: #F00000;
+
+		display: flex;
+
+		align-items: center;
+
+	}
+
+	.secondaryLink{
+
+		color: #fff;
+
+		padding: 0 10px 0 10px;
+
+		text-decoration: none;
+
+		transition: .3s ease all;
+
+		font-size: 12px;
+
+	}
+	#faqLink{
+
+		display:none;
+
+	}
+	.main-navigation{
+
+		height: 70px;
+
+		width: 100%;
+
+		margin: 0 auto;
+
+	    background: #fff;
+
+	}
+	.menuLinkWrap{
+
+		display: flex;
+
+		justify-content: space-between;
+
+		align-items: center;
+
+	}
+	.site-content{
+
+		margin-top: 35px;
+
+	}
+	.entry-header{
+
+		display:none;
+
+	}
+	.siteLogo{
+
+		margin-top: 8px;
+
+		height: auto;
+
+		width: 125px;
+
+	}
+	nav{
+
+		display: flex;
+
+		align-items:center;
+
+		height: 70px;
+
+		justify-content: space-between;
+
+	}
+	.menuText{
+
+		cursor: pointer;
+
+		font-size: 26px;
+
+		padding-right: 10px;
+
+		color: #F00000;
+
+		text-decoration: none;
+
+		transition: .3s ease-out all;
+
+	}
+	.menuTextWrap{
+
+		display: flex;
+
+		margin-left: 10px;
+
+		right: 100px;
+
+	}
+	.menuBars{
+
+		cursor: pointer;
+
+		display: inline-block;
+
+		width: 30px;
+
+		padding-top: 7px;
+
+	}
+	.menuBars span{
+
+		display: block;
+
+		position: relative;
+
+		background-color: #F00000;
+
+		height: 3px;
+
+		width: 100%;
+
+		margin-top: 4px;
+
+	}
+	.menu{
+
+		position: absolute;
+
+		top: 0;
+
+		z-index: 99999;
+
+		height: 100vh;
+
+		width: 100vw;
+
+		background-color:  #fff;
+
+		transform: translateX(-100%);
+
+		transition: .2s ease-out all;
+
+	}
+
+	.open{
+
+		position: fixed;
+
+		transform: translate(0);
+
+		transition: .1s ease-out all;
+
+	}
+
+	.linkWrap{
+
+		position: absolute;
+
+		top: 75px;
+
+		width: 100%;
+
+		padding: 0;
+
+		margin: 0;
+
+		text-align: center;
+
+	}
+
+	.linkList{
+
+		padding: 0 ;
+		margin: 0;
+
+	}
+	.linkWrap li{
+
+		margin-top: 30px;
+
+		font-size: 1em;
+
+		border-bottom: 1px solid #f1f1f1;
+
+		display: flex;
+
+		align-items: center;
+
+		justify-content: space-between;
+
+	}
+	.linkWrap a{
+
+		color: #F00000;
+
+		text-decoration: none;
+
+	}
+
+	.menuLink{
+
+		position: relative;
+
+		display: block;
+
+		padding: 10px 30px 10px 30px;
+
+		transition: .2s ease all;
+	}
+
+	.menu .active a{
+
+		border-bottom: 2px solid #F00000 !important;
+
+		width: 100%;
+
+		text-align: initial;
+
+	}
+
+	.linkList2 .active a{
+
+		border-bottom: 2px solid #F00000 !important;
+
+		color:#fff;
+
+		transition: .2s ease all;
+
+	}
+
+	.closeMenu{
+
+		position: absolute;
+
+		cursor: pointer;
+
+		top: 30px;
+
+		right: 50px;
+
+	}
+
+	.site-header{
+
+		position: fixed;
+
+		top: 0;
+
+		left: 0;
+
+		z-index: 9999;
+
+		height: 70px;
+
+		width: 100vw;
+
+	}
+
+/* 1.3 Footer Responsive -------------------------------------------------------------------*/
+	.footerLink2{
+
+		padding: 10px 20px 10px 20px;
+
+	}
+
+	.site-info{
+
+		display: flex;
+
+		align-content: center;
+
+		justify-content: center;
+
+		flex-direction: column;
+
+		height: auto;
+
+		width: 100%;
+
+		text-align: center;
+
+		background: #fff;
+
+		list-style-type: none;
+
+	}
+	.site-info li{
+
+		margin: 5px 0 5px 0;
+
+	}
+	#copyright{
+
+		font-size: 15px;
+
+		background: #F00000;
+
+		margin-bottom: -50px;
+
+	}
+	.copyrightContentWrap{
+
+		display: flex;
+
+		justify-content: center;
+
+		align-items: center;
+
+		flex-direction: column;
+
+	}
+	#copyright a{
+
+		text-decoration: none;
+
+		color: #fff;
+
+	}
+	#copyrightWrap{
+
+		display: flex;
+
+		flex-direction: row;
+
+		align-items: center;
+
+	}
+
+	.site-footer{
+
+		position: relative;
+
+		z-index: 2;
+
+		background-color: #1D1D1D;
+
+		width: 100%;
+
+		color: #fff;
+
+		padding: 0 0 50px 0;
+
+		margin: 0 auto;
+
+	}
+
+	.footerContact a{
+
+		text-decoration: none;
+
+		color: #f00000;
+
+		transition: .3s ease all;
+
+	}
+
+	.footerLink{
+
+		position: relative;
+
+		color: #F00000;
+
+		text-decoration: none;
+
+		padding: 10px 20px 10px 20px;
+
+		margin: 0;
+
+		transition: .3s ease all;
+
+		font-size: 20px;
+
+	}
+
+	.footerLink:after{
+
+		position: absolute;
+
+		height: 3px;
+
+		width: 0%;
+
+		background: #f00000;
+
+		content: "";
+
+		transition: .3s ease all;
+
+		bottom: 0;
+
+		left: 0;
+
+	}
+	#privacyWrap{
+
+		display: flex;
+
+		justify-content: center;
+
+		align-items: center;
+	}
+
+	#privacyLink{
+
+		padding: 0 10px 0 10px;
+
+	}
+
+	.borderRight{
+
+		border-right: 1px solid #fff;
+
+		padding: 0 10px 0 10px;
+
+	}
+	.siteAuthor{
+
+		text-align: center;
+
+		margin-top: 20px;
+
+	}
+	.siteAuthor a {
+
+		color: #FFF;
+
+		text-decoration: none;
+
+	}
+/* 1.4 General Pages Responsive-------------------------------------------------------------*/		
+	.contentBlock{
+
+		width: 90%;
+
+		margin: 0 auto;
+
+		height: auto;
+
+		padding: 50px 20px 50px 20px;
+
+	}
+	.pageWidth{
+
+		width: 90%;
+
+		margin: 0 auto;
+
+	}
+	.paddedSection{
+
+		padding: 50px 0 50px 0;
+
+	}
+	.hero{
+
+		position: relative;
+
+		z-index: 1;
+
+		height: 40vh;
+
+		width: 100%;
+
+		background-size: cover;
+
+		background-repeat: no-repeat;
+
+	}
+	.heroOverlay{
+
+		position: absolute;
+
+		top: 0;
+
+		left: 0;
+
+		z-index: 999;
+
+		height: 40vh;
+
+		width: 100%;
+
+		content: "";
+
+		background: rgba(0, 0, 0, .3);
+
+	}
+
+	.blockImage{
+
+		max-width:100%;
+
+		max-height: 100%;
+
+	}
+
+	.textWrap{
+
+		width: 90%;
+
+		padding: 20px;
+
+	}
+
+	.blockWrap{
+
+		display: flex;
+
+		margin-bottom: 100px;
+
+	}
+
+	.blockText{
+
+		padding: 20px;
+
+		margin-top: -30px;
+
+	}
+
+	.textBlock{
+
+		padding: 0;
+
+		margin: 50px 0 50px 0;
+
+		background: #fff;
+
+		display: flex;
+
+		flex-direction: column;
+
+		align-items: center;
+
+		text-align: center;
+	}
+
+	.blockText2{
+
+		width: 90%;
+
+		left: 20px;
+
+		margin-top: -30px;
+
+	}
+
+	.imageBlock{
+
+		padding: 100px 0 100px 0;
+
+	}
+
+	.introWrap{
+
+		padding: 0 20px 0 20px;
+
+	}
+
+	.flex-container{
+
+		flex-direction: column;
+
+	}
+
+	.flex-container-reverse{
+		display: flex;
+
+		flex-direction: column-reverse;
+
+	}
+
+	.centeredContainer{
+
+		display: flex;
+
+		justify-content: center;
+
+		flex-direction: column;
+
+	}
+
+	.col30{
+
+		width: 100%;
+
+	}
+
+	.col40{
+
+		width: 100%;
+
+	}	
+
+	.col50{
+
+		width: 100%;
+
+	}
+
+	.col60{
+
+		width: 100%;
+
+	}
+
+	.col70{
+
+		width: 100%;
+
+	}
+
+	.greyBlock{
+
+		padding: 100px 0 100px 0;
+
+		background: #f1f1f1;
+
+	}
+
+	.image{
+
+		width: 100%;
+
+		height: 100%;
+
+	}
+
+	body{
+
+		margin:0;
+
+		overflow-x: hidden;
+
+	}
+
+	.site{
+
+		width: 100vw;
+
+		overflow-x: hidden;
+
+	}
+
+	.whiteIcon{
+
+		color: #fff;
+
+		transition: .3s ease all;
+
+	}
+
+	.greyIcon{
+
+		color: #8A9499;
+
+	}
+
+	.redIcon{
+
+		color: #F00000;
+
+		margin-right: 10px;
+
+	}
+
+	.plainLink{
+
+		text-decoration: none;
+
+		color: #F00000;
+
+		transition: .3s ease all;
+	}
+	.CTAcontent{
+
+		width: 90%;
+
+		margin: 0 auto;
+
+		text-align: center;
+
+		padding: 20px;
+
+	}
+	.siteCTAWrap{
+
+		position: relative;
+
+		background: #F00000;
+
+		width: 100%;
+
+		padding: 50px 0 50px 0;
+
+	}
+
+	.siteCTAWrap a{
+
+		text-decoration: none;
+
+	}
+	.heroNav{
+
+		display:none;
+
+	}
+	.mobileHeroNav{
+
+		background: #1D1D1D;
+
+		padding: 20px 0 20px 0;
+
+	}
+	.heroNavWrap{
+
+		display: flex;
+
+		flex-direction: column;
+
+		justify-content: center;
+
+		align-items: center;
+
+		padding: 0;
+	}
+	.heroNavLink{
+
+		color: #fff;
+
+		text-decoration: none;
+
+		transition: .3s ease all;
+
+		padding: 10px 0 10px 0;
+
+	}
+	.heroNavWrap li{
+
+		list-style-type: none;
+
+		margin: 5px 0 5px 0;
+		
+	}
+	.underlinedHeading{
+
+		position: relative
+
+	}
+	.underlinedHeading:after{
+
+		position: absolute;
+
+		background: #F00000;
+
+		height: 2px;
+
+		width: 200px;
+
+		content: "";
+
+		left: 0;
+
+		bottom: -20px;
+
+	}
+	.iconWrap{
+
+		margin-top: -50px;
+
+	}
+	.iconBlock{
+
+		display: flex;
+
+		flex-direction: row;
+
+		align-items: center;
+
+		margin: 5px 0 5px 0;
+
+	}
+	.mapWrap{
+
+		 padding: 20px;
+
+	}	 
+/* 1.5 Typography ---------------------------------------------------------------------*/	
+
+	body,
+	button,
+	input,
+	select,
+	optgroup,
+	textarea {
+
+		color: #020101;
+
+		font-family: "roboto", sans-serif;
+
+		font-size: 20px;
+
+		line-height: 1.5;
+
+	}
+
+	h1,h2,h3,h4,h5,h6{
+
+		font-family: "Open Sans", sans-serif;
+
+		line-height: 1.2em;
+
+		font-weight: 700;
+
+	}
+
+	h1{
+
+		font-size: 2em;
+
+	}
+
+	h2{
+
+		font-size: 1.999em;
+
+	}
+
+	h3{
+
+		font-size: 1.414em;
+
+	}
+
+	h4{
+
+		font-size: 1em;
+
+	}
+
+	h5{
+
+		font-size: 1em;
+
+	}
+
+	h6{
+
+		font-size: 0.707em;
+
+	}
+
+	.whiteText{
+
+		color: #fff;
+
+		text-shadow: 0 2px 2px rgba(0,0,0,1);
+
+	}
+
+	.redText{
+
+		color: #F00000;
+
+	}
+
+	.centerText{
+
+		text-align: center;
+
+	}
+
+/*1.6 Homepage Responsive-------------------------------------------------------------*/		
+
+	.shopHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/stevensPointShopCropped.png");
+
+	}
+
+	#heroHeading{
+
+		padding: 20px;
+
+		text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+
+	}
+	.heroHeadingWrap{
+
+		display: none;
+
+	}
+	.mobileHeroHeading{
+
+		background: #1D1D1D;
+
+		display: flex;
+
+		flex-direction: column;
+
+		align-items: flex-end;
+
+		height: 100%;
+
+		align-items: center;
+
+		justify-content: center;
+
+		padding: 20px;
+
+	}
+	#homeHeading{
+
+		padding: 20px;
+
+	}
+	.heroHeading{
+
+		padding: 20px;
+
+	}
+	#homeHeroNav{
+
+		background: #f00000;
+
+		padding: 20px 0 20px 0;
+
+		font-size: 26px;
+
+		font-weight: 600;
+
+	}
+	.homeNavLink{
+
+		padding: 30px 20px 30px 20px;
+
+		transition: .3s ease all;
+
+		text-decoration: none;
+
+		border: 2px solid rgba(0,0,0,0);
+
+	}
+	#introText{
+
+		width: 90% !important;
+	}
+	#recyclingServices{
+
+		padding: 50px 0 50px 0;
+
+	}
+	.workWrap{
+
+		width: 100%;
+
+	}
+
+	#contactTitle{
+
+		font-size: 1.414em;
+
+	}
+
+	.contactForm{
+
+		width: 80%;
+
+		top: 30px;
+
+		padding: 20px;
+
+	}
+	.buttonWrap{
+
+		flex-direction: column;
+
+	}
+	#servicesButton{
+
+		margin-top: 50px;
+
+		margin-bottom: 50px;
+
+	}
+	#serviceDesc{
+
+		padding-bottom: 50px;
+
+	}
+	.overlayWrap{
+
+		position: relative;
+
+	}
+	.overlayWrap::before{
+
+		background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(255,255,255,0)));
+    	
+    	background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(255,255,255,0));
+
+    	position: absolute;
+
+    	top: 0;
+
+    	left: 0;
+
+    	content: "";
+
+    	width: 100%;
+
+    	height: 98%;
+
+	}
+	.serviceImage{
+
+		margin: 20px 0 20px 0;
+
+	}
+	.serviceTitle{
+
+		position: absolute;
+
+		width: 100%;
+
+		top: 10%;
+
+		text-align: center;
+
+		text-shadow: 2px 2px 2px rgba(0,0,0,1);
+
+		color: #fff;
+
+		z-index: 3;
+
+	}
+	.title{
+
+		padding: 50px 50px 10px 50px;
+
+		transition: .2s ease all;
+
+	}
+	.desc{
+
+		padding: 10px 50px 50px 50px;
+
+	}
+	.featureOverlay{
+
+		display: flex;
+
+		justify-content: center;
+
+		align-items: center;
+
+		position: absolute;
+
+		top: 0;
+
+		left: 0;
+
+		z-index: 2;
+
+		height: 100%;
+
+		width: 100%;
+
+		background: rgba(50, 64, 55, .8);
+
+		border: 2px solid #fff;
+
+		transition: opacity;
+
+		opacity: 0;
+
+		transition: .3s ease all;
+
+	}
+	.imageBlock{
+
+		padding: 0 0 0 0;
+
+	}
+	.serviceBlock{
+
+		margin: 0 0 50px 0;
+
+	}
+
+	#contactForm{
+
+		width: 80%;
+
+	}
+	#services a{
+
+		text-decoration: none;
+
+	}
+	.workImage{
+
+		margin-top: 0;
+
+		width: 100%;
+
+	}
+
+	.smallHeroHeading{
+
+		font-size: 1.414em;
+
+	}
+
+	#featuredWork{
+
+		padding: 0;
+
+	}
+
+	#featuredWorkWrap{
+
+		width: 90%;
+
+		padding: 50px 20px 50px 20px;
+
+	}
+
+/* 1.7 Buttons ------------------------------------------------------------------------*/
+	.redLink{
+
+		color: #f00000 !important;
+
+		transition: .3s ease all;
+
+	}
+	.redButton{
+
+		position: relative;
+
+		z-index:1;
+
+		border: 2px solid #f00000;
+
+		border-radius: 30px;
+
+		background: #f00000;
+
+		padding: 10px 50px 10px 50px;
+
+		color: #fff !important;
+
+		text-shadow: 0 1px 1px rgba(0,0,0,1);
+
+		margin-bottom: 10px;
+
+		transition: .3s ease all;
+
+		cursor: pointer;
+
+	}
+	.redButtonReverse{
+
+		position: relative;
+
+		z-index:1;
+
+		border: 2px solid #f00000;
+
+		border-radius: 30px;
+
+		padding: 10px 50px 10px 50px;
+
+		color: #F00000;
+
+		margin-bottom: 10px;
+
+		transition: .3s ease all;
+
+		cursor: pointer;
+
+	}
+	.plainRedButton{
+
+		position: relative;
+
+		z-index:1;
+
+		border: 2px solid #ff7841;
+
+		background: #ff7841;
+
+		padding: 10px 50px 10px 50px;
+
+		color: #fff;
+
+		margin-bottom: 10px;
+
+		transition: .3s ease all;
+
+		cursor: pointer;
+
+	}
+	.whiteButton{
+
+		position: relative;
+
+		z-index:1;
+
+		border: 2px solid #fff;
+
+		border-radius: 30px;
+
+		background: #fff;
+
+		padding: 10px 50px 10px 50px;
+
+		color: #F00000;
+
+		transition: .3s ease all;
+
+		cursor: pointer;
+
+	}
+	.centerButton{
+
+		margin: 0 auto;
+
+		text-align: center;
+
+	}
+	.buttonWrap{
+
+		display: flex;
+
+		justify-content: space-evenly;
+
+		width: 100%;
+
+		margin: 50px auto;
+
+		text-align: center;
+
+		}
+		.cn-button.bootstrap{
+			background-color: #ff0000 !important;
+			background-image: none !important;
+			border: 2px solid #ff0000 !important;
+			color: #fff;
+			transition: .3s ease all !important;
+		}
+		.cn-button.bootstrap:hover{
+			background-color: rgba(0,0,0,0) !important;
+			color: #ff0000 !important;
+			transition: .3s ease all !important;
+		}
+/* 1.8 services pages ------------------------------------------------------------------*/
+
+	.serviceHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/stevensPointShop2Cropped.jpg");
+
+	}
+	.cardboardHero{
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/cardboardRecycling.jpg");
+	}
+	#shreddingHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/documentShreddingCropped.jpg");
+
+	}
+	#shredContainer{
+
+		display: flex;
+
+		justify-content: center;
+
+	}
+	#containerHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/rollOffRecyclingContainerCropped.jpg");
+
+	}
+	#electronicsHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/TVRecyclingCropped.jpg");
+
+	}
+	.underline{
+
+		text-decoration: underline #f00000;
+
+	}
+	.largeText{
+
+		font-size: 1.999em;
+
+	}
+	.redBorder{
+
+		border: 2px solid #f00000;
+
+	}
+	.aboutImageRight{
+
+		margin-top: 50px;
+
+	}
+/* 1.9 Contact Page------------------------------------------------------------------*/
+	#formWrap{
+
+		padding: 10px;
+
+	}
+	input[type=text], input[type=email]{
+
+		border: 2px solid #f1f1f1 !important;
+
+		width: 95%;
+
+		margin: 5px 0 5px 0;
+
+	}
+	textarea, select{
+
+		border: 2px solid #f1f1f1 !important;
+
+		width: 100%;
+
+		margin: 5px 0 5px 0;
+
+	}
+	.btn-default{
+
+		border: 2px solid #f00000 !important;
+
+		border-radius: 30px !important;
+
+		background-color: #f00000 !important;
+
+		padding: 10px 50px 10px 50px !important;
+
+		color: #fff !important;
+
+		margin-bottom: 10px !important;
+
+		transition: .3s ease all;
+
+	}
+/* 1.10 Sitemap Page------------------------------------------------------------------*/
+	.sublink{
+
+		margin-left: 50px;
+
+	}
+	.projectTitleWrapper{
+
+		margin-top: 150px;
+
+	}
+/* 1.11 About Page------------------------------------------------------------------*/	
+	.canHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/aluminumCanRecyclingCropped.jpg");
+
+	}
+	#faqHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/copperRecycling.jpg");
+
+	}
+	.faq{
+		margin-bottom: 50px;
+	}	
+
+/* 1.12 Materials Page------------------------------------------------------------------*/	
+	.materialsHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/copperRecycling.jpg");
+
+	}
+} 
+/* 0.1 Extra small devices (phones, 320px and down) */
+
+@media only screen and (max-width: 320px) {
+	.title{
+		padding: 10px 30px 10px 30px;
+	}
+	.desc{
+		padding: 10px 30px 10px 30px;
+	}
+}
+/* 2.1 Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+
+	/*2.2 Navigation/Header Responsive-------------------------------------------------------------*/	
+
+	.site-header{
+
+		position: fixed;
+
+		top: 0;
+
+		left: 0;
+
+		z-index: 9999;
+
+		height: 70px;
+
+		width: 100vw;
+
+	}
+
+	.main-navigation{
+
+		height: 120px;
+
+		width: 100%;
+
+		margin: 0 auto;
+
+	    background: #fff;
+
+	    display: flex;
+
+	    align-items: center;
+
+	}
+
+	.secondaryNavigation{
+
+		height: 40px;
+
+		margin: 0 auto;
+
+		width: 100%;
+
+		background: #F00000;
+
+		display: flex;
+
+		align-items: center;
+
+	}
+
+	.menuLinkWrap{
+
+		display: flex;
+
+		justify-content: space-between;
+
+		align-items: center;
+
+	}
+
+
+	.secondaryMenuWrap{
+
+		display: flex;
+
+		justify-content: flex-end;
+
+		align-items: center;
+
+	}
+
+	.secondaryLink{
+
+		color: #fff;
+
+		padding: 0 20px 0 20px;
+
+		text-decoration: none;
+
+		transition: .3s ease all;
+
+		font-size: 14px;
+
+	}
+
+	.secondaryLink:hover{
+
+		color: #e6e6e6;
+
+		transition: .3s ease all;
+
+	}
+
+	.site-content{
+
+		margin-top: 35px;
+
+	}
+
+	.entry-header{
+
+		display:none;
+
+	}
+
+	.siteLogo{
+
+		margin-top: 8px;
+
+		height: auto;
+
+		width: 200px;
+
+	}
+
+	nav{
+
+		display: flex;
+
+		align-items:center;
+
+		height: 70px;
+
+		justify-content: space-between;
+
+		width: 100%;
+
+	}
+
+	.menuText{
+
+		cursor: pointer;
+
+		font-size: 26px;
+
+		padding-right: 10px;
+
+		color: #f00000;
+
+		text-decoration: none;
+
+		transition: .3s ease-out all;
+
+	}
+
+	.menuTextWrap{
+
+		display: flex;
+
+		margin-left: 10px;
+
+		right: 100px;
+
+	}
+
+	.menuBars{
+
+		cursor: pointer;
+
+		display: inline-block;
+
+		width: 30px;
+
+		padding-top: 7px;
+
+	}
+
+	.menuBars span{
+
+		display: block;
+
+		position: relative;
+
+		background-color: #F00000;
+
+		height: 3px;
+
+		width: 100%;
+
+		margin-top: 4px;
+
+	}
+
+	.menu{
+
+		position: absolute;
+
+		top: 0;
+
+		z-index: 99999;
+
+		height: 100vh;
+
+		width: 100vw;
+
+		background-color:  #fff;
+
+		transform: translateX(-100%);
+
+		transition: .2s ease-out all;
+
+	}
+
+	.open{
+
+		position: fixed;
+
+		transform: translate(0);
+
+		transition: .1s ease-out all;
+
+	}
+
+	.linkWrap{
+
+		position: absolute;
+
+		top: 150px;
+
+		margin: 0 50px 0 50px;
+
+		width: 80%;
+
+		text-align: center;
+
+	}
+
+	.linkWrap a{
+
+		color: #F00000;
+
+		text-decoration: none;
+
+	}
+
+	.linkWrap li{
+
+		list-style: none;
+
+		margin-top: 50px;
+
+		font-size: 1.414em;
+
+		border-bottom: 1px solid #f1f1f1;
+
+		display: flex;
+
+		align-items: center;
+
+		justify-content: space-between;
+
+	}
+
+	.menuLink{
+
+		position: relative;
+
+		display: block;
+
+		padding: 10px 30px 10px 30px;
+
+		transition: .2s ease all;
+
+	}
+
+	.menuLink:after{
+
+		position: absolute;
+
+		content: "";
+
+		bottom: 12px;
+
+		left: 0;
+
+		width: 3px;
+
+		height: 0%;
+
+		background: #F00000;
+
+		transition: .3s ease all;
+
+	}
+
+	.menuLink:hover:after{
+
+		position: absolute;
+
+		content: "";
+
+		bottom: 12px;
+
+		left: 0;
+
+		width: 3px;
+
+		height: 50%;
+
+		background: #F00000;
+
+		transition: .3s ease all;
+
+	}
+
+	.menu .active a{
+
+		border-bottom: 2px solid #F00000 !important;
+
+		width: 100%;
+
+		text-align: initial;
+
+	}
+	.linkList2 .active a{
+
+		margin-bottom: -1px;
+
+		border-bottom: 3px solid #F00000 !important;
+
+		transition: .2s ease all;
+
+	}
+	.closeMenu{
+
+		position: absolute;
+
+		cursor: pointer;
+
+		top: 30px;
+
+		right: 50px;
+
+	}
+	.linkList2{
+
+		display:none;
+
+	}
+	.menuButtonWrap{
+
+		display:flex;
+
+		right: 30px;
+	}
+/* 2.3 Footer -----------------------------------------------------------------------------*/
+
+	.site-info{
+
+		display: flex;
+
+		align-content: center;
+
+		align-items: center;
+
+		justify-content: center;
+
+		flex-direction: column;
+
+		height: auto;
+
+		width: 100%;
+
+		text-align: center;
+
+		background: #fff;
+
+		list-style-type: none;
+
+	}
+
+	.site-footer{
+
+		position: relative;
+
+		z-index: 2;
+
+		background-color: #1D1D1D;
+
+		width: 100%;
+
+		color: #fff;
+
+		padding: 0 0 50px 0;
+
+		margin: 0 auto;
+
+	}
+
+	.footerContact a{
+
+		text-decoration: none;
+
+		color: #F00000;
+
+		transition: .3s ease all;
+
+	}
+
+	.footerContact a:hover{
+
+		color: #f1f1f1;
+
+		transition: .3s ease all;
+
+	}
+
+	.footerLink{
+
+		position: relative;
+
+		color: #f00000;
+
+		text-decoration: none;
+
+		padding: 10px 20px 10px 20px;
+
+		margin: 10px 0 10px 0;
+
+		transition: .3s ease all;
+
+		font-size: 20px;
+
+	}
+
+	.footerLink:after{
+
+		position: absolute;
+
+		height: 0;
+
+		width: 3px;
+
+		background: #f00000;
+
+		content: "";
+
+		transition: .3s ease all;
+
+		bottom: 12px;
+
+		left: 0;
+
+	}
+
+	.footerLink:hover:after{
+
+		width: 3px;
+
+		height: 50%;
+
+		transition: .3s ease all;
+
+	}
+
+	#copyrightWrap{
+
+		display: flex;
+
+		flex-direction: row;
+
+		align-items: center;
+
+	}
+
+	#copyright{
+
+		background: #F00000;
+
+		margin-bottom: -50px;
+
+		font-size: 14px;
+
+	}
+	.copyrightContentWrap{
+
+		display: flex;
+
+		justify-content: space-between;
+
+		align-items: center;
+
+		flex-direction: row;
+
+	}
+	#copyright a{
+
+		text-decoration: none;
+
+		color: #fff;
+
+	}
+	#copyright a:hover{
+
+		color: #f1f1f1;
+
+	}
+	#privacyWrap{
+
+		display: flex;
+
+		justify-content: center;
+
+		align-items: center;
+
+	}
+
+	.borderRight{
+
+		border-right: 1px solid #fff;
+
+		padding: 0 10px 0 10px;
+
+	}
+
+	#privacyLink{
+
+		padding: 0 10px 0 10px;
+
+	}
+
+	.siteAuthor{
+
+		text-align: center;
+
+	}
+
+	.siteAuthor a {
+
+		color: #fff;
+
+		text-decoration: none;
+
+	}
+
+	.siteAuthor a:hover{
+
+		color: #f1f1f1;
+
+	}
+
+/* 2.4 General Body Responsive-------------------------------------------------------------*/		
+
+	.flex-container{
+
+		flex-direction: column;
+
+	}
+
+	.flex-container-reverse{
+
+		display: flex;
+
+		flex-direction: column-reverse;
+
+	}
+
+	.centerAlignedContainer{
+
+		display: flex;
+
+		align-items: center;
+
+	}
+	.centeredContainer{
+
+		display: flex;
+
+		justify-content: center;
+
+		text-align: center;
+
+		flex-direction: column;
+	}
+	.alignCenter{
+
+		display: flex;
+
+		align-items: center;
+
+	}
+	.paddedSection{
+
+		padding: 50px 0 50px 0;
+
+	}
+
+	.pageWidth{
+
+		width: 90%;
+
+		margin: 0 auto;
+
+	}
+
+	.col30{
+
+		width: 100%;
+
+	}
+
+	.col40{
+
+		width: 100%;
+
+	}	
+
+	.col50{
+
+		width: 100%;
+
+	}
+
+	.col60{
+
+		width: 100%;
+
+	}
+
+	.col70{
+
+		width: 100%;
+
+	}
+
+	.greyBlock{
+
+		padding: 100px 0 100px 0;
+
+		background: #f1f1f1;
+
+	}
+	.blackBlock{
+
+		background: #202526;
+
+	}
+
+	.image{
+
+		width: 100%;
+
+		height: 100%;
+
+	}
+
+	.CTAcontent{
+
+		width: 90%;
+
+		margin: 0 auto;
+
+		text-align: center;
+
+		border: 2px solid #fff;
+
+		padding: 20px;
+
+	}
+
+	.siteCTAWrap{
+
+		position: relative;
+
+		background: #F00000;
+
+		width: 100%;
+
+		padding: 50px 0 50px 0;
+
+	}
+
+	.siteCTAWrap a{
+
+		text-decoration: none;
+
+	}
+
+	.textWrap{
+
+		width: 90%;
+
+		padding: 20px;
+
+	}
+	.blockWrap{
+
+		display: flex;
+
+		margin-bottom: 100px;
+
+	}
+	.blockText{
+
+		padding: 20px;
+
+		margin-top: -30px;
+
+		width: 90%;
+
+		margin: 0 auto;
+
+	}
+	.blockImage{
+
+		display: flex;
+
+		max-width:100%;
+
+		max-height: 100%;
+
+	}
+	.textBlock{
+
+		padding: 0;
+
+		margin: 50px 0 50px 0;
+
+		background: #fff;
+
+		display: flex;
+
+		flex-direction: column;
+
+		align-items: center;
+
+		text-align: center;
+
+	}
+	body{
+
+		margin:0;
+
+		overflow-x: hidden;
+
+	}
+
+	.site{
+
+		width: 100vw;
+
+		overflow-x: hidden;
+
+	}
+
+	::selection{
+
+		background: rgba(240,0,0,.5);
+
+	}
+
+	::-moz-selection{
+		background: rgba(240,0,0,.5);
+	}
+	.whiteIcon{
+		color: #fff;
+		transition: .3s ease all;
+	}
+	.greyIcon{
+
+		color: #8A9499;
+
+	}
+	.redIcon{
+
+		color: #F00000;
+
+	}
+	.content{
+
+		padding: 100px 0 100px 0;
+
+	}
+	.fullWidth{
+
+		width: 100%;
+
+	}
+	.contentBlock{
+
+		width: 90%;
+
+		margin: 0 auto;
+
+		height: auto;
+
+		padding: 50px 20px 50px 20px;
+
+	}
+
+	.hero{
+
+		position: relative;
+
+		z-index: 1;
+
+		height: 60vh;
+
+		width: 100%;
+
+		background-size: cover;
+
+		background-repeat: no-repeat;
+
+	}
+	.heroOverlay{
+
+		position: absolute;
+
+		top: 0;
+
+		left: 0;
+
+		z-index: 999;
+
+		height: 60vh;
+
+		width: 100%;
+
+		content: "";
+
+		background: rgba(0, 0, 0, .3);
+
+	}
+
+	.page-content{
+
+		position: relative;
+
+		z-index: 2;
+
+		margin-top: 50vh;
+
+		background: #fff;
+
+	}
+
+	.greyBlock{
+
+		padding: 100px 0 100px 0;
+
+		background: #f1f1f1;
+
+	}
+
+	.blackBlock{
+
+		background: #202526;
+
+	}
+
+	.plainLink{
+
+		text-decoration: none;
+
+		color: #F00000;
+
+		transition: .3s ease all;
+	}
+
+	.plainLink:hover{
+
+		color: #1D1D1D;
+
+		transition: .3s ease all;
+
+	}
+	.underlinedHeading{
+
+		position: relative
+
+	}
+	.underlinedHeading:after{
+
+		position: absolute;
+
+		background: #F00000;
+
+		height: 2px;
+
+		width: 200px;
+
+		content: "";
+
+		left: 0;
+
+		bottom: -20px;
+
+	}
+	.heroNav{
+
+		display:none;
+
+	}
+	.mobileHeroNav{
+
+		background: #1D1D1D;
+
+		padding: 20px 0 20px 0;
+
+	}
+	.heroNavWrap{
+
+		display: flex;
+
+		flex-direction: column;
+
+		justify-content: center;
+
+		align-items: center;
+
+		padding: 0;
+	}
+	.heroNavLink{
+
+		color: #fff;
+
+		text-decoration: none;
+
+		list-style-type: none;
+
+		transition: .3s ease all;
+
+		padding: 5px 0 5px 0;
+
+	}
+	.heroNavWrap li{
+
+		list-style-type: none;
+
+	}
+	.iconBlock{
+
+		display: flex;
+
+		flex-direction: column;
+
+	}
+/* 2.5 Typography --------------------------------------------------------------------*/
+
+	body,
+	button,
+	input,
+	select,
+	optgroup,
+	textarea {
+
+		color: #020101;
+
+		font-family: "roboto", sans-serif;
+
+		font-size: 20px;
+
+		line-height: 1.5;
+
+	}
+
+	h1,h2,h3,h4,h5,h6{
+
+		font-family: "Open Sans", sans-serif;
+
+		line-height: 1em;
+
+		letter-spacing: 1.5px;
+
+		font-weight: 600;
+	}
+
+	h1{
+
+		font-size: 2.827em;
+
+	}
+
+	h2{
+
+		font-size: 1.999em;
+
+	}
+
+	h3{
+
+		font-size: 1.414em;
+
+	}
+
+	h4{
+
+		font-size: 1em;
+
+	}
+
+	h5{
+
+		font-size: 1em;
+
+	}
+
+	h6{
+
+		font-size: 0.707em;
+
+	}
+
+	.whiteText{
+
+		color: #fff;
+
+		text-shadow: 0 2px 2px rgba(0,0,0,1);
+
+	}
+
+	.redText{
+
+		color: #F00000;
+
+	}
+
+	.centerText{
+
+		text-align: center;
+
+	}
+
+/*2.6 Homepage Responsive-------------------------------------------------------------*/		
+
+	.shopHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/stevensPointShopCropped.png");
+
+	}
+
+	#heroHeading{
+
+		text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+
+	}
+	.heroHeadingWrap{
+
+		display: none;
+
+	}
+	.mobileHeroHeading{
+
+		background: #1D1D1D;
+
+		display: flex;
+
+		flex-direction: column;
+
+		align-items: flex-end;
+
+		height: 100%;
+
+		align-items: center;
+
+		justify-content: center;
+
+		padding: 20px;
+
+	}
+	#homeHeading{
+
+		padding: 50px;
+
+	}
+	#homeHeroNav{
+
+		background: #f00000;
+
+		padding: 20px 0 20px 0;
+
+		font-size: 26px;
+
+		font-weight: 600;
+
+	}
+	.homeNavLink{
+
+		padding: 30px 20px 30px 20px;
+
+		transition: .3s ease all;
+
+		text-decoration: none;
+
+		border: 2px solid rgba(0,0,0,0);
+
+	}
+	.homeNavLink:hover{
+
+		border: 2px solid #fff;
+
+		transition: .3s ease all;
+
+	}
+	.heroHeading{
+
+		padding: 50px;
+
+	}
+	.introText{
+
+		padding: 50px 0 50px 0;
+
+		width: 100%;
+
+	}
+	#recyclingServices{
+
+		padding: 50px 0 50px 0;
+
+	}
+	.workWrap{
+
+		width: 100%;
+
+	}
+
+	.imageBlock{
+
+		padding: 100px 0 100px 0;
+
+	}
+
+	.serviceImage{
+
+		width: 50%;
+
+		height: 100%;
+
+		padding: 0;
+
+		margin: 0 auto;
+
+	}
+
+	#homeButtonIcon{
+
+		margin-left: 20px;
+
+	}
+
+	.introWrap{
+
+		background-color: #020101;
+
+		color: #fff;
+
+		padding: 0 20px 0 20px;
+
+	}
+
+	.introText{
+
+		padding: 200px 20px 50px 20px;
+
+		width: 60%;
+
+		margin:0 auto;
+
+	}
+	.boldHR{
+
+		position: relative;
+
+	}
+
+	.boldHR::after{
+
+		position:absolute;
+
+		bottom: -10px;
+
+		left: 40%;
+
+		content: "";
+
+		height: 5px;
+
+		background: #006b80;
+
+		width: 20%;
+
+	}
+
+	#workButton{
+
+		margin-top: 50px;
+	}
+
+	.spacer{
+
+		margin-top: 100px;
+
+	}
+	#serviceDesc{
+
+		padding-bottom: 50px;
+
+	}
+	.overlayWrap{
+
+		position: relative;
+
+	}
+	.overlayWrap::before{
+
+		background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(255,255,255,0)));
+    	
+    	background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(255,255,255,0));
+
+    	position: absolute;
+
+    	top: 0;
+
+    	left: 0;
+
+    	content: "";
+
+    	width: 100%;
+
+    	height: 100%;
+
+	}
+	.serviceTitle{
+
+		position: absolute;
+
+		width: 100%;
+
+		top: 20%;
+
+		text-align: center;
+
+		text-shadow: 2px 2px 2px rgba(0,0,0,1);
+
+		color: #fff;
+
+		z-index: 3;
+
+	}
+	.title{
+
+		padding: 50px 50px 10px 50px;
+
+		transition: .2s ease all;
+
+	}
+	.desc{
+
+		padding: 10px 50px 50px 50px;
+
+	}
+	.featureOverlay{
+
+		display: flex;
+
+		justify-content: center;
+
+		align-items: center;
+
+		position: absolute;
+
+		top: 0;
+
+		left: 0;
+
+		z-index: 2;
+
+		height: 100%;
+
+		width: 100%;
+
+		background: rgba(0, 0, 0, .5);
+
+		transition: opacity;
+
+		opacity: 0;
+
+		transition: .3s ease all;
+
+	}
+
+	.borderedOverlay{
+
+		display: flex;
+
+		justify-content: center;
+
+		align-items: center;
+
+		position: absolute;
+
+		z-index: 2;
+
+		height: 80%;
+
+		width: 80%;
+
+		transition: opacity;
+
+		opacity: 0;
+
+		transition: .3s ease all;
+
+		border: 2px solid #F00000;
+
+	}
+	.serviceImage:hover .featureOverlay, .serviceImage:hover .borderedOverlay{
+
+		opacity: 1;
+
+		transition: opacity;
+
+		transition: .3s ease all;
+
+	}
+
+	.serviceImage:hover h3{
+
+		color: #f00000;
+
+		transition: .3s ease all;
+	}
+
+	.serviceImage a{
+
+		text-decoration: none;
+
+	}
+
+	#lrgFeaturedWorkImage{
+
+		text-align: center;
+
+		display: flex;
+
+		align-items: center;
+
+	}
+
+	.workWrap{
+
+		display: flex;
+
+		flex-flow: row wrap;
+
+		justify-content: center;
+
+		width: 90%;
+
+		margin: 0 auto;
+
+	}
+
+	#services a{
+
+		text-decoration: none;
+
+	}
+
+/* 2.7 Buttons -------------------------------------------------------------------------*/
+
+	.redLink{
+
+		color: #f00000 !important;
+
+		transition: .3s ease all;
+
+	}
+
+	.redLink:hover{
+
+		transition: .3s ease all;
+
+		color: #1d1d1d !important;
+
+	}
+
+	.redButton{
+
+		position: relative;
+
+		z-index:1;
+
+		border: 2px solid #f00000;
+
+		border-radius: 30px;
+
+		background: #f00000;
+
+		padding: 10px 50px 10px 50px;
+
+		color: #fff !important;
+
+		text-shadow: 0 1px 1px rgba(0,0,0,1);
+
+		margin-bottom: 10px;
+
+		transition: .3s ease all;
+
+		cursor: pointer;
+
+	}
+
+	.redButton:hover{
+
+		background: rgba(0,0,0,0)!important;
+
+		transition: .3s ease all;
+
+		color: #f00000 !important;
+
+	}
+	.redButtonReverse{
+
+		position: relative;
+
+		z-index:1;
+
+		border: 2px solid #f00000;
+
+		border-radius: 30px;
+
+		padding: 10px 50px 10px 50px;
+
+		color: #F00000;
+
+		margin-bottom: 10px;
+
+		transition: .3s ease all;
+
+		cursor: pointer;
+
+	}
+	.redButtonReverse:hover{
+
+		background: #F00000;
+
+		transition: .3s ease all;
+
+		color: #fff;
+
+	}
+	.plainRedButton{
+
+		position: relative;
+
+		z-index:1;
+
+		border: 2px solid #ff7841;
+
+		background: #ff7841;
+
+		padding: 10px 50px 10px 50px;
+
+		color: #fff;
+
+		margin-bottom: 10px;
+
+		transition: .3s ease all;
+
+		cursor: pointer;
+
+	}
+	.whiteButton{
+
+		position: relative;
+
+		z-index:1;
+
+		border: 2px solid #fff;
+
+		border-radius: 30px;
+
+		background: #fff;
+
+		padding: 10px 50px 10px 50px;
+
+		color: #F00000;
+
+		transition: .3s ease all;
+
+		cursor: pointer;
+
+	}
+
+	.whiteButton:hover{
+
+		background: rgba(0,0,0,0);
+
+		color: #fff;
+
+		transition: .3s ease all;
+
+	}
+
+	.centerButton{
+
+		margin: 0 auto;
+
+		text-align: center;
+
+	}
+
+	.buttonWrap{
+
+		display: flex;
+
+		justify-content: space-evenly;
+
+		width: 100%;
+
+		margin: 50px auto;
+
+		text-align: center;
+
+	}
+	.cn-button.bootstrap{
+			background-color: #ff0000 !important;
+			background-image: none !important;
+			border: 2px solid #ff0000 !important;
+			color: #fff;
+			transition: .3s ease all !important;
+		}
+		.cn-button.bootstrap:hover{
+			background-color: rgba(0,0,0,0) !important;
+			color: #ff0000 !important;
+			transition: .3s ease all !important;
+		}
+/* 2.8 services pages ------------------------------------------------------------------*/
+
+	.serviceHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/stevensPointShop2Cropped-1.jpg");
+
+	}
+	.cardboardHero{
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/cardboardRecycling.jpg");
+	}
+	#metal{
+
+		margin-top: -50px;
+
+	}
+	#shreddingHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/documentShreddingCropped.jpg");
+
+	}
+	#shredContainer{
+
+		display: flex;
+
+		justify-content: center;
+
+	}
+	#containerHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/rollOffRecyclingContainerCropped.jpg");
+
+	}
+	#electronicsHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/TVRecyclingCropped.jpg");
+
+	}
+	.escrapImage{
+
+		display: flex;
+
+		justify-content: flex-end;
+
+	}
+	.underline{
+
+		text-decoration: underline #f00000;
+
+	}
+	.rotate{
+
+		transform: rotate(90deg);
+
+	}
+	.largeText{
+
+		font-size: 1.999em;
+
+	}
+	.redBorder{
+
+		border: 2px solid #f00000;
+
+	}
+	.aboutImageRight{
+
+		margin-left: 50px;
+
+	}
+	.centerImage{
+		margin: 0 auto;
+	}
+/* 2.9 Contact Page------------------------------------------------------------------*/
+	#formWrap{
+
+		margin: 0 10px 0 10px;
+
+		border: 2px solid #f1f1f1;
+
+		padding: 20px;
+
+	}
+	.caldera-grid{
+
+		padding: 50px;
+
+	}
+	.contactWrap{
+
+		border: 2px solid #f1f1f1;
+
+		margin-top: 50px;
+
+	}
+	.mapWrap{
+		padding: 20px;
+	}
+	#contactForm{
+
+		padding: 0 50px 0 50px;
+
+	}
+
+	#contactContent{
+
+		margin-top: 30px;
+
+		padding: 50px 0 50px 0;
+
+		position: relative; 
+
+		z-index: 2;
+
+		background: #fff;
+
+	}
+	input[type=text], input[type=email], textarea, select{
+
+		border: 2px solid #f1f1f1 !important;
+
+	}
+	.btn-default{
+
+		border: 2px solid #f00000 !important;
+
+		border-radius: 30px !important;
+
+		background: #f00000 !important;
+
+		padding: 10px 50px 10px 50px !important;
+
+		color: #fff !important;
+
+		margin-bottom: 10px !important;
+
+		transition: .3s ease all;
+
+	}
+	.btn-default:hover{
+		background: rgba(0,0,0,0)!important;
+
+		transition: .3s ease all;
+
+		color: #f00000 !important;
+	}
+/* 2.10 Sitemap Page------------------------------------------------------------------*/
+	.sublink{
+
+		margin-left: 50px;
+
+	}
+	.projectTitleWrapper{
+
+		margin-top: 250px !important;
+
+	}
+/* 2.11 About Pages------------------------------------------------------------------*/	
+	.canHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/aluminumCanRecyclingCropped.jpg");
+
+	}
+	#faqHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/copperRecycling.jpg");
+
+	}
+	.faq{
+		margin-bottom: 50px;
+	}	
+	
+/* 2.12 Materials Page------------------------------------------------------------------*/
+	.materialsHero{
+
+		background-image: url("https://expressrecycling.biz/assets/scss/wp-content/uploads/2018/07/copperRecycling.jpg");
+
+	}
+@media only screen and (orientation: landscape) {
+
+   .linkWrap{
+
+		top: 50px;
+	}
+	.contact{
+		width:50%;
+	}
+	.linkWrap li{
+
+		margin-top: 10px;
+
+	}
+
+}
+
+/* 3.1 Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+
+
+} 
+
+/* 4.1 Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+
+/* 4.2 Navigation/Header---------------------------------------------------------------*/
+
+	.linkList2{
+
+		display: flex;
+
+		height: 70px;
+
+		align-items:center;
+
+		list-style-type: none;
+
+		font-size: 12px;
+
+	}
+
+	.linkList2 a{
+
+		color:#1D1D1D;
+
+		text-decoration: none;
+
+		transition: .3s ease all;
+
+	}
+
+	.linkList2 a:hover{
+
+		color:#F00000;
+
+		transition: .3s ease all;
+
+	}
+
+	.menuButtonWrap{
+
+		display:none;
+
+	}
+
+/* 4.3 Footer--------------------------------------------------------------------------*/
+
+	.site-info{
+
+		flex-direction: row;
+
+		height: 120px;
+
+	}
+	#copyright{
+
+		flex-direction: row;
+
+	}
+
+/* 4.4 General Body--------------------------------------------------------------------*/
+
+	.pageWidth{
+
+		width: 70%;
+
+		height: 100%;
+
+		margin: 0 auto;
+
+	}
+
+	.contentBlock{
+
+		width: 60%;
+
+	}
+
+	.blockText{
+
+		padding: 50px;
+
+		display: flex;
+
+		flex-direction: column;
+
+		justify-content: center;
+
+	}
+
+	.textWrap{
+
+		padding: 50px;
+
+		width: 70%;
+
+		margin: 0 auto;
+
+	}
+
+	.hero{
+
+		position: relative;
+
+		z-index: 1;
+
+		height: 70vh;
+
+		width: 100%;
+
+		background-size: cover;
+
+		background-repeat: no-repeat;
+
+	}
+	.heroOverlay{
+
+		position: absolute;
+
+		top: 0;
+
+		left: 0;
+
+		z-index: 999;
+
+		height: 70vh;
+
+		width: 100%;
+
+		content: "";
+
+		background: rgba(0, 0, 0, .3);
+
+	}
+	.heroHeadingWrap{
+
+		display: flex;
+
+		flex-direction: row;
+
+		align-items: flex-end;
+
+		height: 100%;
+
+		align-items: center;
+
+		justify-content: center;
+
+	}
+	.heroNav{
+
+		display: block;
+
+		background: #1D1D1D;
+
+		padding: 50px 0 50px 0;
+
+		margin-top: -100px;
+
+	}
+	.heroNavWrap{
+
+		display: flex;
+
+		flex-direction: row;
+
+		justify-content: space-between;
+
+		align-items: center;
+
+	}
+	.heroNavLink{
+
+		color: #fff;
+
+		text-decoration: none;
+
+		transition: .3s ease all;
+
+	}
+	.heroNavLink:hover{
+
+		color: #F00000;
+
+		transition: .3s ease all;
+
+	}
+	.heroNavWrap li{
+
+		list-style-type: none;
+
+	}
+	.mobileHeroNav{
+
+		display: none;
+
+	}
+
+	.flex-container{
+
+		display: flex;
+
+		flex-direction: row;
+
+		justify-content: space-around;
+
+	}
+
+	.flex-container-reverse{
+
+		display: flex;
+
+		flex-direction: row;
+
+		justify-content: space-around;
+
+	}
+
+	.CTAcontent{
+
+		width: 60%;
+
+	}
+
+	.col30{
+
+		width: 30%;
+
+	}
+
+	.col40{
+
+		width: 40%;
+
+	}
+
+	.col50{
+
+		width: 50%;
+
+	}
+
+	.col60{
+
+		width: 60%;
+
+	}
+
+	.col70{
+
+		width: 70%;
+
+	}
+	.textBlock{
+
+		margin-left: 20px;
+
+	}
+/* 4.5 Typography----------------------------------------------------------------------*/
+
+/* 4.6 Homepage------------------------------------------------------------------------*/
+	.mobileHeroHeading{
+
+		display: none;
+
+	}
+	.introText{
+
+		padding: 200px 20px 50px 20px;
+
+		width: 60%;
+
+		margin:0 auto;
+
+	}
+	#projectDesc{
+
+		margin-left: -100px;
+
+	}
+	#workButton{
+
+		margin-top: 50px;
+
+	}
+
+	.serviceImage{
+
+		width: 100%;
+
+		height: 100%;
+
+		padding: 20px;
+
+	}
+
+/* 4.7 Buttons-------------------------------------------------------------------------*/
+
+/* 4.8 Services Page-------------------------------------------------------------------*/
+
+/*	4.9 Contact Pages----------------------------------------------------------------*/	
+	.contactWrap{
+
+		margin-top: 0;
+
+	}
+/* 4.12 Materials Page------------------------------------------------------------------*/	
+	
+} 
+
+
+
+/* 5.1 Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+
+/* 5.2 Navigation/Header---------------------------------------------------------------*/	
+
+	.linkList2{
+
+		font-size: 16px;
+
+	}
+/* 5.3 Footer -------------------------------------------------------------------------*/
+	#copyright{
+
+		font-size: 16px;
+
+	}
+/* 5.4 General Pages-------------------------------------------------------------------*/	
+	
+/* 5.5 Typography----------------------------------------------------------------------*/	
+	.projectTitleWrapper h1{
+
+		font-size: 6em;
+
+	}
+/* 5.6 Homepage-------------------------------------------------------------------------*/
+	.desc{
+
+		padding: 10px 70px 50px 70px;
+
+	}	
+}
+/* 6.1 Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1300px) {	
+
+}	
+/* 7.1 Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+
+}
+/* 8.1 Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+
+}
