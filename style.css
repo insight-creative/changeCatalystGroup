@@ -1,14 +1,14 @@
 /*
-Theme Name: ardensAutoResponsiveChild
+Theme Name: changeCatalystResponsiveChild
 Theme URI: https://seejustincode.com/
 Author: Justin Parsons
 Author URI: https://seejustincode.com/
-Description: Description
+Description: Custom WP Theme for Change Catalyst Group
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: ardensAutoResponsive
-Template: ardensAutoResponsive
+Text Domain: changeCatalystResponsive
+Template: changeCatalystResponsive
 */
 /* 1.0 sitewide variables -------------------------------------------*/
 /* 2.0 Define mobile breakpoints for our site ----------------------*/
@@ -158,7 +158,7 @@ Template: ardensAutoResponsive
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fbf8f5; }
+  background-color: #009863; }
   @media (max-width: 600px) {
     .blockTextSecondary {
       padding: 20px;
@@ -297,10 +297,10 @@ Template: ardensAutoResponsive
 
 .greyBlock {
   padding: 100px 0 100px 0;
-  background: #E6E6E6; }
+  background: #eff2ef; }
 
 .blackBlock {
-  background: #232323; }
+  background: #4e4e4e; }
 
 .whiteBlock {
   background: #FFFFFF; }
@@ -349,7 +349,7 @@ Template: ardensAutoResponsive
   height: 30px;
   margin: 0 auto;
   width: 100%;
-  background: #c92b2c;
+  background: #8ebe58;
   display: flex;
   align-items: center; }
 
@@ -370,7 +370,7 @@ Template: ardensAutoResponsive
   transition: .3s ease all;
   font-size: 14px; }
   .secondaryLink:hover {
-    color: #E6E6E6;
+    color: #eff2ef;
     transition: .3s ease all; }
   @media (max-width: 600px) {
     .secondaryLink {
@@ -402,7 +402,7 @@ nav {
   font-size: 26px;
   font-weight: 700;
   padding-right: 10px;
-  color: #232323;
+  color: #4e4e4e;
   text-decoration: none;
   transition: .3s ease-out all; }
 
@@ -419,7 +419,7 @@ nav {
   .menuBars span {
     display: block;
     position: relative;
-    background-color: #c92b2c;
+    background-color: #8ebe58;
     height: 3px;
     width: 100%;
     margin-top: 4px; }
@@ -430,7 +430,7 @@ nav {
   z-index: 99999;
   height: 100vh;
   width: 100vw;
-  background-color: #fbf8f5;
+  background-color: #009863;
   transform: translateX(-100%);
   transition: .2s ease-out all; }
 
@@ -445,13 +445,13 @@ nav {
   margin: 0 50px 0 50px;
   width: 90%;
   text-align: left; }
-  @media (max-width: 1250px) {
+  @media (min-width: 1250px) {
     .linkWrap {
       top: 75px;
       padding: 0;
       margin: 0; }
       .linkWrap a {
-        color: #232323;
+        color: #4e4e4e;
         font-weight: 700;
         text-decoration: none; }
       .linkWrap li {
@@ -460,11 +460,11 @@ nav {
         font-size: 20px;
         line-height: 5px;
         padding-bottom: 10px;
-        border-bottom: 1px solid #E6E6E6;
+        border-bottom: 1px solid #eff2ef;
         display: flex;
         align-items: center;
         justify-content: space-between; } }
-  @media (max-width: 1250px) and (max-width: 600px) {
+  @media (min-width: 1250px) and (max-width: 600px) {
     .linkWrap {
       margin-top: 30px;
       font-size: 14px; } }
@@ -474,7 +474,7 @@ nav {
   display: block;
   padding: 10px 30px 10px 30px;
   transition: .2s ease all; }
-  @media (max-width: 1250px) {
+  @media (min-width: 1250px) {
     .menuLink {
       padding: 10px 10px 10px 10px; } }
 
@@ -485,7 +485,7 @@ nav {
   left: 0;
   width: 3px;
   height: 0%;
-  background: #c92b2c;
+  background: #8ebe58;
   transition: .3s ease all; }
 .menuLink:hover:after {
   position: absolute;
@@ -494,18 +494,18 @@ nav {
   left: 0;
   width: 3px;
   height: 50%;
-  background: #c92b2c;
+  background: #8ebe58;
   transition: .3s ease all; }
 
 .menu .active a {
-  border-bottom: 2px solid #c92b2c !important;
+  border-bottom: 2px solid #8ebe58 !important;
   color: #FFFFFF;
   width: 100%;
   text-align: initial; }
 
 .linkList2 .active a {
   margin-bottom: -1px;
-  border-bottom: 3px solid #c92b2c !important;
+  border-bottom: 3px solid #8ebe58 !important;
   transition: .2s ease all; }
 
 .closeMenu {
@@ -520,11 +520,11 @@ nav {
   bottom: 0;
   left: 0;
   height: 60px;
-  background-color: #c92b2c; }
+  background-color: #8ebe58; }
 
 #closeMenuTitle {
   margin: 0 auto;
-  color: #fbf8f5; }
+  color: #009863; }
 
 .linkList2 {
   display: none; }
@@ -536,12 +536,12 @@ nav {
       list-style-type: none;
       font-size: 20px; } }
   .linkList2 a {
-    color: #232323;
+    color: #4e4e4e;
     font-weight: 700;
     text-decoration: none;
     transition: .3s ease all; }
     .linkList2 a:hover {
-      color: #c92b2c !important;
+      color: #8ebe58 !important;
       transition: .3s ease all; }
 
 .menuButtonWrap {
@@ -629,9 +629,9 @@ nav {
   height: auto;
   padding: 20px 0 20px 0;
   text-align: center;
-  background: #fbf8f5;
+  background: #009863;
   list-style-type: none;
-  border-bottom: 1px solid #c92b2c;
+  border-bottom: 1px solid #8ebe58;
   background-color: #fbf8f5;
   background-image: url("/ardens/assets/scss/wp-content/uploads/2019/01/blizzard.png"); }
   @media (min-width: 992px) {
@@ -642,7 +642,7 @@ nav {
 .site-footer {
   position: relative;
   z-index: 2;
-  background-color: #fbf8f5;
+  background-color: #009863;
   width: 100%;
   padding: 0 0 50px 0;
   margin: 0 auto;
@@ -659,16 +659,16 @@ nav {
 
 .footerContact a {
   text-decoration: none;
-  color: #c92b2c;
+  color: #8ebe58;
   transition: .3s ease all;
   font-weight: 700; }
   .footerContact a:hover {
-    color: #232323;
+    color: #4e4e4e;
     transition: .3s ease all; }
 
 .footerLink {
   position: relative;
-  color: #c92b2c;
+  color: #8ebe58;
   text-decoration: none;
   padding: 10px 20px 10px 20px;
   margin: 10px 0 10px 0;
@@ -679,7 +679,7 @@ nav {
     position: absolute;
     height: 0;
     width: 3px;
-    background: #c92b2c;
+    background: #8ebe58;
     content: "";
     transition: .3s ease all;
     bottom: 12px;
@@ -702,8 +702,8 @@ nav {
       flex-direction: column; } }
 
 #copyright {
-  background: #c92b2c;
-  color: #fbf8f5;
+  background: #8ebe58;
+  color: #009863;
   margin-bottom: -50px;
   font-size: 12px; }
   #copyright p {
@@ -716,7 +716,7 @@ nav {
     text-decoration: none;
     color: #FFFFFF; }
     #copyright a:hover {
-      color: #E6E6E6; }
+      color: #eff2ef; }
   @media (max-width: 600px) {
     #copyright {
       font-size: 16px; } }
@@ -768,7 +768,7 @@ nav {
     color: #FFFFFF;
     text-decoration: none; }
   .siteAuthor:hover {
-    color: #E6E6E6; }
+    color: #eff2ef; }
   @media (max-width: 600px) {
     .siteAuthor {
       margin-bottom: 25px; } }
@@ -818,7 +818,7 @@ h6 {
   color: #FFFFFF; }
 
 .redText {
-  color: #c92b2c; }
+  color: #8ebe58; }
 
 .centerText {
   text-align: center; }
@@ -827,7 +827,7 @@ h6 {
   position: relative; }
   .underlinedHeading:after {
     position: absolute;
-    background: #c92b2c;
+    background: #8ebe58;
     height: 2px;
     width: 200px;
     content: "";
@@ -836,7 +836,7 @@ h6 {
 
 /* 7.0 Button Stylings ---------------------------------------*/
 .redLink {
-  color: #c92b2c !important;
+  color: #8ebe58 !important;
   transition: .3s ease all; }
   .redLink:hover {
     transition: .3s ease all;
@@ -845,9 +845,9 @@ h6 {
 .redButton {
   position: relative;
   z-index: 1;
-  border: 2px solid #c92b2c;
+  border: 2px solid #8ebe58;
   border-radius: 10px;
-  background: #c92b2c;
+  background: #8ebe58;
   padding: 10px 50px 10px 50px;
   color: #FFFFFF !important;
   text-shadow: 0 1px 1px black;
@@ -855,30 +855,30 @@ h6 {
   transition: .2s ease all;
   cursor: pointer; }
   .redButton:hover {
-    background: #8a1e1e !important;
-    border: 2px solid #8a1e1e !important;
+    background: #8ebe58 !important;
+    border: 2px solid #8ebe58 !important;
     transition: .2s ease all; }
 
 .redButtonReverse {
   position: relative;
   z-index: 1;
-  border: 2px solid #c92b2c;
+  border: 2px solid #8ebe58;
   border-radius: 30px;
   padding: 10px 50px 10px 50px;
-  color: #c92b2c;
+  color: #8ebe58;
   margin-bottom: 10px;
   transition: .3s ease all;
   cursor: pointer; }
   .redButtonReverse:hover {
-    background: #c92b2c;
+    background: #8ebe58;
     transition: .3s ease all;
     color: #FFFFFF; }
 
 .plainRedButton {
   position: relative;
   z-index: 1;
-  border: 2px solid #c92b2c;
-  background: #c92b2c;
+  border: 2px solid #8ebe58;
+  background: #8ebe58;
   padding: 10px 50px 10px 50px;
   color: #FFFFFF;
   margin-bottom: 10px;
@@ -892,7 +892,7 @@ h6 {
   border-radius: 10px;
   background: #FFFFFF;
   padding: 10px 50px 10px 50px;
-  color: #c92b2c;
+  color: #8ebe58;
   transition: .3s ease all;
   cursor: pointer; }
   .whiteButton:hover {
@@ -907,7 +907,7 @@ h6 {
   border-radius: 10px;
   background: #FFFFFF;
   padding: 10px 20px 10px 20px;
-  color: #c92b2c;
+  color: #8ebe58;
   transition: .3s ease all;
   cursor: pointer;
   font-size: 14px !important; }
@@ -929,7 +929,7 @@ h6 {
 
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
-  background: #fbf8f5;
+  background: #009863;
   margin: 0; }
 
 ::selection {
@@ -953,10 +953,10 @@ body {
   font-size: 16px; }
 
 .greyIcon {
-  color: #E6E6E6; }
+  color: #eff2ef; }
 
 .redIcon {
-  color: #c92b2c; }
+  color: #8ebe58; }
 
 .iconBlock {
   display: flex;
@@ -986,13 +986,13 @@ body {
     .homeHeading {
       width: 100%;
       border-radius: 0;
-      background-color: #c92b2c;
+      background-color: #8ebe58;
       bottom: -235px; } }
   @media (min-width: 600px) {
     .homeHeading {
       width: 100%;
       border-radius: 0;
-      background-color: #c92b2c;
+      background-color: #8ebe58;
       bottom: -195px; } }
   @media (min-width: 768px) {
     .homeHeading {
@@ -1073,7 +1073,7 @@ body {
   .zoomContainerWrapper {
     margin: 0 25px 0 25px; } }
 .zoomContainerWrapper a {
-  color: #232323;
+  color: #4e4e4e;
   text-decoration: none; }
 
 .zoomContainer {
@@ -1127,7 +1127,7 @@ body {
   margin-block-start: 1em; }
 
 .zoomContainer:hover h4, .zoomContainerLarge:hover h4 {
-  color: #c92b2c;
+  color: #8ebe58;
   transition: .3s ease all; }
 
 .zoomImage {
@@ -1236,7 +1236,7 @@ body {
   padding: 10px 20px !important; }
 
 .surveyWrapper {
-  background-color: #c92b2c;
+  background-color: #8ebe58;
   border-radius: 10px;
   position: fixed;
   bottom: 0;
@@ -1637,10 +1637,10 @@ template {
   padding: 20px; }
 
 .caldera-grid label {
-  color: #232323 !important; }
+  color: #4e4e4e !important; }
 
 .field_required {
-  color: #c92b2c !important; }
+  color: #8ebe58 !important; }
 
 .CF5c3c73e0407dd input[type=text], .CF5c3c73e0407dd input[type=email], #fld_7683514_1 {
   margin-top: 10px;

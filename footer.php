@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package ardensAutoResponsive
+ * @package changeCatalystResponsive
  */
 ?>
 
@@ -18,31 +18,31 @@
 
 			<li>
 
-				<a class="footerLink" href = "https://expressrecycling.biz/acceptable-materials/">Auto Repair Services</a>
+				<a class="footerLink" href = "#">ABOUT</a>
 
 			</li>
 
 			<li>
 
-				<a class="footerLink" href = "https://expressrecycling.biz/recycling-services/">Projects</a>
+				<a class="footerLink" href = "#">SERVICES</a>
 
 			</li>
 
 			<li>
 
-				<a class="footerLink" href = "https://expressrecycling.biz/recycling-services/document-shredding/">About</a>
+				<a class="footerLink" href = "#">PROJECTS</a>
 
 			</li>
 
 			<li>
 
-				<a class="footerLink" href = "https://expressrecycling.biz/about/">Promotions</a>
+				<a class="footerLink" href = "#">BLOG</a>
 
 			</li>
 
 			<li>
 
-				<a class="footerLink" href = "https://expressrecycling.biz/contact/">Contact</a>
+				<a class="footerLink" href = "#">CONTACT</a>
 
 			</li>
 
@@ -54,7 +54,7 @@
 
 			<a href="https://expressrecycling.biz"><img src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/ArdensLogoSmall.png" class="footerLogo" ></a>
 
-			<h3 class="centerText">Ardens Automotive Hospital</h3>
+			<h3 class="centerText">Change Catalyst Group</h3>
 
 			<a target="_blank" href="https://www.google.com/maps/dir/''/Express+Recycling+Solutions,+Inc.,+5949,+480+Strodman+Ave,+Wisconsin+Rapids,+WI+54494/data=!4m5!4m4!1m0!1m2!1m1!1s0x880088481020408f:0xb96b50ee5af1c418?sa=X&ved=0ahUKEwiivIGkxpTcAhUKW60KHbsgB40QiBMILDAA"><p class="centerText">510 W 8th Ave. Oshkosh, WI 54902</p></a>
 
@@ -92,7 +92,7 @@
 
 					<div class="siteAuthor">Web Design by
 
-							<a target="_blank" href="https://seejustincode.com"> Justin Parsons</a>
+							<a target="_blank" href="#"> Insight Creative</a>
 
 					</div>
 

@@ -20,8 +20,8 @@
 	transition: .2s ease all;
 	cursor: pointer;
     &:hover{
-      background: $primaryColorDarkened !important;
-      border: 2px solid $primaryColorDarkened !important;
+      background: $primaryColor !important;
+      border: 2px solid $primaryColor !important;
     	transition: .2s ease all;
     }
 }

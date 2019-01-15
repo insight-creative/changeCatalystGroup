@@ -1,12 +1,12 @@
 <?php
 /**
- * ardensAutoResponsive functions and definitions
+ * changeCatalystResponsive functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package ardensAutoResponsive
+ * @package changeCatalystResponsive
  */
- function ardensAutoResponsiveChild_fonts_url() {
+ function changeCatalystResponsiveChild_fonts_url() {
  	$fonts_url = '';
 
  	/**
@@ -14,8 +14,8 @@
  	 * supported by Libre Franklin and Open Sans, translate this to 'off'. Do not translate
  	 * into your own language.
  	 */
- 	$LibreFranklin = _x( 'on', 'Libre Franklin font: on or off', 'ardensAutoResponsiveChild' );
- 	$OpenSans = _x( 'on', 'Open Sans font: on or off', 'ardensAutoResponsiveChild' );
+ 	$LibreFranklin = _x( 'on', 'Libre Franklin font: on or off', 'changeCatalystResponsiveChild' );
+ 	$OpenSans = _x( 'on', 'Open Sans font: on or off', 'changeCatalystResponsiveChild' );
 
  	$font_families = array();
 
@@ -50,8 +50,8 @@
   * @param string $relation_type  The relation type the URLs are printed.
   * @return array $urls           URLs to print for resource hints.
   */
- function ardensAutoResponsiveChild_resource_hints( $urls, $relation_type ) {
- 	if ( wp_style_is( 'ardensAutoResponsiveChild-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+ function changeCatalystResponsiveChild_resource_hints( $urls, $relation_type ) {
+ 	if ( wp_style_is( 'changeCatalystResponsiveChild-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
  		$urls[] = array(
  			'href' => 'https://fonts.gstatic.com',
  			'crossorigin',
@@ -60,13 +60,13 @@
 
  	return $urls;
  }
- add_filter( 'wp_resource_hints', 'ardensAutoResponsiveChild_resource_hints', 10, 2 );
+ add_filter( 'wp_resource_hints', 'changeCatalystResponsiveChild_resource_hints', 10, 2 );
 
-function ardensAutoResponsiveChildScripts(){
+function changeCatalystResponsiveChildScripts(){
 	wp_enqueue_script('customJS', get_stylesheet_directory_uri() . '/JS/customJS.js');
   wp_enqueue_script('rellaxJS', get_stylesheet_directory_uri() . '/JS/rellax.min.js');
 	// Enqueue Google Fonts for our site
-	wp_enqueue_script('ardensFonts', ardensAutoResponsiveChild_fonts_url());
+	wp_enqueue_script('changeCatalystFonts', changeCatalystResponsiveChild_fonts_url());
 }
-add_action('wp_enqueue_scripts', 'ardensAutoResponsiveChildScripts');
+add_action('wp_enqueue_scripts', 'changeCatalystResponsiveChildScripts');
 ?>

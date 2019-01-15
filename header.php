@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package ardensAutoResponsive
+ * @package changeCatalystResponsive
  */
 ?>
 <!doctype html>
@@ -21,12 +21,12 @@
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
-	<link href="http://localhost/ardens/assets/scss/wp-content/themes/ardensAutoResponsiveChild/Assets/webfonts/fontawesome-all.css" rel="stylesheet">
+	<link href="/assets/scss/wp-content/themes/changeCatalystResponsiveChild/Assets/webfonts/fontawesome-all.css" rel="stylesheet">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
 
-	<!--Scripte for rellax-->
-	<script src="http://localhost/ardens/assets/scss/wp-content/themes/ardensAutoResponsiveChild/JS/rellax.min.js" type="text/javascript"></script>
+	<!--Script for rellax-->
+	<script src="/assets/scss/wp-content/themes/changeCatalystResponsiveChild/JS/rellax.min.js" type="text/javascript"></script>
 
 	<?php wp_head(); ?>
 
@@ -63,31 +63,31 @@
 
 				<li>
 
-					<a class="menuLink" href = "/ardens/auto-repair-services/">Auto Repair Services</a><i class=" redIcon fas fa-chevron-right"></i>
+					<a class="menuLink" href = "#">ABOUT</a><i class=" redIcon fas fa-chevron-right"></i>
 
 				</li>
 
 				<li>
 
-					<a class="menuLink" href = "/ardens/projects/">Projects</a><i class=" redIcon fas fa-chevron-right"></i>
+					<a class="menuLink" href = "#">SERVICES</a><i class=" redIcon fas fa-chevron-right"></i>
 
 				</li>
 
 				<li>
 
-					<a class="menuLink" href = "/ardens/about/">About</a><i class=" redIcon fas fa-chevron-right"></i>
+					<a class="menuLink" href = "#">PROJECTS</a><i class=" redIcon fas fa-chevron-right"></i>
 
 				</li>
 
 				<li>
 
-					<a class="menuLink" href = "/ardens/promotions/">Promotions</a><i class=" redIcon fas fa-chevron-right"></i>
+					<a class="menuLink" href = "#">BLOG</a><i class=" redIcon fas fa-chevron-right"></i>
 
 				</li>
 
 				<li>
 
-					<a class="menuLink" href = "/ardens/contact/">Contact</a><i class=" redIcon fas fa-chevron-right"></i>
+					<a class="menuLink" href = "#">Contact</a><i class=" redIcon fas fa-chevron-right"></i>
 
 				</li>
 
@@ -139,31 +139,31 @@
 
 							<li>
 
-								<a class="menuLink" href = "/ardens/auto-repair-services/">Auto Repair Services</a>
+								<a class="menuLink" href = "#">ABOUT</a>
 
 							</li>
 
 							<li>
 
-								<a class="menuLink" href = "/ardens/projects/">Projects</a>
+								<a class="menuLink" href = "#">SERVICES</a>
 
 							</li>
 
 							<li>
 
-								<a class="menuLink" href = "/ardens/about/">About</a>
+								<a class="menuLink" href = "#">PROJECTS</a>
 
 							</li>
 
 							<li>
 
-								<a class="menuLink" href = "/ardens/promotions/">Promotions</a>
+								<a class="menuLink" href = "#">BLOG</a>
 
 							</li>
 
 							<li>
 
-								<a class="redButton" href = "/ardens/contact/">Contact</a>
+								<a class="redButton" href = "#">CONTACT</a>
 
 							</li>
 
