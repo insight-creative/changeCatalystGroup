@@ -111,29 +111,13 @@
 
 	<header id="masthead" class="site-header" role="navigation">
 
-		<div class="secondaryNavigation">
-
-			<div class="navWidth secondaryMenuWrap">
-
-				<i class="fas fa-map-marker-alt whiteIcon"></i>
-
-				<a class="secondaryLink" href="mailto:email@expressrecycling.biz">Map</a>
-
-				<i class="fas fa-phone whiteIcon"></i>
-
-				<a class="secondaryLink" href="tel:(920)203-3694">(920)203-3694</a>
-
-			</div>
-
-		</div>
-
 		<div id="site-navigation" class="main-navigation">
 
 			<nav>
 
 				<div class="navWidth menuLinkWrap">
 
-						<a href="/ardens/"><img src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/ArdensLogoSmall.png" class="siteLogo" ></a>
+						<a href="https://wordpress-154794-719978.cloudwaysapps.com"><img src="/assets/scss/wp-content/uploads/2019/01/ChangeCatalystLogoTransparent.png" class="siteLogo" ></a>
 
 						<ul class="linkList2">
 
@@ -163,7 +147,7 @@
 
 							<li>
 
-								<a class="redButton" href = "#">CONTACT</a>
+								<a class="menuLink" href = "#">CONTACT</a>
 
 							</li>
 

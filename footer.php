@@ -52,7 +52,7 @@
 
 			<div class="col50 centerText">
 
-			<a href="https://expressrecycling.biz"><img src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/ArdensLogoSmall.png" class="footerLogo" ></a>
+			<a href="https://wordpress-154794-719978.cloudwaysapps.com"><img src="/assets/scss/wp-content/uploads/2019/01/ChangeCatalystLogoTransparent.png" class="footerLogo" ></a>
 
 			<h3 class="centerText">Change Catalyst Group</h3>
 

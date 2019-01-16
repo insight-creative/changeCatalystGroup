@@ -1,20 +1,20 @@
 /* 8.0 General Body Styles -------------------------------------------*/
 body{
-	background: $secondaryColor;
+	background: $white;
 	margin: 0;
 }
 ::selection{
-		background: rgba(240,0,0,.5);
+		background: rgba(142, 190, 88, .5);
 }
 ::-moz-selection{
-	background: rgba(240,0,0,.5);
+	background: rgba(142, 190, 88, .5);
 }
 .plainLink{
 	text-decoration: none;
-	color: #F00000;
+	color: $orangeAccent;
 	transition: .3s ease all;
     &:hover{
-    color: #1D1D1D;
+    color: $orangeAccentDark;
     transition: .3s ease all;
     }
 }
