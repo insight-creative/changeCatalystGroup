@@ -5,13 +5,13 @@ input,
 select,
 optgroup,
 textarea {
-	color: #020101;
+	color: $black;
 	font-family: "Open Sans", "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
 	font-size: 20px;
 	line-height: 1.5;
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Libre Franklin', "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
+	font-family: 'Roboto', "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
 	line-height: 1.2em;
 	font-weight: 700;
 }
@@ -19,17 +19,24 @@ h1,h2,h3,h4,h5,h6,p{
 	margin-block-start: 0;
 }
 h1{
-	font-size: 2em;
-    @include breakpoint(largeMobileScreen){
-      font-size: 2.488em;
-    }
+	@include breakpoint(smallScreen){
+		font-size: 1.5em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 2em;
+	}
+	@include breakpoint(laptopScreen){
+		font-size: 2em;
+	}
+	@include breakpoint(extraLargeScreen){
+		font-size: 3em;
+	}
 }
 h2{
-	font-size: 2.074em;
-
+	font-size: 1.7em;
 }
 h3{
-	font-size: 1.728em;
+	font-size: 1.5em;
 }
 h4{
 	font-size: 1.4em;
@@ -38,16 +45,36 @@ h5{
 	font-size: 1.2em;
 }
 h6{
-	font-size: 0.707em;
+	font-size: 1.1em;
 }
 .whiteText{
 	color: $white;
 }
-.redText{
+.primaryText{
 	color: $primaryColor;
+}
+.lightPrimaryText{
+	color: $primaryColorLight;
 }
 .centerText{
 	text-align: center;
+}
+.centerTextMobile{
+	@include breakpoint(smallScreen){
+		text-align: center;
+	}
+	@include breakpoint(largeMobileScreen){
+		text-align: center;
+	}
+	@include breakpoint(laptopScreen){
+		text-align: left;
+	}
+}
+.strongText{
+	font-family: 'Roboto', "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
+	line-height: 1.2em;
+	font-weight: 700;
+	font-size: 1.4em;
 }
 .underlinedHeading{
 	position: relative;

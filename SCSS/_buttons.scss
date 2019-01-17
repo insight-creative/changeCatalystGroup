@@ -1,13 +1,13 @@
 /* 7.0 Button Stylings ---------------------------------------*/
-.redLink{
-  color: $primaryColor !important;
+.primaryLink{
+  color: $orangeAccent !important;
 	transition: .3s ease all;
     &:hover{
       transition: .3s ease all;
-    	color: #1d1d1d !important;
+    	color: $orangeAccentDark !important;
     }
 }
-.redButton{
+.primaryButton{
 	position: relative;
 	z-index:1;
 	border: 2px solid $primaryColor;
@@ -15,17 +15,20 @@
 	background: $primaryColor;
 	padding: 10px 50px 10px 50px;
 	color: $white !important;
-	text-shadow: 0 1px 1px rgba(0,0,0,1);
 	margin-bottom: 10px;
 	transition: .2s ease all;
 	cursor: pointer;
     &:hover{
-      background: $primaryColor !important;
-      border: 2px solid $primaryColor !important;
+      background: $primaryColorLight !important;
+      border: 2px solid $primaryColorLight !important;
     	transition: .2s ease all;
     }
+    &:hover .arrowIcon{
+      margin-left: 25px;
+      transition: .2s ease all;
+    }
 }
-.redButtonReverse{
+.primaryButtonReverse{
 	position: relative;
 	z-index:1;
 	border: 2px solid $primaryColor;

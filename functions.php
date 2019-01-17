@@ -14,13 +14,13 @@
  	 * supported by Libre Franklin and Open Sans, translate this to 'off'. Do not translate
  	 * into your own language.
  	 */
- 	$LibreFranklin = _x( 'on', 'Libre Franklin font: on or off', 'changeCatalystResponsiveChild' );
+ 	$Roboto = _x( 'on', 'Roboto font: on or off', 'changeCatalystResponsiveChild' );
  	$OpenSans = _x( 'on', 'Open Sans font: on or off', 'changeCatalystResponsiveChild' );
 
  	$font_families = array();
 
- 	if ( 'off' !== $LibreFranklin ) {
- 		$font_families[] = 'Libre Franklin:400,700,900';
+ 	if ( 'off' !== $Roboto ) {
+ 		$font_families[] = 'Roboto:400,700,900';
  	}
 
  	if ( 'off' !== 	$OpenSans ) {
@@ -28,7 +28,7 @@
  	}
 
 
- 	if ( in_array( 'on', array($LibreFranklin, 	$OpenSans) ) ) {
+ 	if ( in_array( 'on', array($Roboto, 	$OpenSans) ) ) {
 
  		$query_args = array(
  			'family' => urlencode( implode( '|', $font_families ) ),

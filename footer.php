@@ -16,83 +16,83 @@
 
 		<div class="site-info pageWidth">
 
-			<li>
+			<div class="logoWrapper">
 
-				<a class="footerLink" href = "#">ABOUT</a>
+				<a href="https://wordpress-154794-719978.cloudwaysapps.com"><img src="/assets/scss/wp-content/uploads/2019/01/ChangeCatalystLogoTransparent.png" class="footerLogo" ></a>
 
-			</li>
+			</div>
 
-			<li>
+			<div class="socialWrapper">
 
-				<a class="footerLink" href = "#">SERVICES</a>
+				<i class="greenSocialIcon fab fa-facebook-square"></i>
 
-			</li>
+				<i class="greenSocialIcon fab fa-linkedin"></i>
 
-			<li>
+				<i class="greenSocialIcon fab fa-twitter-square"></i>
 
-				<a class="footerLink" href = "#">PROJECTS</a>
-
-			</li>
-
-			<li>
-
-				<a class="footerLink" href = "#">BLOG</a>
-
-			</li>
-
-			<li>
-
-				<a class="footerLink" href = "#">CONTACT</a>
-
-			</li>
+			</div>
 
 		</div><!-- .site-info -->
 
 		<div class="footerContact pageWidth flex-container">
 
-			<div class="col50 centerText">
+			<div class="col30 footerCTA">
 
-			<a href="https://wordpress-154794-719978.cloudwaysapps.com"><img src="/assets/scss/wp-content/uploads/2019/01/ChangeCatalystLogoTransparent.png" class="footerLogo" ></a>
+				<h3 class="">Is Your Organization Ready for <span class="lightPrimaryText">Change</span>?</h3>
 
-			<h3 class="centerText">Change Catalyst Group</h3>
+				<p class="strongText">The Change Catalyst Group assists our clients in embracing change to make them create a better, achievable future.</p>
 
-			<a target="_blank" href="https://www.google.com/maps/dir/''/Express+Recycling+Solutions,+Inc.,+5949,+480+Strodman+Ave,+Wisconsin+Rapids,+WI+54494/data=!4m5!4m4!1m0!1m2!1m1!1s0x880088481020408f:0xb96b50ee5af1c418?sa=X&ved=0ahUKEwiivIGkxpTcAhUKW60KHbsgB40QiBMILDAA"><p class="centerText">510 W 8th Ave. Oshkosh, WI 54902</p></a>
-
-			<a class="whiteText centerText" href="tel:(920)203-3694"><p>(920)203-3694</p></a>
-
-			<i class="redIcon fab fa-facebook-square"></i>
+				<a href="/contact/"><button class="primaryButton">Contact <i class="fas fa-arrow-right arrowIcon"></i></button></a>
 
 			</div>
+
+			<div class="col30">
+
+				<h3 class="lightPrimaryText">Contact</h3>
+
+				<p class="strongText">23233 N Pima Road, Suite 113-261<br>Scottsdale, Arizona</p>
+
+				<p class="strongText">(480) 695-1959</p>
+
+			</div>
+
+			<div class="col30"></div>
 
 		</div>
 
 			<div id="copyright">
 
-				<div class="copyrightContentWrap navWidth">
+				<div class="copyrightContentWrap pageWidth">
 
 					<div id="copyrightWrap">
 
 						<div id="copyrightContent">
 
-							<i id="footerIcon" class="whiteIcon far fa-copyright"></i><p>&nbsp;<script>document.write(new Date().getFullYear());</script> Ardens Automotive Hospital</p>
+							<i id="footerIcon" class="far fa-copyright"></i><p>&nbsp;<script>document.write(new Date().getFullYear());</script> Change Catalyst Group</p>
 
 						</div>
 
 						<div id="closingLinks">
 
-							<a href="https://expressrecycling.biz/sitemap/" class="borderRight">Sitemap</a> |
+							<a href="/privacy-policy/" class="borderRight">Privacy Policy</a> |
 
-							<a href="https://expressrecycling.biz/privacy-policy/" class="borderRight ">Privacy Policy</a> |
-
-							<a href="https://expressrecycling.biz/contact/" id="footerContactLink">Contact Us</a>
+							<span>Web Design by</span><a target="_blank" href="https://insightcreative.com">Insight Creative</a>
 
 						</div>
 
 					</div>
 
-					<div class="siteAuthor">Web Design by
+					<div class="footerNav">
 
-							<a target="_blank" href="#"> Insight Creative</a>
+						<a href="/about/">ABOUT</a>
+
+						<a href="/services/">SERVICES</a>
+
+						<a href="/projects/">PROJECTS</a>
+
+						<a href="/blog/">BLOG</a>
+
+						<a href="/contact/">CONTACT</a>
 
 					</div>
 

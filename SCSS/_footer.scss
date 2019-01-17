@@ -1,17 +1,20 @@
 /* 5.0 Footer Stylings -------------------------------------------*/
 .site-info{
 	display: flex;
-	align-content: center;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-o-justify-content: space-between;
 	flex-direction: column;
 	height: auto;
 	padding: 20px 0 20px 0;
 	text-align: center;
 	background: $secondaryColor;
 	list-style-type: none;
-	border-bottom: 1px solid $primaryColor;
-	background-color: #fbf8f5;
+	border-bottom: 1px solid $white;
+	background-color: $lightGrey;
 	background-image: url("/ardens/assets/scss/wp-content/uploads/2019/01/blizzard.png");
     @include breakpoint(laptopScreen){
       flex-direction: row;
@@ -26,11 +29,11 @@
 	width: 100%;
 	padding: 0 0 50px 0;
 	margin: 0 auto;
-	background-color: #fbf8f5;
+	background-color: $lightGrey;
 	background-image: url("/ardens/assets/scss/wp-content/uploads/2019/01/blizzard.png");
 }
 .footerLogo{
-	margin-top: 25px;
+	margin-top: 10px;
 	height: auto;
 	width: 200px;
 		@include breakpoint(smallScreen){
@@ -38,6 +41,7 @@
 		}
 }
 .footerContact{
+	margin-top: 25px;
   a{
   	text-decoration: none;
   	color: $primaryColor;
@@ -80,6 +84,17 @@
         }
       }
 }
+.footerCTA{
+	@include breakpoint(smallScreen){
+		margin-right: 0;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin-right: 0;
+	}
+	@include breakpoint(laptopScreen){
+		margin-right: 100px;
+	}
+}
 #copyrightWrap{
 	display: flex;
 	flex-direction: row;
@@ -89,30 +104,36 @@
 	}
 }
 #copyright{
-	background: $primaryColor;
-	color: $secondaryColor;
+	background: $lightGrey;
+	color: $black;
 	margin-bottom: -50px;
 	font-size: 12px;
 		p{
 			margin-block-start: 1em;
 		}
-    @include breakpoint(laptopScreen){
+		@include breakpoint(tinyScreen){
+			font-size: 10px;
+		}
+		@include breakpoint(smallScreen){
+			font-size: 12px;
+		}
+		@include breakpoint(largeMobileScreen){
+			font-size: 14px;
+		}
+		@include breakpoint(laptopScreen){
+			font-size: 12px;
+		}
+    @include breakpoint(largeScreen){
       flex-direction: row;
 			font-size: 16px;
     }
       a{
         text-decoration: none;
-      	color: $white;
+      	color: $primaryColor;
 				&:hover{
-					color: $lightGrey;
+					color: $primaryColorLight;
 				}
       }
-		@include breakpoint(smallScreen){
-			font-size: 16px;
-		}
-		@include breakpoint(tinyScreen){
-			font-size: 14px;
-		}
 }
 #footerIcon{
 	font-size: 12px;
@@ -122,10 +143,24 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: row;
+	border-top: 1px solid $white;
+	padding: 20px 0;
     @include breakpoint(smallScreen){
       justify-content: center;
       flex-direction: column;
     }
+		@include breakpoint(largeMobileScreen){
+			justify-content: center;
+      flex-direction: column;
+		}
+		@include breakpoint(laptopScreen){
+			flex-direction: row;
+			justify-content: space-between;
+			-moz-justify-content: space-between;
+			-webkit-justify-content: space-between;
+			-ms-justify-content: space-between;
+			-o-justify-content: space-between;
+		}
 }
 #copyrightContent{
 	display: flex;
@@ -165,4 +200,16 @@
 		@include breakpoint(smallScreen){
 			margin-bottom: 25px;
 		}
+}
+.footerNav{
+	a{
+		padding: 5px 10px;
+		color: $black !important;
+		font-weight: 700;
+		transition: .3s ease all;
+		&:hover{
+			color: $primaryColor !important;
+			transition: .3s ease all;
+		}
+	}
 }

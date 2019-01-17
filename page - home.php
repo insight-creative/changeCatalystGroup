@@ -14,31 +14,31 @@
 get_header();
 
 ?>
-<div id="barba-wrapper">
-
-	<div class="barba-container">
-
 		<div id="primary" class="content-area">
 
 			<main id="main" class="site-main">
 
 				<section id="hero">
 
-					<div class="hero shopHero">
+					<div class="pageWidth">
 
-						<div class="heroOverlay">
+						<div class="homeHeading flex-container">
 
-							<div class="heroHeadingWrap fullWidth">
+							<div class="col50">
 
-								<div class="centerText homeHeading">
+								<div class="heroHeading">
 
-									<div class="heroHeading">
+									<h1 id="mainHeader">Developing <span class="lightPrimaryText">Organization Resilience</span> Through Proven <span class="lightPrimaryText">Sustainability Practices</span></h1>
 
-										<h1 class="whiteText">Full-Service Auto Repair Shop, Serving Oshkosh, WI, Since 1959</h1>
-
-									</div>
+									<p>In these fast-moving times, continuous change is part of organizational life. Innovation is one of the few things that keeps your organization competitive.</p>
 
 								</div>
+
+							</div>
+
+							<div class="col50 heroImageWrapper">
+
+								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" id="heroImage">
 
 							</div>
 
@@ -52,28 +52,22 @@ get_header();
 
 				<div>
 
-				<section id ="ardensIntro">
+				<section id ="changeCatalystIntro" class="smallPaddedSection">
 
-					<div class="navWidth flex-container centerAlignedContainer">
+					<div class="pageWidth flex-container centerAlignedContainer">
 
 						<div class="col50">
 
 							<div class="blockText">
 
-								<h2>About Arden's</h2>
+								<h2>Assisting Clients with <span class="lightPrimaryText">Change</span></h2>
 
-								<p>
-									Arden's Automotive Hospital has been a family owned and operated auto repair shop since 1959. At Arden's, you’ll experience our great
-									customer service and honest opinion.
-								</p>
+								<h3>The Change Catalyst Group assists our clients in embracing change to make them create a better, achievable future.</h3>
 
-								<p>
-									We know you need to get the job done quickly so you get your car back on the road. But most importantly, you need the job done right.
-									At Arden’s, we pride ourselves in taking the extra time to properly diagnose your car's issues. Saving you money and getting you back
-									on the road faster.
-								</p>
+								<p>By utilizing unique methods, we address change throughout the organization, beginning at the individual level.</p>
 
-								<a href="https://expressrecycling.biz/acceptable-materials/"><button class="redButton">Learn More About Arden's</button></a>
+								<p>We guide all of your team members (including leaders, management and staff) toward the understanding and alignment of your organization’s vision
+									for the future.</p>
 
 							</div>
 
@@ -81,7 +75,7 @@ get_header();
 
 						<div class="col50">
 
-							<img src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/ardensOldTruck.jpg" class="image">
+							<img src="/assets/scss/wp-content/uploads/2019/01/organizationalChange.jpg" class="image greenShadow">
 
 						</div>
 
@@ -89,209 +83,47 @@ get_header();
 
 				</section>
 
-				<section id="ardensBenefits" class="paddedSection">
-
-					<div class="flex-container cardWrap">
-
-						<div class="col30">
-
-							<div class="raisedTextBox">
-
-								<div class="textWrap">
-
-									<h3 class="centerText">Trustworthy and Reliable</h3>
-
-									<p>No matter how big or small the issue, you’ll find a professional and honest opinion for all your auto repairs.</p>
-
-								</div>
-
-							</div>
-
-						</div>
-						<div class="col30">
-
-							<div class="raisedTextBox">
-
-								<div class="textWrap">
-
-									<h3 class="centerText">Family Oriented</h3>
-
-									<p>You’ll always be treated as a part of our family. Now in our third generation of ownership, family values run true here at Arden’s.</p>
-
-								</div>
-
-							</div>
-
-						</div>
-						<div class="col30">
-
-							<div class="raisedTextBox">
-
-								<div class="textWrap">
-
-									<h3 class="centerText">Fair</h3>
-
-									<p>Your car is important to you so it’s important to us as well, at Arden’s you’ll always get a fair price to get your car back on the road.</p>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</section>
-
-				<section id="services">
+				<section id="uniqueProcess" class="smallPaddedSection">
 
 					<div class="pageWidth">
 
-						<h2 class="centerText">Auto Maintenance Is Hard, Right?</h2>
-
-						<p id="serviceHook">
-							Is your car making that weird noise again? Not sure what’s going on or how to figure it out? With experience from oil changes, brakes, and
-							tires to troubleshooting and diagnosing engine failures, at Arden’s you’ll find an expert and fair diagnosis and repair for all your
-							car’s issues.
-						</p>
+						<h2 class="centerText">Our <span class="lightPrimaryText">Unique Process</span></h2>
 
 					</div>
 
-					<div class="navWidth servicescontent">
+					<div class="pageWidth flex-container">
 
-						<div class="serviceFlexContainer">
+						<div class="col30 centerText">
 
-							<div class="col30 zoomContainerWrapper">
+							<div class="smallPaddedWrapper">
 
-								<a class="zoomContainer" href="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/tireRepairServicesMedium.jpg">
+								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
 
-									<div class="zoomContainer">
-
-										<img class="image zoomImage" src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/oilChangeServicesMedium.jpg">
-
-									</div>
-
-									<h4 class="centerText">Oil Changes</h4>
-
-								</a>
-
-							</div>
-
-							<div class="col30 zoomContainerWrapper">
-
-								<a class="zoomContainer" href="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/tireRepairServicesMedium.jpg">
-
-									<div class="zoomContainer">
-
-										<img class="image zoomImage" src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/brakeRepairServicesMedium.jpg">
-
-									</div>
-
-									<h4 class="centerText">Brake Repair</h4>
-
-								</a>
-
-							</div>
-
-							<div class="col30 zoomContainerWrapper hiddenMobile">
-
-								<a class="zoomContainer" href="https://universalpropertyenhancement.com/landscape-services/edging-installation/">
-
-									<div class="zoomContainer">
-
-										<img class="image zoomImage" src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/ACRepairServices.jpg">
-
-									</div>
-
-									<h4 class="centerText">Air Conditioning</h4>
-
-								</a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 							</div>
 
 						</div>
 
-					<div class="serviceFlexContainer">
+						<div class="col30 centerText">
 
-						<div class="col30 zoomContainerWrapper">
+							<div class="smallPaddedWrapper">
 
-							<a class="zoomContainer" href="https://universalpropertyenhancement.com/landscape-services/pruning-and-trimming/">
+								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
 
-								<div class="zoomContainer">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-									<img class="image zoomImage" src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/tireRepairServicesMedium.jpg">
-
-								</div>
-
-								<h4 class="centerText">Tires</h4>
-
-							</a>
+							</div>
 
 						</div>
 
-						<div class="col30 zoomContainerWrapper">
+						<div class="col30 centerText">
 
-							<a class="zoomContainer" href="https://universalpropertyenhancement.com/landscape-services/mulch-installation/">
+							<div class="smallPaddedWrapper">
 
-								<div class="zoomContainer">
+								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
 
-									<img class="image zoomImage" src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/mufflerAndExhaustRepairServicesMedium.jpg">
-
-								</div>
-
-								<h4 class="centerText">Exhaust</h4>
-
-							</a>
-
-						</div>
-
-						<div class="col30 zoomContainerWrapper hiddenMobile">
-
-							<a class="zoomContainer" href="https://universalpropertyenhancement.com/landscape-services/tree-care-and-removal/">
-
-								<div class="zoomContainer">
-
-									<img class="image zoomImage" src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/generalAutoMaintenanceMedium.jpg">
-
-								</div>
-
-								<h4 class="centerText">Preventative Maintenance</h4>
-
-							</a>
-
-						</div>
-
-						</div>
-
-						<div class="centerButton">
-
-							<a href="https://universalpropertyenhancement.com/landscape-services/"><button id="servicesButton" class="redButton">View all auto repair services</button></a>
-
-						</div>
-
-						<div class="fullWidth smallPaddedSection">
-
-							<div class="col60 centeredContainer">
-
-								<div class="raisedTextBox">
-
-									<div class="textWrap">
-
-										<h3>Client Feedback</h3>
-
-										<p>
-
-											" This a great family owned business that prides itself on honesty and trustworthiness. They really make you feel a part of the family when you're there. Prices
-											are always fair and you can trust that the work being done is of high quality. "
-
-											<br><br>
-
-											-Kailey Lemon
-										</p>
-
-									</div>
-
-								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 							</div>
 
@@ -301,113 +133,109 @@ get_header();
 
 				</section>
 
-				<section id="featuredProjects">
+				<section id ="whoWeService" class="smallPaddedSection">
 
-					<div class="fullWidth whiteBlock">
+					<div class="pageWidth flex-container centerAlignedContainer">
 
-						<div class="navWidth paddedSection">
+						<div class="col50">
 
-							<div class="fullWidth">
-
-									<h3 class="centerText">Featured Auto Repair Projects</h3>
-
-							</div>
-
-							<div class="fullWidth serviceFlexContainer">
-
-								<div class="col40 zoomContainerWrapper">
-
-										<a class="zoomContainerLarge" href="https://universalpropertyenhancement.com/landscape-services/mulch-installation/">
-
-											<div class="zoomContainerLarge">
-
-												<img class="image zoomImage" src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/ardensBuildingWithJeepInFrontCropped.jpg">
-
-											</div>
-
-											<h4 class="centerText">Jeep Cherokee</h4>
-
-										</a>
-
-								</div>
-
-								<div class="col40 zoomContainerWrapper">
-
-										<a class="zoomContainerLarge" href="https://universalpropertyenhancement.com/landscape-services/mulch-installation/">
-
-											<div class="zoomContainerLarge">
-
-												<img class="image zoomImage" src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/engineTiburonCropped.jpg">
-
-											</div>
-
-											<h4 class="centerText">Hyundai Tiburon</h4>
-
-										</a>
-
-								</div>
-
-							</div>
-
-							<div class="fullWidth flex-container centerAlignedContainer">
-
-								<div class="col50">
-
-									<div class="blockTextSecondary">
-
-										<h3>2012 Mazdaspeed3</h3>
-
-										<p>
-
-											Fast cars are fun but, can end up taking a lot of abuse while being pushed to their limit. Which was exactly the case for this Mazdaspeed3’s engine
-											that was in desperate need of attention.
-
-										</p>
-
-										<a href="https://universalpropertyenhancement.com/landscape-services/"><button class="redButton">View the full project</button></a>
-
-									</div>
-
-								</div>
-
-								<div class="col50">
-
-									<img src="http://localhost/ardens/assets/scss/wp-content/uploads/2019/01/mazdaEnginePull0.1Medium.jpg" class="image">
-
-								</div>
-
-							</div>
+							<img src="/assets/scss/wp-content/uploads/2019/01/ScottsdaleWaterfrontMedium.jpg" class="image greenShadowReverse">
 
 						</div>
 
-					</div>
+						<div class="col50">
 
-				</section>
+							<div class="blockText">
 
-				<section id="homepageCTA">
+								<h2 class="centerTextMobile">Who We <span class="lightPrimaryText">Service</span></h2>
 
-					<div class="siteCTAWrap">
+								<div class="industryWrapper">
 
-						<div class="CTAWrapOverlay">
+									<div class="col30 centerText">
 
-								<div class="CTAcontent">
+										<div class="smallPaddedWrapper">
 
-									<h3 class="whiteText">Ready to start giving your car the expert care that it deserves?</h3>
+											<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
 
-										<p class="whiteText">
-
-											Don't put it off any longer. Stop in or contact Arden's Automotive Hospital to set up an appointment for your vehicle today.
-
-										</p>
-
-
-										<div class="centeredButton">
-
-											<a href="https://expressrecycling.biz/contact/"><button class="whiteButton">Contact Arden's</button></a>
+											<h5>Sustainable Housing</h5>
 
 										</div>
 
+									</div>
+
+									<div class="col30 centerText">
+
+										<div class="smallPaddedWrapper">
+
+											<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
+
+											<h5>Energy</h5>
+
+										</div>
+
+									</div>
+
+									<div class="col30 centerText hiddenMobile">
+
+										<div class="smallPaddedWrapper">
+
+											<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
+
+											<h5>Technology</h5>
+
+										</div>
+
+									</div>
+
 								</div>
+
+								<div class="industryWrapper">
+
+									<div class="col30 centerText">
+
+										<div class="smallPaddedWrapper">
+
+											<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
+
+											<h5>Academia</h5>
+
+										</div>
+
+									</div>
+
+									<div class="col30 centerText">
+
+										<div class="smallPaddedWrapper">
+
+											<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
+
+											<h5>Utilities</h5>
+
+										</div>
+
+									</div>
+
+									<div class="col30 centerText hiddenMobile">
+
+										<div class="smallPaddedWrapper">
+
+											<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
+
+											<h5>City Governments</h5>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="centerTextMobile">
+
+										<a href="/services/"><button class="primaryButton">View Our Services <i class="fas fa-arrow-right arrowIcon"></i></button></a>
+
+								</div>
+
+							</div>
 
 						</div>
 
@@ -415,63 +243,29 @@ get_header();
 
 				</section>
 
-				<section class="map">
+				<section id ="humanCatalysts" class="smallPaddedSection">
 
-					<div class="fullWidth">
+					<div class="pageWidth flex-container centerAlignedContainer">
 
-						<div>
+						<div class="col50">
 
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2869.495470991913!2d-88.55277408449062!3d44.011154779110626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8803ebf8a244848f%3A0xab246929a6800b92!2sArden&#39;s+Automotive+Hospital+LLC!5e0!3m2!1sen!2sus!4v1547119658458" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<div class="blockText">
 
-						</div>
+								<h2>Human <span class="lightPrimaryText">Catalysts</span></h2>
 
-							<div class="locationInfo">
+								<p>Once your team members reach a designated level of commitment, they must take the appropriate actions, moving themselves and the organization toward
+									greater success.  As human catalysts, the Change Catalyst Group accelerates the process of moving organizations through the change they face with better
+									results and more positive outcomes than on their own.</p>
 
-								<div class="locationContent">
-
-									<h5>Arden's Automotive Hospital</h5>
-
-									<a class="plainLink" target="_blank" href="https://www.google.com/maps/place/Arden's+Automotive+Hospital+LLC/@44.0111548,-88.5527741,17z/data=!3m1!4b1!4m5!3m4!1s0x8803ebf8a244848f:0xab246929a6800b92!8m2!3d44.0111548!4d-88.5505854">
-
-									<p>510 W 8th Ave<br>
-
-									Oshkosh, WI 54902</p></a>
-
-									<a class="plainLink" href="tel:(920)203-3694">(920)203-3694</a>
-
-									<br>
-
-								</div>
+								<a href="/about/"><button class="primaryButton">Learn More About Us <i class="fas fa-arrow-right arrowIcon"></i></button></a>
 
 							</div>
 
-					</div>
-
-				</section>
-
-				<section class="feedback">
-
-					<div class="feedbackButtonWrapper">
-
-						<div class="feedbackContent">
-
-							<button class="redButton feedbackButton"><i class="fas fa-edit"></i> Feedback</button>
-
 						</div>
 
-					</div>
+						<div class="col50">
 
-					<div class="surveyWrapper">
-
-						<div class="surveyContent">
-
-							<button class="redButton surveyClose ">Close <i class="fas fa-times"></i></button>
-
-							<div class="survey">
-
-								<?php echo do_shortcode('[caldera_form id="CF5c387bcd0a786"]')?>
-
-							</div>
+							<img src="/assets/scss/wp-content/uploads/2019/01/humanCatalysts.jpg" class="image greenShadow">
 
 						</div>
 
@@ -485,9 +279,6 @@ get_header();
 
 	</main>
 
-	</div>
-
-</div>
 </div>
 
 <?php

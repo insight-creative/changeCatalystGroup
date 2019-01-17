@@ -63,31 +63,31 @@
 
 				<li>
 
-					<a class="menuLink" href = "#">ABOUT</a><i class=" redIcon fas fa-chevron-right"></i>
+					<a class="menuLink" href = "/about/">ABOUT</a><i class=" redIcon fas fa-chevron-right"></i>
 
 				</li>
 
 				<li>
 
-					<a class="menuLink" href = "#">SERVICES</a><i class=" redIcon fas fa-chevron-right"></i>
+					<a class="menuLink" href = "/services/">SERVICES</a><i class=" redIcon fas fa-chevron-right"></i>
 
 				</li>
 
 				<li>
 
-					<a class="menuLink" href = "#">PROJECTS</a><i class=" redIcon fas fa-chevron-right"></i>
+					<a class="menuLink" href = "/projects/">PROJECTS</a><i class=" redIcon fas fa-chevron-right"></i>
 
 				</li>
 
 				<li>
 
-					<a class="menuLink" href = "#">BLOG</a><i class=" redIcon fas fa-chevron-right"></i>
+					<a class="menuLink" href = "/blog/">BLOG</a><i class=" redIcon fas fa-chevron-right"></i>
 
 				</li>
 
 				<li>
 
-					<a class="menuLink" href = "#">Contact</a><i class=" redIcon fas fa-chevron-right"></i>
+					<a class="menuLink" href = "/contact/">CONTACT</a><i class=" redIcon fas fa-chevron-right"></i>
 
 				</li>
 
@@ -99,7 +99,7 @@
 
 			<div>
 
-				<h4 id="closeMenuTitle">Close Menu</h4>
+				<h4 id="closeMenuTitle">CLOSE MENU</h4>
 
 			</div>
 
@@ -115,7 +115,7 @@
 
 			<nav>
 
-				<div class="navWidth menuLinkWrap">
+				<div class="pageWidth menuLinkWrap">
 
 						<a href="https://wordpress-154794-719978.cloudwaysapps.com"><img src="/assets/scss/wp-content/uploads/2019/01/ChangeCatalystLogoTransparent.png" class="siteLogo" ></a>
 
@@ -123,31 +123,31 @@
 
 							<li>
 
-								<a class="menuLink" href = "#">ABOUT</a>
+								<a class="menuLink" href = "/about/">ABOUT</a>
 
 							</li>
 
 							<li>
 
-								<a class="menuLink" href = "#">SERVICES</a>
+								<a class="menuLink" href = "/services/">SERVICES</a>
 
 							</li>
 
 							<li>
 
-								<a class="menuLink" href = "#">PROJECTS</a>
+								<a class="menuLink" href = "/projects/">PROJECTS</a>
 
 							</li>
 
 							<li>
 
-								<a class="menuLink" href = "#">BLOG</a>
+								<a class="menuLink" href = "/blog/">BLOG</a>
 
 							</li>
 
 							<li>
 
-								<a class="menuLink" href = "#">CONTACT</a>
+								<a class="contactLink" href = "/contact/">CONTACT</a>
 
 							</li>
 
@@ -157,7 +157,7 @@
 
 							<div class = "menuTextWrap">
 
-								<span class = "menuText">Menu</span>
+								<span class = "menuText">MENU</span>
 
 								<span class = "menuBars">
 
