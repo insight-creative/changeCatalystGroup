@@ -35,9 +35,9 @@
 .footerLogo{
 	margin-top: 10px;
 	height: auto;
-	width: 200px;
+	width: 180px;
 		@include breakpoint(smallScreen){
-			width: 125px;
+			width: 150px;
 		}
 }
 .footerContact{
@@ -84,6 +84,17 @@
         }
       }
 }
+.footerBlock{
+	@include breakpoint(smallScreen){
+		width: 100%;
+	}
+	@include breakpoint(largeMobileScreen){
+		width: 100%;
+	}
+	@include breakpoint(laptopScreen){
+		width: 50%;
+	}
+}
 .footerCTA{
 	@include breakpoint(smallScreen){
 		margin-right: 0;
@@ -110,6 +121,7 @@
 	font-size: 12px;
 		p{
 			margin-block-start: 1em;
+			margin-block-end: 1em;
 		}
 		@include breakpoint(tinyScreen){
 			font-size: 10px;
@@ -165,6 +177,9 @@
 #copyrightContent{
 	display: flex;
 	align-items: center;
+		@include breakpoint(smallScreen){
+			font-size: 14px;
+		}
 }
 #closingLinks{
 	margin: 0;
@@ -210,6 +225,9 @@
 		&:hover{
 			color: $primaryColor !important;
 			transition: .3s ease all;
+		}
+		@include breakpoint(smallScreen){
+			font-size: 10px;
 		}
 	}
 }

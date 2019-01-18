@@ -13,7 +13,6 @@
 	border: 2px solid $primaryColor;
 	border-radius: 10px;
 	background: $primaryColor;
-	padding: 10px 50px 10px 50px;
 	color: $white !important;
 	margin-bottom: 10px;
 	transition: .2s ease all;
@@ -26,6 +25,15 @@
     &:hover .arrowIcon{
       margin-left: 25px;
       transition: .2s ease all;
+    }
+    @include breakpoint(smallScreen){
+      padding: 10px 20px 10px 20px;
+    }
+    @include breakpoint(largeMobileScreen){
+      padding: 10px 20px 10px 20px;
+    }
+    @include breakpoint(tabletScreen){
+      padding: 10px 50px 10px 50px;
     }
 }
 .primaryButtonReverse{

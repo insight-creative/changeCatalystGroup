@@ -18,7 +18,7 @@ get_header();
 
 			<main id="main" class="site-main">
 
-				<section id="hero">
+				<section id="hero" class="smallPaddedSection">
 
 					<div class="pageWidth">
 
@@ -28,7 +28,7 @@ get_header();
 
 								<div class="heroHeading">
 
-									<h1 id="mainHeader">Developing <span class="lightPrimaryText">Organization Resilience</span> Through Proven <span class="lightPrimaryText">Sustainability Practices</span></h1>
+									<h1 id="mainHeader">Developing <span class="primaryText">Organization Resilience</span> Through Proven <span class="primaryText">Sustainability Practices</span></h1>
 
 									<p>In these fast-moving times, continuous change is part of organizational life. Innovation is one of the few things that keeps your organization competitive.</p>
 
@@ -60,7 +60,7 @@ get_header();
 
 							<div class="blockText">
 
-								<h2>Assisting Clients with <span class="lightPrimaryText">Change</span></h2>
+								<h2>Assisting Clients with <span class="primaryText">Change</span></h2>
 
 								<h3>The Change Catalyst Group assists our clients in embracing change to make them create a better, achievable future.</h3>
 
@@ -87,7 +87,7 @@ get_header();
 
 					<div class="pageWidth">
 
-						<h2 class="centerText">Our <span class="lightPrimaryText">Unique Process</span></h2>
+						<h2 class="centerText">Our <span class="primaryText">Unique Process</span></h2>
 
 					</div>
 
@@ -99,17 +99,7 @@ get_header();
 
 								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
 
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-							</div>
-
-						</div>
-
-						<div class="col30 centerText">
-
-							<div class="smallPaddedWrapper">
-
-								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
+								<h4 class="processHeader">Research</h4>
 
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -122,6 +112,22 @@ get_header();
 							<div class="smallPaddedWrapper">
 
 								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
+
+								<h4 class="processHeader">Planning</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+							</div>
+
+						</div>
+
+						<div class="col30 centerText">
+
+							<div class="smallPaddedWrapper">
+
+								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
+
+								<h4 class="processHeader">Development</h4>
 
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -147,7 +153,7 @@ get_header();
 
 							<div class="blockText">
 
-								<h2 class="centerTextMobile">Who We <span class="lightPrimaryText">Service</span></h2>
+								<h2 class="centerTextMobile">Who We <span class="primaryText">Service</span></h2>
 
 								<div class="industryWrapper">
 
@@ -243,6 +249,26 @@ get_header();
 
 				</section>
 
+				<section id="recommendation" class="smallPaddedSection">
+
+					<div class="pageWidth">
+
+						<div class="blockText greenBorder centerText">
+
+							<p><span class="primaryText">" </span>Jean and I have been working together on Fielding Graduate University's sustainability efforts. Even as an alumna in a volunteer role, she has been
+								exemplary. I have found her knowledge to be on target, her approach to be effective and engaging, her deliverables to be highly professional, and her
+								efforts demonstrate commitment and passion. She has been consistently present and her participation has been invaluable.<span class="primaryText">" </span></p>
+
+							<h5 class="recommendationAuthor">Kerul Kassel</h5>
+
+							<h6 class="primaryText">Sustainability Author, Graduate Faculty, Researcher, Executive Coach, Consultant </h6>
+
+						</div>
+
+					</div>
+
+				</section>
+
 				<section id ="humanCatalysts" class="smallPaddedSection">
 
 					<div class="pageWidth flex-container centerAlignedContainer">
@@ -251,7 +277,7 @@ get_header();
 
 							<div class="blockText">
 
-								<h2>Human <span class="lightPrimaryText">Catalysts</span></h2>
+								<h2>Human <span class="primaryText">Catalysts</span></h2>
 
 								<p>Once your team members reach a designated level of commitment, they must take the appropriate actions, moving themselves and the organization toward
 									greater success.  As human catalysts, the Change Catalyst Group accelerates the process of moving organizations through the change they face with better

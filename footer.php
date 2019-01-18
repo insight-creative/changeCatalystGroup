@@ -36,9 +36,9 @@
 
 		<div class="footerContact pageWidth flex-container">
 
-			<div class="col30 footerCTA">
+			<div class="footerBlock footerCTA">
 
-				<h3 class="">Is Your Organization Ready for <span class="lightPrimaryText">Change</span>?</h3>
+				<h3 class="">Is Your Organization Ready for <span class="primaryText">Change</span>?</h3>
 
 				<p class="strongText">The Change Catalyst Group assists our clients in embracing change to make them create a better, achievable future.</p>
 
@@ -46,17 +46,15 @@
 
 			</div>
 
-			<div class="col30">
+			<div class="footerBlock">
 
-				<h3 class="lightPrimaryText">Contact</h3>
+				<h3 class="primaryText">Contact</h3>
 
 				<p class="strongText">23233 N Pima Road, Suite 113-261<br>Scottsdale, Arizona</p>
 
 				<p class="strongText">(480) 695-1959</p>
 
 			</div>
-
-			<div class="col30"></div>
 
 		</div>
 

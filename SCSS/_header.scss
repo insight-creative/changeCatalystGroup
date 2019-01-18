@@ -58,11 +58,11 @@
 	display:none;
 }
 .siteLogo{
-	margin-top: 10px;
+	margin-top: 8px;
 	height: auto;
 	width: 150px;
 		@include breakpoint(smallScreen){
-			width: 75px;
+			width: 125px;
 		}
 }
 	nav{
@@ -90,7 +90,7 @@
 	cursor: pointer;
 	display: inline-block;
 	width: 30px;
-	padding-top: 8px;
+	padding-top: 7px;
 		span{
 			display: block;
 			position: relative;
@@ -104,7 +104,7 @@
 	position: absolute;
 	top: 0;
 	z-index: 99999;
-	height: 100vh;
+	height: 70vh;
 	width: 100vw;
 	background-color: $lightGrey;
 	transform: translateX(-100%);

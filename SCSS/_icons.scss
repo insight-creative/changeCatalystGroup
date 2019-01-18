@@ -16,12 +16,20 @@
 }
 .greenSocialIcon{
 	color: $primaryColor;
-	font-size: 60px;
 	margin: 10px;
 	transition: .3s ease all;
 		&:hover{
 			color: $primaryColorLight;
 			transition: .3s ease all;
+		}
+		@include breakpoint(smallScreen){
+			font-size: 40px;
+		}
+		@include breakpoint(largeMobileScreen){
+			font-size: 40px;
+		}
+		@include breakpoint(laptopScreen){
+			font-size: 60px;
 		}
 }
 .arrowIcon{

@@ -298,5 +298,13 @@
 	}
 }
 .smallPaddedSection{
-	padding: 50px 0 50px 0;
+	@include breakpoint(smallScreen){
+		padding: 25px 0 25px 0;
+	}
+	@include breakpoint(largeMobileScreen){
+		padding: 25px 0 25px 0;
+	}
+	@include breakpoint(laptopScreen){
+		padding: 50px 0 50px 0;
+	}
 }

@@ -40,6 +40,9 @@
 	@include breakpoint(laptopScreen){
 		width: 70%;
 	}
+	@include breakpoint(extraLargeScreen){
+		width: 50%;
+	}
 }
 .heroHeading{
 	padding: 25px;
@@ -58,7 +61,7 @@
 }
 #pageContent{
 	@include breakpoint(extraLargeScreen){
-		margin-top: 200px;
+		margin-top: 100px;
 	}
 }
 .smallIconPlaceholder{
@@ -92,6 +95,17 @@
 	@include breakpoint(laptopScreen){
 		display: block;
 	}
+}
+.processHeader{
+	margin-block-start: 25px !important;
+	margin-block-end: 0 !important;
+}
+.recommendationAuthor{
+	margin-block-end: 0 !important;
+}
+.greenBorder{
+	border: 5px solid $primaryColor;
+	border-radius: 10px;
 }
 #feedback{
 	width: 20%;
