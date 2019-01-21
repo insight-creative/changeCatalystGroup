@@ -1092,7 +1092,7 @@ nav {
   @media (min-width: 992px) {
     #copyright {
       font-size: 12px; } }
-  @media (min-width: 1250px) {
+  @media (min-width: 1600px) {
     #copyright {
       flex-direction: row;
       font-size: 16px; } }
@@ -1459,23 +1459,22 @@ body {
   text-align: center; }
 
 #heroImage {
-  width: 60%;
   height: auto; }
   @media (max-width: 600px) {
     #heroImage {
-      width: 50%; } }
+      width: 60%; } }
   @media (min-width: 600px) {
     #heroImage {
-      width: 50%; } }
+      width: 60%; } }
   @media (min-width: 768px) {
     #heroImage {
-      width: 40%; } }
+      width: 50%; } }
   @media (min-width: 992px) {
     #heroImage {
-      width: 70%; } }
-  @media (min-width: 1600px) {
+      width: 90%; } }
+  @media (min-width: 1250px) {
     #heroImage {
-      width: 50%; } }
+      width: 75%; } }
 
 .heroHeading {
   padding: 25px; }
@@ -1497,8 +1496,19 @@ body {
     margin-top: 100px; } }
 
 .smallIconPlaceholder {
-  width: 30%;
   text-align: center; }
+  @media (max-width: 600px) {
+    .smallIconPlaceholder {
+      width: 60%; } }
+  @media (min-width: 600px) {
+    .smallIconPlaceholder {
+      width: 50%; } }
+  @media (min-width: 768px) {
+    .smallIconPlaceholder {
+      width: 70%; } }
+  @media (min-width: 1250px) {
+    .smallIconPlaceholder {
+      width: 50%; } }
 
 .smallPaddedWrapper {
   padding: 20px; }

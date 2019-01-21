@@ -135,7 +135,7 @@
 		@include breakpoint(laptopScreen){
 			font-size: 12px;
 		}
-    @include breakpoint(largeScreen){
+    @include breakpoint(extraLargeScreen){
       flex-direction: row;
 			font-size: 16px;
     }

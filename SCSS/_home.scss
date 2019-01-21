@@ -26,22 +26,21 @@
 	text-align: center;
 }
 #heroImage{
-	width: 60%;
 	height: auto;
 	@include breakpoint(smallScreen){
-		width: 50%;
+		width: 60%;
 	}
 	@include breakpoint(largeMobileScreen){
-		width: 50%;
+		width: 60%;
 	}
 	@include breakpoint(tabletScreen){
-		width: 40%;
+		width: 50%;
 	}
 	@include breakpoint(laptopScreen){
-		width: 70%;
+		width: 90%;
 	}
-	@include breakpoint(extraLargeScreen){
-		width: 50%;
+	@include breakpoint(largeScreen){
+		width: 75%;
 	}
 }
 .heroHeading{
@@ -65,8 +64,19 @@
 	}
 }
 .smallIconPlaceholder{
-	width: 30%;
 	text-align: center;
+		@include breakpoint(smallScreen){
+			width: 60%;
+		}
+		@include breakpoint(largeMobileScreen){
+			width: 50%;
+		}
+		@include breakpoint(tabletScreen){
+			width: 70%;
+		}
+		@include breakpoint(largeScreen){
+			width: 50%;
+		}
 }
 .smallPaddedWrapper{
 	padding: 20px;

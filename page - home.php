@@ -38,7 +38,7 @@ get_header();
 
 							<div class="col50 heroImageWrapper">
 
-								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" id="heroImage">
+								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world-color-edit-with-background.svg" id="heroImage">
 
 							</div>
 
@@ -97,7 +97,7 @@ get_header();
 
 							<div class="smallPaddedWrapper">
 
-								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
+								<img src="/assets/scss/wp-content/uploads/2019/01/undraw_people_search_editedSmall.svg" class="smallIconPlaceholder">
 
 								<h4 class="processHeader">Research</h4>
 
@@ -111,7 +111,7 @@ get_header();
 
 							<div class="smallPaddedWrapper">
 
-								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
+								<img src="/assets/scss/wp-content/uploads/2019/01/undraw_prototyping_process_rswj-edited-1.svg" class="smallIconPlaceholder">
 
 								<h4 class="processHeader">Planning</h4>
 
@@ -125,7 +125,7 @@ get_header();
 
 							<div class="smallPaddedWrapper">
 
-								<img src="/assets/scss/wp-content/uploads/2019/01/iStock-sustainable-world.png" class="smallIconPlaceholder">
+								<img src="/assets/scss/wp-content/uploads/2019/01/undraw_in_progress_ql66.svg" class="smallIconPlaceholder">
 
 								<h4 class="processHeader">Development</h4>
 
@@ -139,7 +139,7 @@ get_header();
 
 				</section>
 
-				<section id ="whoWeService" class="smallPaddedSection">
+				<!--<section id ="whoWeService" class="smallPaddedSection">
 
 					<div class="pageWidth flex-container centerAlignedContainer">
 
@@ -232,6 +232,56 @@ get_header();
 										</div>
 
 									</div>
+
+								</div>
+
+								<div class="centerTextMobile">
+
+										<a href="/services/"><button class="primaryButton">View Our Services <i class="fas fa-arrow-right arrowIcon"></i></button></a>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>-->
+
+				<section id ="whoWeService" class="smallPaddedSection">
+
+					<div class="pageWidth flex-container centerAlignedContainer">
+
+						<div class="col50">
+
+							<img src="/assets/scss/wp-content/uploads/2019/01/ScottsdaleWaterfrontMedium.jpg" class="image greenShadowReverse">
+
+						</div>
+
+						<div class="col50">
+
+							<div class="blockText">
+
+								<h2 class="centerTextMobile">Who We <span class="primaryText">Service</span></h2>
+
+								<div class="industryWrapper">
+
+									<ul>
+
+										<li>Sustainable Housing</li>
+
+										<li>Energy</li>
+
+										<li>Technology</li>
+
+										<li>Academia</li>
+
+										<li>Utilities</li>
+
+										<li>City Governments</li>
+
+									</ul>
 
 								</div>
 
