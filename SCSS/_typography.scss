@@ -64,6 +64,9 @@ h6{
 .centerText{
 	text-align: center;
 }
+.leftText{
+	text-align: left;
+}
 .centerTextMobile{
 	@include breakpoint(smallScreen){
 		text-align: center;

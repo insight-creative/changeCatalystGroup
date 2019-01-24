@@ -11,10 +11,33 @@ body{
 }
 .plainLink{
 	text-decoration: none;
-	color: $orangeAccent;
+	color: $primaryColor;
 	transition: .3s ease all;
+	position: relative;
+		&:after{
+			position: absolute;
+			content: "";
+			height: 2px;
+			width: 100%;
+			opacity: 0;
+			background-color: $primaryColorLight;
+			bottom: 25%;
+			left: 0;
+			transition: .2s ease all;
+		}
     &:hover{
-    color: $orangeAccentDark;
+    color: $primaryColorLight;
     transition: .3s ease all;
-    }
+			&:after{
+				position: absolute;
+				content: "";
+				height: 2px;
+				width: 100%;
+				opacity: 1;
+				background-color: $primaryColorLight;
+				bottom: -2px;
+				left: 0;
+				transition: .2s ease all;
+			}
+		}
 }

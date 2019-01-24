@@ -24,7 +24,7 @@
 
 			<div class="socialWrapper">
 
-				<i class="greenSocialIcon fab fa-facebook-square"></i>
+				<a href="https://www.facebook.com/TheChangeCatalystGroup/" target="_blank"><i class="greenSocialIcon fab fa-facebook-square"></i></a>
 
 				<i class="greenSocialIcon fab fa-linkedin"></i>
 
@@ -40,7 +40,7 @@
 
 				<h3 class="">Is Your Organization Ready for <span class="primaryText">Change</span>?</h3>
 
-				<p class="strongText">The Change Catalyst Group assists our clients in embracing change to make them create a better, achievable future.</p>
+				<p class="strongText">The Change Catalyst Group assists our clients in embracing change to create a better, achievable future.</p>
 
 				<a href="/contact/"><button class="primaryButton">Contact <i class="fas fa-arrow-right arrowIcon"></i></button></a>
 
@@ -105,8 +105,6 @@
 			<!-- Script for barba.js-->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" type="text/javascript"></script>
 
-			<!--Script for rellax-->
-			<script src="/ardens/assets/scss/wp-content/themes/ardensAutoResponsiveChild/JS/rellax.min.js" type="text/javascript"></script>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

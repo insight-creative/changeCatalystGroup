@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home
+ * Template Name: About
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -32,10 +32,7 @@ get_header();
 
 								<div class="heroHeading">
 
-									<h1 id="mainHeader">Developing <span class="primaryText">Organization Resilience</span> Through Proven <span class="primaryText">Sustainability Practices</span></h1>
-
-									<p>In these fast-moving times, change is part of organizational life. Continuous improvement and innovation are key to moving forward and
-										staying competitive.</p>
+									<h1 id="mainHeader">About <span class="primaryText">Change Catalyst Group</span></h1>
 
 								</div>
 
@@ -65,13 +62,17 @@ get_header();
 
 							<div class="blockText">
 
-								<h2>Assisting Clients with <span class="primaryText">Change</span></h2>
-
-								<h3>The Change Catalyst Group assists our clients in embracing change to create a better, achievable future.</h3>
+								<h2>Meet <span class="primaryText">Jean Lasee</span></h2>
 
 								<p>
-									By using empathetic listening, we address change throughout the organization to make sure people are committed and inspired. We guide your
-									members including leadership, management and staff toward the understanding and alignment of your organization’s vision for the future.
+									Jean is a graduate of Fielding Graduate University in Santa Barbara, CA with a Master of Arts in Organizational Management. She worked for
+									the largest consulting company in the world and led several large-scale projects that improved collaboration, communication and
+									interaction among all levels in an organization. Her clients included BC Hydro, Tesoro and BP. As a result of her work, engagement,
+									as well as team and organizational performance moved to higher levels. Before that time, she worked for various communication and
+									training departments, accumulating over 20 years of experience. Her companies included Salt River Project and Honeywell, as well
+									as her own consulting firm Lexeme Information Development. For the last five years, she has applied her skills to the sustainability
+									and human well-being field. She is a Certified Sustainable Building Advisor and has consulted with Fielding Graduate University,
+									Gila River Indian Community and the City of Scottsdale to improve sustainability strategy and practices.
 								</p>
 
 							</div>
@@ -80,7 +81,7 @@ get_header();
 
 						<div class="col50">
 
-							<img src="/assets/scss/wp-content/uploads/2019/01/organizationalChange.jpg" class="image greenShadow">
+							<img src="/assets/scss/wp-content/uploads/2019/01/Blank_woman_placeholder.svg.png" class="image greenShadow">
 
 						</div>
 
@@ -231,36 +232,6 @@ get_header();
 							<h5 class="recommendationAuthor">Kerul Kassel</h5>
 
 							<h6 class="primaryText">Sustainability Author, Graduate Faculty, Researcher, Executive Coach, Consultant </h6>
-
-						</div>
-
-					</div>
-
-				</section>
-
-				<section id ="humanCatalysts" class="smallPaddedSection">
-
-					<div class="pageWidth flex-container centerAlignedContainer">
-
-						<div class="col50">
-
-							<div class="blockText">
-
-								<h2>Human <span class="primaryText">Catalysts</span></h2>
-
-								<p>Once your team members reach a designated level of commitment, they must take the appropriate actions, moving themselves and the organization toward
-									greater success.  As human catalysts, the Change Catalyst Group accelerates the process of moving organizations through the change they face with better
-									results and more positive outcomes than on their own.</p>
-
-								<a href="/about/"><button class="primaryButton">Learn More About Us <i class="fas fa-arrow-right arrowIcon"></i></button></a>
-
-							</div>
-
-						</div>
-
-						<div class="col50">
-
-							<img src="/assets/scss/wp-content/uploads/2019/01/humanCatalysts.jpg" class="image greenShadow">
 
 						</div>
 

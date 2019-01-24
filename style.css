@@ -1245,6 +1245,9 @@ h6 {
 .centerText {
   text-align: center; }
 
+.leftText {
+  text-align: left; }
+
 @media (max-width: 600px) {
   .centerTextMobile {
     text-align: center; } }
@@ -1388,11 +1391,32 @@ body {
 
 .plainLink {
   text-decoration: none;
-  color: #be8858;
-  transition: .3s ease all; }
+  color: #8ebe58;
+  transition: .3s ease all;
+  position: relative; }
+  .plainLink:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    background-color: #a1d291;
+    bottom: 25%;
+    left: 0;
+    transition: .2s ease all; }
   .plainLink:hover {
-    color: #916238;
+    color: #a1d291;
     transition: .3s ease all; }
+    .plainLink:hover:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 100%;
+      opacity: 1;
+      background-color: #a1d291;
+      bottom: -2px;
+      left: 0;
+      transition: .2s ease all; }
 
 /*9.0 Icon Styling -------------------------------------------*/
 .whiteIcon {
@@ -1502,11 +1526,14 @@ body {
       width: 60%; } }
   @media (min-width: 600px) {
     .smallIconPlaceholder {
-      width: 50%; } }
+      width: 60%; } }
   @media (min-width: 768px) {
     .smallIconPlaceholder {
       width: 70%; } }
   @media (min-width: 1250px) {
+    .smallIconPlaceholder {
+      width: 60%; } }
+  @media (min-width: 1600px) {
     .smallIconPlaceholder {
       width: 50%; } }
 

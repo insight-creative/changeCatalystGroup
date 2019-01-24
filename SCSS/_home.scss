@@ -69,12 +69,15 @@
 			width: 60%;
 		}
 		@include breakpoint(largeMobileScreen){
-			width: 50%;
+			width: 60%;
 		}
 		@include breakpoint(tabletScreen){
 			width: 70%;
 		}
 		@include breakpoint(largeScreen){
+			width: 60%;
+		}
+		@include breakpoint(extraLargeScreen){
 			width: 50%;
 		}
 }
