@@ -26,9 +26,9 @@
 
 				<a href="https://www.facebook.com/TheChangeCatalystGroup/" target="_blank"><i class="greenSocialIcon fab fa-facebook-square"></i></a>
 
-				<i class="greenSocialIcon fab fa-linkedin"></i>
+				<a href="https://www.linkedin.com/in/jeanlasee/" target="_blank"><i class="greenSocialIcon fab fa-linkedin"></i></a>
 
-				<i class="greenSocialIcon fab fa-twitter-square"></i>
+				<a href="https://twitter.com/jlasee" target="_blank"><i class="greenSocialIcon fab fa-twitter-square"></i></a>
 
 			</div>
 

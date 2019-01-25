@@ -978,11 +978,9 @@ nav {
   height: auto;
   padding: 20px 0 20px 0;
   text-align: center;
-  background: #009863;
   list-style-type: none;
   border-bottom: 1px solid #FFFFFF;
-  background-color: #eff2ef;
-  background-image: url("/ardens/assets/scss/wp-content/uploads/2019/01/blizzard.png"); }
+  background-color: #eff2ef; }
   @media (min-width: 992px) {
     .site-info {
       flex-direction: row;
@@ -995,8 +993,7 @@ nav {
   width: 100%;
   padding: 0 0 50px 0;
   margin: 0 auto;
-  background-color: #eff2ef;
-  background-image: url("/ardens/assets/scss/wp-content/uploads/2019/01/blizzard.png"); }
+  background-color: #eff2ef; }
 
 .footerLogo {
   margin-top: 10px;
@@ -1418,6 +1415,9 @@ body {
       left: 0;
       transition: .2s ease all; }
 
+#privacyPolicy {
+  margin-top: 100px; }
+
 /*9.0 Icon Styling -------------------------------------------*/
 .whiteIcon {
   color: #FFFFFF;
@@ -1706,5 +1706,80 @@ body {
 
 #fld_7683514_1 {
   height: 100px; }
+
+/* 14.0 Projects Page stylings -------------------------------------------*/
+@media (max-width: 600px) {
+  .zoomContainerWrapper {
+    margin: 0; } }
+@media (min-width: 600px) {
+  .zoomContainerWrapper {
+    margin: 0 25px 0 25px; } }
+.zoomContainerWrapper a {
+  color: #4e4e4e;
+  text-decoration: none; }
+
+.zoomContainer {
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  transition: 3s ease all; }
+  @media (max-width: 600px) {
+    .zoomContainer {
+      height: 250px; } }
+  @media (min-width: 600px) {
+    .zoomContainer {
+      height: 190px; } }
+  @media (min-width: 768px) {
+    .zoomContainer {
+      height: 215px; } }
+  @media (min-width: 1250px) {
+    .zoomContainer {
+      height: 450px; } }
+
+.zoomContainerLarge {
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  transition: 10s ease all; }
+  @media (max-width: 600px) {
+    .zoomContainerLarge {
+      height: 300px; } }
+  @media (min-width: 600px) {
+    .zoomContainerLarge {
+      height: 185px; } }
+  @media (min-width: 768px) {
+    .zoomContainerLarge {
+      height: 260px; } }
+  @media (min-width: 992px) {
+    .zoomContainerLarge {
+      height: 315px; } }
+  @media (min-width: 1250px) {
+    .zoomContainerLarge {
+      height: 450px; } }
+
+.zoomContainer:hover .zoomImage, .zoomContainerLarge:hover .zoomImage {
+  transform: scale(1.5, 1.5);
+  transition: 10s ease all; }
+
+.zoomContainer h3, .zoomContainerLarge h3 {
+  margin-block-start: 1em; }
+
+.zoomContainer:hover h3, .zoomContainerLarge:hover h3 {
+  color: #8ebe58;
+  transition: .3s ease all; }
+
+.zoomImage {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transition: 10s ease all; }
+
+.imageWrapper {
+  padding: 20px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -225,13 +225,13 @@ get_header();
 
 						<div class="blockText greenBorder centerText">
 
-							<p><span class="primaryText">" </span>Jean and I have been working together on Fielding Graduate University's sustainability efforts. Even as an alumna in a volunteer role, she has been
-								exemplary. I have found her knowledge to be on target, her approach to be effective and engaging, her deliverables to be highly professional, and her
-								efforts demonstrate commitment and passion. She has been consistently present and her participation has been invaluable.<span class="primaryText">" </span></p>
+							<p><span class="primaryText">" </span>Jean is a smart, creative professional who brings great discipline, critical thinking skills and passion
+								to any project in which she's associated. She has deep expertise in the areas of change management and organization development, and is a
+								great team player.<span class="primaryText">" </span></p>
 
-							<h5 class="recommendationAuthor">Kerul Kassel</h5>
+							<h5 class="recommendationAuthor">Alain Paolini</h5>
 
-							<h6 class="primaryText">Sustainability Author, Graduate Faculty, Researcher, Executive Coach, Consultant </h6>
+							<h6 class="primaryText">Partner Accenture</h6>
 
 						</div>
 

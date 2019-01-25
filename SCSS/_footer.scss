@@ -11,11 +11,9 @@
 	height: auto;
 	padding: 20px 0 20px 0;
 	text-align: center;
-	background: $secondaryColor;
 	list-style-type: none;
 	border-bottom: 1px solid $white;
 	background-color: $lightGrey;
-	background-image: url("/ardens/assets/scss/wp-content/uploads/2019/01/blizzard.png");
     @include breakpoint(laptopScreen){
       flex-direction: row;
 		  height: 75px;
@@ -30,7 +28,6 @@
 	padding: 0 0 50px 0;
 	margin: 0 auto;
 	background-color: $lightGrey;
-	background-image: url("/ardens/assets/scss/wp-content/uploads/2019/01/blizzard.png");
 }
 .footerLogo{
 	margin-top: 10px;

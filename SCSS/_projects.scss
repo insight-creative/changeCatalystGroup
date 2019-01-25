@@ -1,0 +1,79 @@
+/* 14.0 Projects Page stylings -------------------------------------------*/
+.zoomContainerWrapper{
+	@include breakpoint(smallScreen){
+		margin: 0;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin: 0 25px 0 25px;
+	}
+	a{
+		color: $black;
+		text-decoration: none;
+	}
+}
+.zoomContainer{
+	position: relative;
+	z-index: 4;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	transition: 3s ease all;
+	@include breakpoint(smallScreen){
+		height: 250px;
+	}
+	@include breakpoint(largeMobileScreen){
+		height: 190px;
+	}
+	@include breakpoint(tabletScreen){
+		height: 215px;
+	}
+	@media (min-width: 1250px){
+		height: 450px;
+	}
+}
+.zoomContainerLarge{
+	position: relative;
+	z-index: 4;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	transition: 10s ease all;
+	@include breakpoint(smallScreen){
+		height: 300px;
+	}
+	@include breakpoint(largeMobileScreen){
+		height: 185px;
+	}
+	@include breakpoint(tabletScreen){
+		height: 260px;
+	}
+	@include breakpoint(laptopScreen){
+		height: 315px;
+	}
+	@media (min-width: 1250px){
+		height: 450px;
+	}
+}
+.zoomContainer, .zoomContainerLarge{
+	&:hover .zoomImage{
+		transform: scale(1.5,1.5);
+		transition: 10s ease all;
+	}
+}
+.zoomContainer h3, .zoomContainerLarge h3{
+	margin-block-start: 1em;
+}
+.zoomContainer:hover h3, .zoomContainerLarge:hover h3{
+	color: $primaryColor;
+	transition: .3s ease all;
+}
+.zoomImage{
+	position: absolute;
+	z-index: 2;
+	top: 0 ;
+	left: 0;
+	transition: 10s ease all;
+}
+.imageWrapper{
+	padding: 20px;
+}
