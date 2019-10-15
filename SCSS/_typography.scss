@@ -14,27 +14,26 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'Roboto', "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
 	line-height: 1.2em;
 	font-weight: 700;
-}
-h1,h2,h3,h4,h5,h6{
-	margin-block-start: 0;
-	margin-block-end: 15px;
+	-webkit-margin-before: 0;
+	        margin-block-start: 0;
+	-webkit-margin-after: 15px;
+	        margin-block-end: 15px;
 }
 p{
-	margin-block-start: 0;
-	margin-block-end: 20px;
+	-webkit-margin-before: 0;
+	        margin-block-start: 0;
+	-webkit-margin-after: 20px;
+	        margin-block-end: 20px;
 }
 h1{
 	@include breakpoint(smallScreen){
 		font-size: 1.3em;
 	}
 	@include breakpoint(largeMobileScreen){
-		font-size: 2em;
-	}
-	@include breakpoint(laptopScreen){
-		font-size: 2em;
+		font-size: 1.6em;
 	}
 	@include breakpoint(extraLargeScreen){
-		font-size: 3em;
+		font-size: 2.4em;
 	}
 }
 h2{
@@ -51,9 +50,6 @@ h5{
 }
 h6{
 	font-size: 1.1em;
-}
-.whiteText{
-	color: $white;
 }
 .primaryText{
 	color: $primaryColor;
@@ -84,15 +80,6 @@ h6{
 	font-weight: 700;
 	font-size: 1.4em;
 }
-.underlinedHeading{
-	position: relative;
-    &:after{
-      position: absolute;
-    	background: $primaryColor;
-    	height: 2px;
-    	width: 200px;
-    	content: "";
-    	left: 0;
-    	bottom: -20px;
-    }
+.simpleHeading {
+	max-width: 850px;
 }

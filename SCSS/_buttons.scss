@@ -7,6 +7,38 @@
     	color: $orangeAccentDark !important;
     }
 }
+.plainLink{
+	text-decoration: none;
+	color: $primaryColor;
+	transition: .3s ease all;
+	position: relative;
+		&:after{
+			position: absolute;
+			content: "";
+			height: 2px;
+			width: 100%;
+			opacity: 0;
+			background-color: $primaryColorLight;
+			bottom: 25%;
+			left: 0;
+			transition: .2s ease all;
+		}
+    &:hover{
+    color: $primaryColorLight;
+    transition: .3s ease all;
+			&:after{
+				position: absolute;
+				content: "";
+				height: 2px;
+				width: 100%;
+				opacity: 1;
+				background-color: $primaryColorLight;
+				bottom: -2px;
+				left: 0;
+				transition: .2s ease all;
+			}
+		}
+}
 .primaryButton{
 	position: relative;
 	z-index:1;
@@ -15,6 +47,7 @@
 	background: $primaryColor;
 	color: $white !important;
 	margin-bottom: 10px;
+  padding: 10px 20px 10px 20px;
 	transition: .2s ease all;
 	cursor: pointer;
     &:hover{
@@ -25,12 +58,6 @@
     &:hover .arrowIcon{
       margin-left: 25px;
       transition: .2s ease all;
-    }
-    @include breakpoint(smallScreen){
-      padding: 10px 20px 10px 20px;
-    }
-    @include breakpoint(largeMobileScreen){
-      padding: 10px 20px 10px 20px;
     }
     @include breakpoint(tabletScreen){
       padding: 10px 50px 10px 50px;
@@ -51,59 +78,4 @@
     	transition: .3s ease all;
     	color: $white;
     }
-}
-.plainRedButton{
-	position: relative;
-	z-index:1;
-	border: 2px solid $primaryColor;
-	background: $primaryColor;
-	padding: 10px 50px 10px 50px;
-	color: $white;
-	margin-bottom: 10px;
-	transition: .3s ease all;
-	cursor: pointer;
-}
-.whiteButton{
-	position: relative;
-	z-index:1;
-	border: 2px solid $white;
-	border-radius: 10px;
-	background: $white;
-	padding: 10px 50px 10px 50px;
-	color: $primaryColor;
-	transition: .3s ease all;
-	cursor: pointer;
-    &:hover{
-      background: $transparent;
-    	color: $white;
-    	transition: .3s ease all;
-    }
-}
-.feedbackSubmit{
-	position: relative;
-	z-index:1;
-	border: 2px solid $white;
-	border-radius: 10px;
-	background: $white;
-	padding: 10px 20px 10px 20px;
-	color: $primaryColor;
-	transition: .3s ease all;
-	cursor: pointer;
-  font-size: 14px !important;
-    &:hover{
-      background: $transparent;
-    	color: $white;
-    	transition: .3s ease all;
-    }
-}
-.centerButton{
-	margin: 0 auto;
-	text-align: center;
-}
-.buttonWrap{
-	display: flex;
-	justify-content: space-evenly;
-	width: 100%;
-	margin: 50px auto;
-	text-align: center;
 }

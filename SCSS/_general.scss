@@ -3,43 +3,17 @@ body{
 	background: $white;
 	margin: 0;
 }
+.site-content{
+	margin-top: 65px;
+}
+::-moz-selection{
+		background: rgba(142, 190, 88, .5);
+}
 ::selection{
 		background: rgba(142, 190, 88, .5);
 }
 ::-moz-selection{
 	background: rgba(142, 190, 88, .5);
-}
-.plainLink{
-	text-decoration: none;
-	color: $primaryColor;
-	transition: .3s ease all;
-	position: relative;
-		&:after{
-			position: absolute;
-			content: "";
-			height: 2px;
-			width: 100%;
-			opacity: 0;
-			background-color: $primaryColorLight;
-			bottom: 25%;
-			left: 0;
-			transition: .2s ease all;
-		}
-    &:hover{
-    color: $primaryColorLight;
-    transition: .3s ease all;
-			&:after{
-				position: absolute;
-				content: "";
-				height: 2px;
-				width: 100%;
-				opacity: 1;
-				background-color: $primaryColorLight;
-				bottom: -2px;
-				left: 0;
-				transition: .2s ease all;
-			}
-		}
 }
 #privacyPolicy{
 	margin-top: 100px;

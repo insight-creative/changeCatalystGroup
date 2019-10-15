@@ -1,8 +1,6 @@
 /* 14.0 Projects Page stylings -------------------------------------------*/
 .zoomContainerWrapper{
-	@include breakpoint(smallScreen){
-		margin: 0;
-	}
+	margin: 0;
 	@include breakpoint(largeMobileScreen){
 		margin: 0 25px 0 25px;
 	}
@@ -17,18 +15,16 @@
 	overflow: hidden;
 	margin: 0 auto;
 	width: 100%;
+	height: 180px;
 	transition: 3s ease all;
-	@include breakpoint(smallScreen){
+	@include breakpoint(largeMobileScreen){
 		height: 250px;
 	}
-	@include breakpoint(largeMobileScreen){
-		height: 190px;
-	}
 	@include breakpoint(tabletScreen){
-		height: 215px;
+		height: 325px;
 	}
 	@media (min-width: 1250px){
-		height: 450px;
+		height: 275px;
 	}
 }
 .zoomContainerLarge{
@@ -37,10 +33,8 @@
 	overflow: hidden;
 	margin: 0 auto;
 	width: 100%;
-	transition: 10s ease all;
-	@include breakpoint(smallScreen){
-		height: 300px;
-	}
+	height: 300px;
+	transition: 5s ease all;
 	@include breakpoint(largeMobileScreen){
 		height: 185px;
 	}
@@ -61,7 +55,8 @@
 	}
 }
 .zoomContainer h3, .zoomContainerLarge h3{
-	margin-block-start: 1em;
+	-webkit-margin-before: 1em;
+	        margin-block-start: 1em;
 }
 .zoomContainer:hover h3, .zoomContainerLarge:hover h3{
 	color: $primaryColor;
@@ -76,4 +71,13 @@
 }
 .imageWrapper{
 	padding: 20px;
+}
+#fieldingProject {
+	.imageWrapper {
+		width: 90%;
+		margin: 0 auto;
+		@include breakpoint (laptopScreen) {
+			width: 50%;
+		}
+	}
 }

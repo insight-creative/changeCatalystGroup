@@ -1,25 +1,11 @@
 /* 10.0 Homepage stylings -------------------------------------------*/
-.heroHeadingWrap{
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-}
-.shopHero{
-	background-image: url("/assets/scss/wp-content/uploads/2019/01/ardensBuildingLarge.jpg");
-}
-#heroHeading{
-	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-}
-.homeHeading{
+.heading{
   align-items: center;
 	@include breakpoint(largeMobileScreen){
 		margin-top: 100px;
 	}
 }
-#mainHeader{
+.mainHeader{
 	margin-bottom: 0;
 }
 .heroImageWrapper{
@@ -63,20 +49,9 @@
 		margin-top: 100px;
 	}
 }
-.smallIconPlaceholder{
+.illustration{
 	text-align: center;
-		@include breakpoint(smallScreen){
-			width: 60%;
-		}
-		@include breakpoint(largeMobileScreen){
-			width: 60%;
-		}
-		@include breakpoint(tabletScreen){
-			width: 70%;
-		}
-		@include breakpoint(largeScreen){
-			width: 60%;
-		}
+	width: 60%;
 		@include breakpoint(extraLargeScreen){
 			width: 50%;
 		}
@@ -91,79 +66,22 @@
 .serviceFlexContainer{
 	display: flex;
 	justify-content: space-around;
-	@include breakpoint(smallScreen){
-		flex-direction: column;
-	}
+	flex-direction: column;
 	@include breakpoint(largeMobileScreen){
 		flex-direction: row;
 	}
 }
-.hiddenMobile{
-	@include breakpoint(smallScreen){
-		display: none;
-	}
-	@include breakpoint(largeMobileScreen){
-		display: none;
-	}
-	@include breakpoint(laptopScreen){
-		display: block;
-	}
-}
 .processHeader{
-	margin-block-start: 25px !important;
-	margin-block-end: 0 !important;
+	-webkit-margin-before: 25px !important;
+	        margin-block-start: 25px !important;
+	-webkit-margin-after: 0 !important;
+	        margin-block-end: 0 !important;
 }
 .recommendationAuthor{
-	margin-block-end: 0 !important;
+	-webkit-margin-after: 0 !important;
+	        margin-block-end: 0 !important;
 }
 .greenBorder{
 	border: 5px solid $primaryColor;
 	border-radius: 10px;
-}
-#feedback{
-	width: 20%;
-}
-.feedbackButtonWrapper{
-	position: fixed;
-  bottom: 200px;
-  right: -70px;
-  z-index: 9999;
-  transform: rotate(-90deg);
-}
-.feedbackButton{
-	padding: 10px 20px !important;
-}
-.surveyWrapper{
-	background-color: $primaryColor;
-	border-radius: 10px;
-	position: fixed;
-  bottom: 0;
-	right: 0;
-  transform: translateX(100%);
-  z-index: 9999;
-	transition: .3s ease all;
-}
-.surveyContent{
-	a{
-		text-decoration: none;
-	}
-}
-.survey{
-	padding: 20px 10px;
-}
-.surveyClose{
-	position: absolute;
-	right: 20px;
-	padding: 10px;
-	cursor:pointer;
-}
-.surveyOpen{
-	position: fixed;
-	z-index: 9999;
-  transform: translateX(0);
-	transition: .3s ease all;
-}
-.caldera-grid label{
-	font-size: 14px;
-	color: $white !important;
 }

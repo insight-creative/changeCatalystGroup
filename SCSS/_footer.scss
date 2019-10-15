@@ -82,33 +82,27 @@
       }
 }
 .footerBlock{
-	@include breakpoint(smallScreen){
-		width: 100%;
-	}
-	@include breakpoint(largeMobileScreen){
-		width: 100%;
-	}
+	width: 100%;
 	@include breakpoint(laptopScreen){
 		width: 50%;
 	}
 }
 .footerCTA{
-	@include breakpoint(smallScreen){
-		margin-right: 0;
-	}
-	@include breakpoint(largeMobileScreen){
-		margin-right: 0;
-	}
+	margin-right: 0;
 	@include breakpoint(laptopScreen){
 		margin-right: 100px;
 	}
 }
 #copyrightWrap{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	@include breakpoint(smallScreen){
-		flex-direction: column;
+	margin-bottom: 20px;
+	@include breakpoint (largeMobileScreen) {
+		flex-direction: row;
+	}
+	@include breakpoint (laptopScreen) {
+		margin-bottom: 0;
 	}
 }
 #copyright{
@@ -117,8 +111,10 @@
 	margin-bottom: -50px;
 	font-size: 12px;
 		p{
-			margin-block-start: 1em;
-			margin-block-end: 1em;
+			-webkit-margin-before: 1em;
+			        margin-block-start: 1em;
+			-webkit-margin-after: 1em;
+			        margin-block-end: 1em;
 		}
 		@include breakpoint(tinyScreen){
 			font-size: 10px;
@@ -149,19 +145,11 @@
 }
 .copyrightContentWrap{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	flex-direction: row;
+	flex-direction: column;
 	border-top: 1px solid $white;
 	padding: 20px 0;
-    @include breakpoint(smallScreen){
-      justify-content: center;
-      flex-direction: column;
-    }
-		@include breakpoint(largeMobileScreen){
-			justify-content: center;
-      flex-direction: column;
-		}
 		@include breakpoint(laptopScreen){
 			flex-direction: row;
 			justify-content: space-between;
@@ -187,31 +175,6 @@
 	@include breakpoint(smallScreen){
 		margin: 15px 0 25px 0;
 	}
-}
-#privacyWrap{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.borderRight{
-	padding: 0 10px 0 10px;
-}
-#footerContactLink{
-	padding: 0 10px 0 10px;
-}
-.siteAuthor{
-	text-align: center;
-	margin: 0;
-    a{
-      color: $white;
-    	text-decoration: none;
-    }
-      &:hover{
-        color: $lightGrey
-      }
-		@include breakpoint(smallScreen){
-			margin-bottom: 25px;
-		}
 }
 .footerNav{
 	a{

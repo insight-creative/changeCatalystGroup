@@ -19,40 +19,10 @@
 			height: 70px;
 		}
 }
-.secondaryNavigation{
-	height: 30px;
-	margin: 0 auto;
-	width: 100%;
-	background: $primaryColor;
-	display: flex;
-	align-items: center;
-}
 .menuLinkWrap{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-.secondaryMenuWrap{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-.secondaryLink{
-	color: $white;
-	padding: 4px 15px 5px 15px;
-	text-decoration: none;
-	transition: .3s ease all;
-	font-size: 14px;
-		&:hover{
-			color: $lightGrey;
-			transition: .3s ease all;
-		}
-			@include breakpoint(smallScreen){
-				font-size: 12px;
-			}
-}
-.site-content{
-	margin-top: 35px;
 }
 .entry-header{
 	display:none;
@@ -161,15 +131,7 @@
 			border-radius: 50%;
 			background-color: $primaryColor;
 			transition: .3s ease all;
-				@include breakpoint(smallScreen){
-					visibility: hidden;
-				}
-				@include breakpoint(largeMobileScreen){
-					visibility: hidden;
-				}
-				@include breakpoint(tabletScreen){
-					visibility: hidden;
-				}
+			visibility: hidden;
 				@include breakpoint(laptopScreen){
 					visibility: visible;
 				}
@@ -234,25 +196,6 @@
 		}
 	}
 }
-.menu{
-	.active{
-		a{
-				border-bottom: 2px solid $primaryColor !important;
-				color: $white;
-				width: 100%;
-				text-align: initial;
-			}
-		}
-}
-.linkList2{
-	.active{
-		a{
-			margin-bottom: -1px;
-			border-bottom: 3px solid $primaryColor !important;
-			transition: .2s ease all;
-		}
-	}
-}
 .closeMenu{
 	position: absolute;
 	cursor: pointer;
@@ -300,71 +243,5 @@
 		}
 		@include breakpoint(smallScreen){
 			padding: 15px;
-		}
-}
-.heroNav{
-	display: block;
-	background: #1D1D1D;
-	padding: 50px 0 50px 0;
-	margin-top: -100px;
-		@include breakpoint(smallScreen){
-			display: none;
-		}
-		@include breakpoint(largeMobileScreen){
-			display: none;
-		}
-		@include breakpoint(laptopScreen){
-			display: block;
-		}
-}
-.heroNavWrap{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-		@include breakpoint(smallScreen){
-			flex-direction: column;
-			justify-content: center;
-		}
-		@include breakpoint(largeMobileScreen){
-			flex-direction: column;
-			justify-content: center;
-		}
-		@include breakpoint(laptopScreen){
-			flex-direction: row;
-			justify-content: space-between;
-		}
-		li{
-			list-style-type: none;
-				@include breakpoint(smallScreen){
-					margin: 5px 0 5px 0;
-				}
-		}
-}
-.heroNavLink{
-	color: #fff;
-	text-decoration: none;
-	transition: .3s ease all;
-	padding: 5px 0 5px 0;
-		@include breakpoint(smallScreen){
-			color: #3598db;
-		}
-		&:hover{
-			color: #F00000;
-			transition: .3s ease all;
-		}
-}
-.mobileHeroNav{
-	display: none;
-		@include breakpoint(smallScreen){
-			background: #1D1D1D;
-			padding: 20px 0 20px 0;
-		}
-		@include breakpoint(largeMobileScreen){
-			background: #1D1D1D;
-			padding: 20px 0 20px 0;
-		}
-		@include breakpoint(laptopScreen){
-			display: none;
 		}
 }
