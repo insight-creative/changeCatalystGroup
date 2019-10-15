@@ -4,7 +4,7 @@
     @media (min-width: 1600px) { @content; }
   }
   @else if $point == largeScreen {
-    @media (min-width: 1250px) { @content; }
+    @media (min-width: 1400px) { @content; }
   }
   @else if $point == laptopScreen {
     @media (min-width: 992px)  { @content; }

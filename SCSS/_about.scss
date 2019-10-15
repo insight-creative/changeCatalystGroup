@@ -1,0 +1,15 @@
+#headshot {
+  text-align: center;
+  img {
+    width: 90%;
+    @include breakpoint (largeMobileScreen) {
+      width: 50%;
+    }
+    @include breakpoint (laptopScreen) {
+      width: 80%;
+    }
+    @include breakpoint (largeScreen) {
+      width: 50%;
+    }
+  }
+}

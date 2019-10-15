@@ -359,7 +359,7 @@ template {
   width: 95%;
   height: 100%;
   margin: 0 auto; }
-  @media (min-width: 1250px) {
+  @media (min-width: 1400px) {
     .pageWidth {
       width: 70%; } }
 
@@ -628,7 +628,7 @@ nav {
   display: block;
   padding: 10px 30px 10px 30px;
   transition: .2s ease all; }
-  @media (min-width: 1250px) {
+  @media (min-width: 1400px) {
     .menuLink {
       padding: 10px 50px 10px 50px; } }
 
@@ -673,7 +673,7 @@ nav {
   display: block;
   padding: 10px 30px 10px 30px;
   transition: .2s ease all; }
-  @media (min-width: 1250px) {
+  @media (min-width: 1400px) {
     .contactLink {
       padding: 10px 50px 10px 50px; } }
   .contactLink:after {
@@ -1128,7 +1128,7 @@ body {
   align-items: center; }
   @media (min-width: 600px) {
     .heading {
-      margin-top: 100px; } }
+      margin-top: 50px; } }
 
 .mainHeader {
   margin-bottom: 0; }
@@ -1150,7 +1150,7 @@ body {
   @media (min-width: 992px) {
     #heroImage {
       width: 90%; } }
-  @media (min-width: 1250px) {
+  @media (min-width: 1400px) {
     #heroImage {
       width: 75%; } }
 
@@ -1255,30 +1255,24 @@ body {
   @media (min-width: 768px) {
     .zoomContainer {
       height: 325px; } }
-  @media (min-width: 1250px) {
-    .zoomContainer {
-      height: 275px; } }
-
-.zoomContainerLarge {
-  position: relative;
-  z-index: 4;
-  overflow: hidden;
-  margin: 0 auto;
-  width: 100%;
-  height: 300px;
-  transition: 5s ease all; }
-  @media (min-width: 600px) {
-    .zoomContainerLarge {
-      height: 185px; } }
-  @media (min-width: 768px) {
-    .zoomContainerLarge {
-      height: 260px; } }
   @media (min-width: 992px) {
-    .zoomContainerLarge {
-      height: 315px; } }
-  @media (min-width: 1250px) {
-    .zoomContainerLarge {
-      height: 450px; } }
+    .zoomContainer {
+      height: 220px; } }
+  @media (min-width: 1200px) {
+    .zoomContainer {
+      height: 245px; } }
+  @media (min-width: 1800px) {
+    .zoomContainer {
+      height: 280px; } }
+  @media (min-width: 2000px) {
+    .zoomContainer {
+      height: 310px; } }
+  @media (min-width: 2300px) {
+    .zoomContainer {
+      height: 350px; } }
+  @media (min-width: 2500px) {
+    .zoomContainer {
+      height: 400px; } }
 
 .zoomContainer:hover .zoomImage, .zoomContainerLarge:hover .zoomImage {
   transform: scale(1.5, 1.5);
@@ -1308,5 +1302,19 @@ body {
   @media (min-width: 992px) {
     #fieldingProject .imageWrapper {
       width: 50%; } }
+
+#headshot {
+  text-align: center; }
+  #headshot img {
+    width: 90%; }
+    @media (min-width: 600px) {
+      #headshot img {
+        width: 50%; } }
+    @media (min-width: 992px) {
+      #headshot img {
+        width: 80%; } }
+    @media (min-width: 1400px) {
+      #headshot img {
+        width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -35,7 +35,7 @@ get_header();
 								</p>
 							</div>
 						</div>
-						<div class="col50">
+						<div id="headshot" class="col50">
 							<img src="/assets/scss/wp-content/uploads/2019/10/jean-lasee-updated-headshot.jpg" class="image greenShadow">
 						</div>
 					</div>
