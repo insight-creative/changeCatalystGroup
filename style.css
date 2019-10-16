@@ -510,6 +510,7 @@ template {
       padding: 50px 0 50px 0; } }
 
 .limitWidth {
+  width: 95%;
   max-width: 1050px;
   margin: 0 auto; }
 
@@ -1007,6 +1008,9 @@ h6 {
 .simpleHeading {
   max-width: 850px; }
 
+.noMargin {
+  margin-bottom: 0; }
+
 /* 7.0 Button Stylings ---------------------------------------*/
 .primaryLink {
   color: #be8858 !important;
@@ -1186,6 +1190,8 @@ body {
 .industryWrapper {
   display: flex;
   flex-direction: row; }
+  .industryWrapper ul {
+    margin-top: 0; }
 
 .serviceFlexContainer {
   display: flex;

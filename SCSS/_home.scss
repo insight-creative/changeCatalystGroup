@@ -62,6 +62,9 @@
 .industryWrapper{
 	display: flex;
 	flex-direction: row;
+  ul {
+    margin-top: 0;
+  }
 }
 .serviceFlexContainer{
 	display: flex;

@@ -38,12 +38,6 @@ if ( ! function_exists( 'changecatalystresponsive_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'changecatalystresponsive' ),
-		) );
-
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -113,6 +107,7 @@ function changeCatalystResponsive_fonts_url() {
   return $urls;
  }
  add_filter( 'wp_resource_hints', 'changeCatalystResponsive_resource_hints', 10, 2 );
+
 /**
  * Enqueue scripts and styles.
  */

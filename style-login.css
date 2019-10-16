@@ -1,0 +1,31 @@
+body.login {
+  background-color: #f6f6f6;
+}
+#login h1 a, .login h1 a {
+  background-image: url("/assets/scss/wp-content/uploads/2019/10/Insight-logo-color-open-center.png");
+  height: 200px;
+  width: 100%;
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+}
+body.login div#login form#loginform {
+  background: #d31b45;
+}
+body.login div#login form#loginform p label {
+  color: #ffffff;
+}
+body.login div#login form#loginform p.submit input#wp-submit {
+  background-color: #ffffff;
+  color: #d31b45;
+  transition: .2s ease all;
+  text-shadow: none;
+  border: none;
+}
+body.login div#login form#loginform p.submit input#wp-submit:hover {
+  background-color: #f6f6f6;
+  color: #ffffff;
+  transition: .2s ease all;
+}
+.login #login_error, .login .message, .login .success {
+  border-left: 4px solid #d31b45;
+}
