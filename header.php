@@ -21,16 +21,16 @@
 	<div class = "linkWrap">
 		<ul class="linkList">
 			<li>
-				<a class="menuLink" href = "/about/">ABOUT</a><i class="fas fa-chevron-right"></i>
+				<a class="mobileMenuLink" href = "/about/">ABOUT</a><i class="fas fa-chevron-right"></i>
 			</li>
 			<li>
-				<a class="menuLink" href = "/services/">SERVICES</a><i class="fas fa-chevron-right"></i>
+				<a class="mobileMenuLink smooth-goto" href = "<?=site_url()?>/#whoWeService">SERVICES</a><i class="fas fa-chevron-right"></i>
 			</li>
 			<li>
-				<a class="menuLink" href = "/projects/">PROJECTS</a><i class="fas fa-chevron-right"></i>
+				<a class="mobileMenuLink" href = "/projects/">PROJECTS</a><i class="fas fa-chevron-right"></i>
 			</li>
 			<li>
-				<a class="menuLink" href = "/contact/">CONTACT</a><i class="fas fa-chevron-right"></i>
+				<a class="mobileMenuLink" href = "/contact/">CONTACT</a><i class="fas fa-chevron-right"></i>
 			</li>
 		</ul>
 	</div>
@@ -51,7 +51,7 @@
 								<a class="menuLink" href = "/about/">ABOUT</a>
 							</li>
 							<li>
-								<a class="menuLink" href = "/services/">SERVICES</a>
+								<a class="menuLink smooth-goto" href = "<?=site_url()?>/#whoWeService">SERVICES</a>
 							</li>
 							<li>
 								<a class="menuLink" href = "/projects/">PROJECTS</a>

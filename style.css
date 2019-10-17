@@ -627,11 +627,14 @@ nav {
 .menuLink {
   position: relative;
   display: block;
+  padding: 10px 50px 10px 50px;
+  transition: .2s ease all; }
+
+.mobileMenuLink {
+  position: relative;
+  display: block;
   padding: 10px 30px 10px 30px;
   transition: .2s ease all; }
-  @media (min-width: 1400px) {
-    .menuLink {
-      padding: 10px 50px 10px 50px; } }
 
 .menuLink:before {
   position: absolute;
@@ -1104,6 +1107,9 @@ body {
 
 #privacyPolicy {
   margin-top: 100px; }
+
+html {
+  scroll-behavior: smooth; }
 
 /*9.0 Icon Styling -------------------------------------------*/
 .whiteIcon {

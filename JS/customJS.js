@@ -52,14 +52,6 @@ $(function() {
        */
        //Remove open class from mobile menu after a link is clicked and a new page is loaded
        Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
-         if($(".menu").hasClass("open")){
-               $(".linkList").on("click", closeMenu);
-         };
-
-         function closeMenu(){
-           $(".menu").removeClass("open");
-         };
-
 
         });
       _this.done();
@@ -79,28 +71,21 @@ Barba.Pjax.getTransition = function() {
 };
     Barba.Pjax.start();
     pageCheckBefore();
-
     function pageCheckBefore(){
       if($(".menu").hasClass("open")){
-            document.querySelector(".linkList").addEventListener("click", closeMenu);
+            $(".menu").removeClass("open");
       };
-
-      function closeMenu(){
-        $(".menu").removeClass("open");
-      };
+      $('.smooth-goto').on('click', function() {
+        $('html, body').animate({scrollTop: $(this.hash).offset().top - 150}, 50);
+        return false;
+      });
     }
 });
-// open menu
+// toggle menu
 $(function() {
     $(".menuTextWrap").click(function(e){
-        $(".menu").addClass("open");
+        $(".menu").toggleClass("open");
         	e.stopPropagation();
-    });
-});
-//close menu
-$(function() {
-    $(".closeMenuButton").click(function(e){
-        	$(".menu").removeClass("open");
     });
 });
 $(function() {
@@ -110,12 +95,15 @@ $(function() {
     	}
     });
 });
-
 $(function() {
-  $(".menuTextWrap").click(function(e){
-    if($(".menu").hasClass("open")){
-          document.querySelector(".linkList").addEventListener("click", closeMenu);
-            $(".menu").removeClass("open");
-          }
-        });
-  });
+    $(".closeMenuButton").click(function(e){
+        $(".menu").toggleClass("open");
+        	e.stopPropagation();
+    });
+});
+$(function() {
+    $(".mobileMenuLink").click(function(e){
+        $(".menu").toggleClass("open");
+        	e.stopPropagation();
+    });
+});
