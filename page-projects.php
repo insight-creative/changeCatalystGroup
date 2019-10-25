@@ -38,6 +38,7 @@ get_header();
 						</div>
 					</div>
 				</section>
+				<?php get_template_part('/inc/testimonial-3'); ?>
 			</main>
 		</div>
 	</div>

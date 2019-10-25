@@ -3,7 +3,6 @@
  * @package changeCatalystResponsive
  */
 get_header();
-
 ?>
 <div id="barba-wrapper">
 	<div class="barba-container">
@@ -27,11 +26,18 @@ get_header();
 									Jean is a graduate of Fielding Graduate University in Santa Barbara, CA with a Master of Arts in Organizational Management. She worked for
 									the largest consulting company in the world and led several large-scale projects that improved collaboration, communication and
 									interaction among all levels in an organization. Her clients included BC Hydro, Tesoro and BP. As a result of her work, engagement,
-									as well as team and organizational performance moved to higher levels. Before that time, she worked for various communication and
+									as well as team and organizational performance moved to higher levels.
+								</p>
+								<p>
+									Before that time, she worked for various communication and
 									training departments, accumulating over 20 years of experience. Her companies included Salt River Project and Honeywell, as well
-									as her own consulting firm Lexeme Information Development. For the last five years, she has applied her skills to the sustainability
-									and human well-being field. She is a Certified Sustainable Building Advisor and has consulted with Fielding Graduate University,
-									Gila River Indian Community and the City of Scottsdale to improve sustainability strategy and practices.
+									as her own consulting firm Lexeme Information Development.
+								</p>
+								<p>
+									For the last six years, she has applied her skills to the sustainability
+									and human well-being field. She is a Certified Sustainable Building Advisor
+									and has consulted with Smart Pad Living, Transpolis Global, Fielding Graduate
+									University and One Greener to improve sustainability strategy and practices.
 								</p>
 							</div>
 						</div>
@@ -42,9 +48,7 @@ get_header();
 				</section>
 				<?php get_template_part('/inc/process'); ?>
 				<?php get_template_part('/inc/services'); ?>
-				<section id="recommendation" class="smallPaddedSection">
-					<?php get_template_part('/inc/testimonial-2'); ?>
-				</section>
+				<?php get_template_part('/inc/testimonial-2'); ?>
 			</main>
 		</div>
 	</div>

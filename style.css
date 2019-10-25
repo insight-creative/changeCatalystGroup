@@ -503,6 +503,12 @@ template {
     .paddedSection {
       padding: 100px 0 100px 0; } }
 
+.paddedTop {
+  padding-top: 50px; }
+
+.paddedBottom {
+  padding-bottom: 50px; }
+
 .smallPaddedSection {
   padding: 25px 0 25px 0; }
   @media (min-width: 992px) {
