@@ -498,10 +498,7 @@ template {
   background: #FFFFFF; }
 
 .paddedSection {
-  padding: 50px 0 50px 0; }
-  @media (min-width: 992px) {
-    .paddedSection {
-      padding: 100px 0 100px 0; } }
+  padding: 0 0 50px 0; }
 
 .paddedTop {
   padding-top: 50px; }
@@ -1067,13 +1064,17 @@ h6 {
   margin-bottom: 10px;
   padding: 10px 20px 10px 20px;
   transition: .2s ease all;
+  text-decoration: none;
   cursor: pointer; }
   .primaryButton:hover {
     background: #a1d291 !important;
     border: 2px solid #a1d291 !important;
     transition: .2s ease all; }
   .primaryButton:hover .arrowIcon {
-    margin-left: 25px;
+    left: 20px;
+    transition: .2s ease all; }
+  .primaryButton:hover .arrowIconLeft {
+    left: -20px;
     transition: .2s ease all; }
   @media (min-width: 768px) {
     .primaryButton {
@@ -1088,6 +1089,7 @@ h6 {
   color: #8ebe58;
   margin-bottom: 10px;
   transition: .3s ease all;
+  text-decoration: none;
   cursor: pointer; }
   .primaryButtonReverse:hover {
     background: #8ebe58;
@@ -1100,7 +1102,7 @@ body {
   margin: 0; }
 
 .site-content {
-  margin-top: 65px; }
+  margin-top: 70px; }
 
 ::-moz-selection {
   background: rgba(142, 190, 88, 0.5); }
@@ -1136,10 +1138,21 @@ html {
       font-size: 60px; } }
 
 .arrowIcon {
-  margin-left: 20px;
+  position: relative;
+  left: 15px;
+  transition: .2s ease all; }
+
+.arrowIconLeft {
+  position: relative;
+  left: -15px;
   transition: .2s ease all; }
 
 /* 10.0 Homepage stylings -------------------------------------------*/
+#hero img {
+  width: 75%; }
+#hero .col50:last-of-type {
+  text-align: center; }
+
 .heading {
   align-items: center; }
   @media (min-width: 600px) {
@@ -1189,6 +1202,16 @@ html {
   #pageContent {
     margin-top: 100px; } }
 
+#uniqueProcess .col30 img {
+  width: 100%; }
+#uniqueProcess .col30, #uniqueProcess p:first-of-type {
+  text-align: center; }
+#uniqueProcess h4 {
+  margin-top: 25px;
+  margin-bottom: 0; }
+#uniqueProcess p {
+  text-align: left; }
+
 .illustration {
   text-align: center;
   width: 60%; }
@@ -1227,6 +1250,11 @@ html {
   border: 5px solid #8ebe58;
   border-radius: 10px; }
 
+.testimonial h5 {
+  margin-bottom: 0; }
+.testimonial h6 {
+  color: #8ebe58; }
+
 /* 13.0 Contact Page stylings -------------------------------------------*/
 .wpcf7 input[type=text], .wpcf7 input[type=email], .wpcf7 textarea {
   border: 1px solid #4e4e4e;
@@ -1257,7 +1285,11 @@ html {
       margin: 0 25px 0 25px; } }
   .zoomContainerWrapper a {
     color: #4e4e4e;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: .3s ease; }
+  .zoomContainerWrapper:hover a {
+    color: #8ebe58;
+    transition: .3s ease; }
 
 .zoomContainer {
   position: relative;
@@ -1296,11 +1328,7 @@ html {
   transform: scale(1.5, 1.5);
   transition: 10s ease all; }
 
-.zoomContainer h3, .zoomContainerLarge h3 {
-  -webkit-margin-before: 1em;
-  margin-block-start: 1em; }
-
-.zoomContainer:hover h3, .zoomContainerLarge:hover h3 {
+.zoomContainer:hover a, .zoomContainerLarge:hover a {
   color: #8ebe58;
   transition: .3s ease all; }
 
@@ -1314,25 +1342,27 @@ html {
 .imageWrapper {
   padding: 20px; }
 
-#fieldingProject .imageWrapper {
-  width: 90%;
-  margin: 0 auto; }
-  @media (min-width: 992px) {
-    #fieldingProject .imageWrapper {
-      width: 50%; } }
-
-#headshot {
+.page-id-68 .limitWidth {
   text-align: center; }
-  #headshot img {
-    width: 90%; }
-    @media (min-width: 600px) {
-      #headshot img {
-        width: 50%; } }
+  .page-id-68 .limitWidth img {
+    width: 90%;
+    margin: 0 auto; }
     @media (min-width: 992px) {
-      #headshot img {
-        width: 80%; } }
-    @media (min-width: 1400px) {
-      #headshot img {
+      .page-id-68 .limitWidth img {
         width: 50%; } }
+
+#meetJean .col50:last-of-type {
+  text-align: center; }
+#meetJean img {
+  width: 90%; }
+  @media (min-width: 600px) {
+    #meetJean img {
+      width: 50%; } }
+  @media (min-width: 992px) {
+    #meetJean img {
+      width: 80%; } }
+  @media (min-width: 1400px) {
+    #meetJean img {
+      width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */

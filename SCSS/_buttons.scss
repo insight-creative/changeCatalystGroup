@@ -49,6 +49,7 @@
 	margin-bottom: 10px;
   padding: 10px 20px 10px 20px;
 	transition: .2s ease all;
+  text-decoration: none;
 	cursor: pointer;
     &:hover{
       background: $primaryColorLight !important;
@@ -56,7 +57,11 @@
     	transition: .2s ease all;
     }
     &:hover .arrowIcon{
-      margin-left: 25px;
+    	left: 20px;
+      transition: .2s ease all;
+    }
+    &:hover .arrowIconLeft{
+    	left: -20px;
       transition: .2s ease all;
     }
     @include breakpoint(tabletScreen){
@@ -72,6 +77,7 @@
 	color: $primaryColor;
 	margin-bottom: 10px;
 	transition: .3s ease all;
+  text-decoration: none;
 	cursor: pointer;
     &:hover{
       background: $primaryColor;

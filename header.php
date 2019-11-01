@@ -45,31 +45,31 @@
 		<div id="site-navigation" class="main-navigation">
 			<nav>
 				<div class="pageWidth menuLinkWrap">
-						<a href="<?=site_url()?>"><img src="/assets/scss/wp-content/uploads/2019/01/ChangeCatalystLogoTransparent.png" class="siteLogo" ></a>
-						<ul class="linkList2">
-							<li>
-								<a class="menuLink" href = "/about/">ABOUT</a>
-							</li>
-							<li>
-								<a class="menuLink smooth-goto" href = "<?=site_url()?>/#whoWeService">SERVICES</a>
-							</li>
-							<li>
-								<a class="menuLink" href = "/projects/">PROJECTS</a>
-							</li>
-							<li>
-								<a class="contactLink" href = "/contact/">CONTACT</a>
-							</li>
-						</ul>
-						<div class = "menuButtonWrap">
-							<div class = "menuTextWrap">
-								<span class = "menuText">MENU</span>
-								<span class = "menuBars">
-									<span></span>
-									<span></span>
-									<span></span>
-								</span>
-							</div>
+					<a href="<?=site_url()?>"><img src="/assets/scss/wp-content/uploads/2019/01/ChangeCatalystLogoTransparent.png" class="siteLogo" ></a>
+					<ul class="linkList2">
+						<li>
+							<a class="menuLink" href = "/about/">ABOUT</a>
+						</li>
+						<li>
+							<a class="menuLink smooth-goto" href = "<?=site_url()?>/#whoWeService">SERVICES</a>
+						</li>
+						<li>
+							<a class="menuLink" href = "/projects/">PROJECTS</a>
+						</li>
+						<li>
+							<a class="contactLink" href = "/contact/">CONTACT</a>
+						</li>
+					</ul>
+					<div class = "menuButtonWrap">
+						<div class = "menuTextWrap">
+							<span class = "menuText">MENU</span>
+							<span class = "menuBars">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
 						</div>
+					</div>
 				</div>
 			</nav>
 		</div><!-- #site-navigation -->

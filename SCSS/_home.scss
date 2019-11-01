@@ -1,4 +1,12 @@
 /* 10.0 Homepage stylings -------------------------------------------*/
+#hero {
+  img {
+    width: 75%;
+  }
+  .col50:last-of-type {
+    text-align: center;
+  }
+}
 .heading{
   align-items: center;
 	@include breakpoint(largeMobileScreen){
@@ -49,6 +57,23 @@
 		margin-top: 100px;
 	}
 }
+#uniqueProcess {
+  .col30 {
+    img {
+      width: 100%;
+    }
+  }
+  .col30, p:first-of-type {
+    text-align: center;
+  }
+  h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  p {
+    text-align: left;
+  }
+}
 .illustration{
 	text-align: center;
 	width: 60%;
@@ -87,4 +112,12 @@
 .greenBorder{
 	border: 5px solid $primaryColor;
 	border-radius: 10px;
+}
+.testimonial {
+  h5 {
+    margin-bottom: 0;
+  }
+  h6 {
+    color: $primaryColor;
+  }
 }

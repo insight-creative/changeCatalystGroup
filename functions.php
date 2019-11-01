@@ -49,6 +49,36 @@ if ( ! function_exists( 'changecatalystresponsive_setup' ) ) :
 			'gallery',
 			'caption',
 		) );
+		/**
+		 * Add support for core custom logo.
+		 *
+		 * @link https://codex.wordpress.org/Theme_Logo
+		 */
+		add_theme_support( 'custom-logo', array(
+			'height'      => 250,
+			'width'       => 250,
+			'flex-width'  => true,
+			'flex-height' => true,
+		) );
+		// Advanced Custom Fields Customizations
+		// Add ACF options page for global settings
+		if( function_exists('acf_add_options_page') ) {
+			acf_add_options_page();
+		}
+		// Set fields to collapsed for a condensed view for new users
+		function my_acf_admin_head() {
+		?>
+		<script type="text/javascript">
+		    (function($){
+		        $(document).ready(function(){
+		            $('.layout').addClass('-collapsed');
+		            $('.acf-postbox').addClass('closed');
+		        });
+		    })(jQuery);
+		</script>
+		<?php
+		}
+		add_action('acf/input/admin_head', 'my_acf_admin_head');
 	}
 endif;
 add_action( 'after_setup_theme', 'changecatalystresponsive_setup' );

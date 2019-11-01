@@ -18,6 +18,12 @@
 		}
 }
 .arrowIcon{
-	margin-left: 20px;
+	position: relative;
+	left: 15px;
+	transition: .2s ease all;
+}
+.arrowIconLeft{
+	position: relative;
+	left: -15px;
 	transition: .2s ease all;
 }
