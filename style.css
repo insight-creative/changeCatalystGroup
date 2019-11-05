@@ -1351,6 +1351,13 @@ html {
       .page-id-68 .limitWidth img {
         width: 50%; } }
 
+#clientLogos h2 {
+  text-align: center; }
+#clientLogos .col30 {
+  text-align: center; }
+  #clientLogos .col30 img {
+    width: 40%; }
+
 #meetJean .col50:last-of-type {
   text-align: center; }
 #meetJean img {
