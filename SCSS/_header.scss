@@ -4,7 +4,6 @@
 	top: 0;
 	left: 0;
 	z-index: 9999;
-	height: 70px;
 	width: 100vw;
 }
 .main-navigation{
@@ -12,17 +11,27 @@
 	width: 100%;
 	margin: 0 auto;
 	background: $lightGrey;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	box-shadow: 0 0 28px 0 rgba(0,0,0,.25);
 		@include breakpoint(smallScreen){
 			height: 70px;
 		}
 }
 .menuLinkWrap{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .entry-header{
 	display:none;
@@ -36,10 +45,16 @@
 		}
 }
 	nav{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items:center;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
 	height: 70px;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 100%;
 }
 .menuText{
@@ -49,9 +64,12 @@
 	padding-right: 10px;
 	color: $black;
 	text-decoration: none;
+	-webkit-transition: .3s ease-out all;
 	transition: .3s ease-out all;
 }
 .menuTextWrap{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-left: 10px;
 	right: 100px;
@@ -77,12 +95,16 @@
 	height: 70vh;
 	width: 100vw;
 	background-color: $lightGrey;
-	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	        transform: translateX(-100%);
+	-webkit-transition: .2s ease-out all;
 	transition: .2s ease-out all;
 }
 .open{
 	position: fixed;
-	transform: translate(0);
+	-webkit-transform: translate(0);
+	        transform: translate(0);
+	-webkit-transition: .1s ease-out all;
 	transition: .1s ease-out all;
 }
 .linkWrap{
@@ -106,24 +128,34 @@
 			line-height: 5px;
 			padding-bottom: 10px;
 			border-bottom: 1px solid $white;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			align-items: center;
-			justify-content: space-between;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
 		}
 }
 .menuLink{
 	position: relative;
 	display: block;
 	padding: 10px 50px 10px 50px;
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 }
 .mobileMenuLink {
 	position: relative;
 	display: block;
 	padding: 10px 30px 10px 30px;
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 }
 .menuLink{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 		&:before{
 			position: absolute;
 			content: "";
@@ -133,6 +165,7 @@
 			height: 10px;
 			border-radius: 50%;
 			background-color: $primaryColor;
+			-webkit-transition: .3s ease all;
 			transition: .3s ease all;
 			visibility: hidden;
 				@include breakpoint(laptopScreen){
@@ -147,10 +180,13 @@
 			width: 60%;
 			height: 3px;
 			opacity: 0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 			background-color: $primaryColor;
+			-webkit-transition: .3s ease all;
 			transition: .3s ease all;
 		}
 		&:hover{
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			&:after{
 				position: absolute;
 				content: "";
@@ -159,16 +195,22 @@
 				width: 60%;
 				height: 3px;
 				opacity: 1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 				background-color: $primaryColor;
+				-webkit-transition: .3s ease all;
 				transition: .3s ease all;
+				-webkit-transition: opacity .3s ease all;
 				transition: opacity .3s ease all;
 		}
 	}
 }
 .contactLink{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	position: relative;
 	display: block;
 	padding: 10px 30px 10px 30px;
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 		@include breakpoint(largeScreen){
 			padding: 10px 50px 10px 50px;
@@ -181,10 +223,13 @@
 		width: 60%;
 		height: 3px;
 		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 		background-color: $primaryColor;
+		-webkit-transition: .3s ease all;
 		transition: .3s ease all;
 	}
 	&:hover{
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 		&:after{
 			position: absolute;
 			content: "";
@@ -193,8 +238,11 @@
 			width: 60%;
 			height: 3px;
 			opacity: 1;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			background-color: $primaryColor;
+			-webkit-transition: .3s ease all;
 			transition: .3s ease all;
+			-webkit-transition: opacity .3s ease all;
 			transition: opacity .3s ease all;
 		}
 	}
@@ -220,9 +268,13 @@
 .linkList2{
 	display:none;
 		@include breakpoint(laptopScreen){
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
 			height: 70px;
-			align-items:center;
+			-webkit-box-align:center;
+			    -ms-flex-align:center;
+			        align-items:center;
 			list-style-type: none;
 			font-size: 20px;
 		}
@@ -230,14 +282,18 @@
 			color:$black;
 			font-weight: 700;
 			text-decoration: none;
+			-webkit-transition: .3s ease all;
 			transition: .3s ease all;
 			&:hover{
 				color: $primaryColor !important;
+				-webkit-transition: .3s ease all;
 				transition: .3s ease all;
 			}
 		}
 }
 .menuButtonWrap{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
 	right: 30px;
 	padding: 20px;

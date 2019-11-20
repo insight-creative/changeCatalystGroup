@@ -4,10 +4,10 @@
  */
 ?>
 </div><!-- #content -->
-<footer id="colophon" class="site-footer">
+<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info pageWidth">
 		<div class="logoWrapper">
-			<a href="https://wordpress-154794-719978.cloudwaysapps.com"><img src="/assets/scss/wp-content/uploads/2019/01/ChangeCatalystLogoTransparent.png" class="footerLogo" ></a>
+			<a href="<?=site_url()?>"><img src="/assets/scss/wp-content/uploads/2019/01/ChangeCatalystLogoTransparent.png" class="footerLogo" ></a>
 		</div>
 		<div class="socialWrapper">
 			<a href="https://www.facebook.com/TheChangeCatalystGroup/" target="_blank"><i class="greenSocialIcon fab fa-facebook-square"></i></a>
@@ -19,7 +19,9 @@
 		<div class="footerBlock footerCTA">
 			<h3 class="">Is Your Organization Ready for <span class="primaryText">Change</span>?</h3>
 			<p class="strongText">The Change Catalyst Group assists our clients in embracing change to create a better, achievable future.</p>
-			<a href="/contact/"><button class="primaryButton">Contact <i class="fas fa-arrow-right arrowIcon"></i></button></a>
+			<p>
+				<a href="/contact/" class="primaryButton">Contact <i class="fas fa-arrow-right arrowIcon"></i></a>
+			</p>
 		</div>
 		<div class="footerBlock">
 			<h3 class="primaryText">Contact</h3>

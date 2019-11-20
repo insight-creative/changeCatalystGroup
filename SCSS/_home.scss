@@ -8,34 +8,16 @@
   }
 }
 .heading{
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
 	@include breakpoint(largeMobileScreen){
 		margin-top: 50px;
 	}
 }
 .mainHeader{
 	margin-bottom: 0;
-}
-.heroImageWrapper{
-	text-align: center;
-}
-#heroImage{
-	height: auto;
-	@include breakpoint(smallScreen){
-		width: 60%;
-	}
-	@include breakpoint(largeMobileScreen){
-		width: 60%;
-	}
-	@include breakpoint(tabletScreen){
-		width: 50%;
-	}
-	@include breakpoint(laptopScreen){
-		width: 90%;
-	}
-	@include breakpoint(largeScreen){
-		width: 75%;
-	}
 }
 .heroHeading{
 	padding: 25px;
@@ -85,18 +67,32 @@
 	padding: 20px;
 }
 .industryWrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
   ul {
     margin-top: 0;
   }
 }
 .serviceFlexContainer{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	@include breakpoint(largeMobileScreen){
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 }
 .processHeader{

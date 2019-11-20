@@ -1,17 +1,27 @@
 /* 14.0 Projects Page stylings -------------------------------------------*/
 .zoomContainerWrapper{
+	width: 90%;
 	margin: 0;
 	@include breakpoint(largeMobileScreen){
-		margin: 0 25px 0 25px;
+		margin: 0 10px;
+		width: 80%;
+	}
+	@include breakpoint (tabletScreen) {
+		width: 75%;
+	}
+	@include breakpoint (laptopScreen) {
+		width: 45%;
 	}
 	a{
 		color: $black;
 		text-decoration: none;
+		-webkit-transition: .3s ease;
 		transition: .3s ease;
 	}
 	&:hover {
 		a {
 			color: $primaryColor;
+			-webkit-transition: .3s ease;
 			transition: .3s ease;
 		}
 	}
@@ -23,6 +33,7 @@
 	margin: 0 auto;
 	width: 100%;
 	height: 180px;
+	-webkit-transition: 3s ease all;
 	transition: 3s ease all;
 	@include breakpoint(largeMobileScreen){
 		height: 250px;
@@ -51,13 +62,16 @@
 }
 .zoomContainer, .zoomContainerLarge{
 	&:hover .zoomImage{
-		transform: scale(1.5,1.5);
-		transition: 10s ease all;
+		-webkit-transform: scale(1.5,1.5);
+		        transform: scale(1.5,1.5);
+		-webkit-transition: 5s ease all;
+		transition: 5s ease all;
 	}
 }
 .zoomContainer, .zoomContainerLarge {
 	&:hover a{
 		color: $primaryColor;
+		-webkit-transition: .3s ease all;
 		transition: .3s ease all;
 	}
 }
@@ -66,12 +80,13 @@
 	z-index: 2;
 	top: 0 ;
 	left: 0;
+	-webkit-transition: 10s ease all;
 	transition: 10s ease all;
 }
 .imageWrapper{
 	padding: 20px;
 }
-.page-id-68 {
+.postid-219 {
 	.limitWidth {
 		text-align: center;
 		img {
@@ -84,13 +99,128 @@
 	}
 }
 #clientLogos {
-	h2 {
+	h1, h2 {
 		text-align: center;
 	}
 	.col30 {
 		text-align: center;
 		img {
 			width: 40%;
+		}
+	}
+}
+.nav-links {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	.nav-previous , .nav-next {
+		font-size: 12px;
+		padding: 10px;
+		@include breakpoint (tabletScreen) {
+			font-size: 16px;
+			padding: 10px 25px;
+		}
+		@include breakpoint (laptopScreen) {
+			font-size: 20px;
+		}
+		.arrowIconLeft {
+			left: -5px;
+		}
+		a {
+			position: relative;
+			z-index:1;
+			border: 2px solid $primaryColor;
+			border-radius: 10px;
+			background: $primaryColor;
+			color: $white !important;
+			margin-bottom: 10px;
+		  padding: 10px 20px 10px 20px;
+			-webkit-transition: .2s ease all;
+			transition: .2s ease all;
+		  text-decoration: none;
+			cursor: pointer;
+			white-space: nowrap;
+		    &:hover{
+		      background: $primaryColorLight !important;
+		      border: 2px solid $primaryColorLight !important;
+		    	-webkit-transition: .2s ease all;
+		    	transition: .2s ease all;
+		    }
+		    @include breakpoint(tabletScreen){
+		      padding: 10px 50px 10px 50px;
+		    }
+				&:before {
+					content: "<<";
+					position: relative;
+					left: -10px;
+					-webkit-transition: .3s ease;
+					transition: .3s ease;
+				}
+				&:after {
+					content: ">>";
+					position: relative;
+					right: -10px;
+					-webkit-transition: .3s ease;
+					transition: .3s ease;
+				}
+		}
+	}
+	.nav-previous {
+		a {
+			&:after {
+				display: none;
+			}
+			&:hover {
+				&:before {
+					left: -15px;
+					-webkit-transition: .3s ease;
+					transition: .3s ease;
+				}
+			}
+		}
+	}
+	.nav-next {
+		a {
+			&:before {
+				display: none;
+			}
+			&:hover {
+				&:after {
+					right: -15px;
+					-webkit-transition: .3s ease;
+					transition: .3s ease;
+				}
+			}
+		}
+	}
+	a {
+		color: $black;
+		text-decoration: none;
+	}
+}
+.back {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: center;
+}
+#fieldingBrochure {
+	.limitWidth {
+		text-align: center;
+		img {
+			width: 90%;
+			margin: 0 auto;
+			@include breakpoint (laptopScreen) {
+				width: 50%;
+			}
 		}
 	}
 }

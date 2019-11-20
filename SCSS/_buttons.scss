@@ -1,15 +1,11 @@
 /* 7.0 Button Stylings ---------------------------------------*/
-.primaryLink{
-  color: $orangeAccent !important;
-	transition: .3s ease all;
-    &:hover{
-      transition: .3s ease all;
-    	color: $orangeAccentDark !important;
-    }
-}
+/* 7.0 Button Stylings ---------------------------------------*/
 .plainLink{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	text-decoration: none;
 	color: $primaryColor;
+	-webkit-transition: .3s ease all;
 	transition: .3s ease all;
 	position: relative;
 		&:after{
@@ -18,13 +14,17 @@
 			height: 2px;
 			width: 100%;
 			opacity: 0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 			background-color: $primaryColorLight;
 			bottom: 25%;
 			left: 0;
+			-webkit-transition: .2s ease all;
 			transition: .2s ease all;
 		}
     &:hover{
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     color: $primaryColorLight;
+    -webkit-transition: .3s ease all;
     transition: .3s ease all;
 			&:after{
 				position: absolute;
@@ -32,9 +32,11 @@
 				height: 2px;
 				width: 100%;
 				opacity: 1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 				background-color: $primaryColorLight;
 				bottom: -2px;
 				left: 0;
+				-webkit-transition: .2s ease all;
 				transition: .2s ease all;
 			}
 		}
@@ -48,40 +50,28 @@
 	color: $white !important;
 	margin-bottom: 10px;
   padding: 10px 20px 10px 20px;
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
   text-decoration: none;
 	cursor: pointer;
+  white-space: nowrap;
     &:hover{
       background: $primaryColorLight !important;
       border: 2px solid $primaryColorLight !important;
+    	-webkit-transition: .2s ease all;
     	transition: .2s ease all;
     }
     &:hover .arrowIcon{
     	left: 20px;
+      -webkit-transition: .2s ease all;
       transition: .2s ease all;
     }
     &:hover .arrowIconLeft{
     	left: -20px;
+      -webkit-transition: .2s ease all;
       transition: .2s ease all;
     }
     @include breakpoint(tabletScreen){
       padding: 10px 50px 10px 50px;
-    }
-}
-.primaryButtonReverse{
-	position: relative;
-	z-index:1;
-	border: 2px solid $primaryColor;
-	border-radius: 30px;
-	padding: 10px 50px 10px 50px;
-	color: $primaryColor;
-	margin-bottom: 10px;
-	transition: .3s ease all;
-  text-decoration: none;
-	cursor: pointer;
-    &:hover{
-      background: $primaryColor;
-    	transition: .3s ease all;
-    	color: $white;
     }
 }

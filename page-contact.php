@@ -10,10 +10,12 @@ get_header();
 		<div id="primary" class="content-area limitWidth">
 			<main id="main" class="site-main">
 				<section class="smallPaddedSection">
-					<div class="heading simpleHeading">
-						<h1 class="mainHeader">Is Your Organization Ready for <span class="primaryText">Change</span>?</h1>
-						<p>In these fast-moving times, change is part of organizational life. Continuous improvement and innovation are key to moving forward and
-							staying competitive.</p>
+					<div class="heading">
+						<div class="simpleHeading">
+							<h1 class="mainHeader">Is Your Organization Ready for <span class="primaryText">Change</span>?</h1>
+							<p>In these fast-moving times, change is part of organizational life. Continuous improvement and innovation are key to moving forward and
+								staying competitive.</p>
+						</div>
 					</div>
 				</section>
 				<section id ="contactContent">

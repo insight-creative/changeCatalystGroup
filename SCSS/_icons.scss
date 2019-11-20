@@ -1,16 +1,13 @@
 /*9.0 Icon Styling -------------------------------------------*/
-.whiteIcon{
-	color: $white;
-	transition: .3s ease all;
-	font-size: 16px;
-}
 .greenSocialIcon{
 	color: $primaryColor;
 	font-size: 40px;
 	margin: 10px;
+	-webkit-transition: .3s ease all;
 	transition: .3s ease all;
 		&:hover{
 			color: $primaryColorLight;
+			-webkit-transition: .3s ease all;
 			transition: .3s ease all;
 		}
 		@include breakpoint(laptopScreen){
@@ -20,10 +17,12 @@
 .arrowIcon{
 	position: relative;
 	left: 15px;
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 }
 .arrowIconLeft{
 	position: relative;
 	left: -15px;
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 }

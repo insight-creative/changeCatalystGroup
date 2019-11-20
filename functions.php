@@ -138,6 +138,15 @@ function changeCatalystResponsive_fonts_url() {
  }
  add_filter( 'wp_resource_hints', 'changeCatalystResponsive_resource_hints', 10, 2 );
 
+require_once('inc/custom-post-type.php');
+require_once('inc/custom-taxonomy.php');
+
+add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
+function add_my_post_types_to_query( $query ) {
+    if ( is_home() && $query->is_main_query() )
+        $query->set( 'post_type', array( 'post', 'portfolio' ) );
+    return $query;
+}
 /**
  * Enqueue scripts and styles.
  */
@@ -145,8 +154,7 @@ function changecatalystresponsive_scripts() {
 	wp_enqueue_style( 'changecatalystresponsive-style', get_stylesheet_uri() );
 	wp_enqueue_script( 'changecatalystresponsive-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'changecatalystresponsive-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-	wp_enqueue_script('customJS', get_stylesheet_directory_uri() . '/js/customJS.js');
-	wp_enqueue_script('rellaxJS', get_stylesheet_directory_uri() . '/js/rellax.min.js');
+	wp_enqueue_script('customJS', get_stylesheet_directory_uri() . '/JS/customJS.js');
 	// Enqueue Google Fonts for our site
 	wp_enqueue_script('changeCatalystFonts', changeCatalystResponsive_fonts_url());
 
@@ -155,3 +163,13 @@ function changecatalystresponsive_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'changecatalystresponsive_scripts' );
+
+/**
+ * Functions which enhance the theme by hooking into WordPress.
+ */
+require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';

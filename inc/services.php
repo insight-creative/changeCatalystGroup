@@ -1,7 +1,7 @@
 <section id ="whoWeService" class="smallPaddedSection">
   <div class="pageWidth flex-container centerAlignedContainer">
     <div class="col30">
-      <img src="/assets/scss/wp-content/uploads/2019/01/ScottsdaleWaterfrontMedium.jpg" class="image greenShadowReverse">
+      <img src="/assets/scss/wp-content/uploads/2019/01/ScottsdaleWaterfrontMedium.jpg" class="responsiveImage greenShadowReverse">
     </div>
     <div class="col30">
       <div class="blockText">

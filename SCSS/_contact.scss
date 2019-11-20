@@ -16,12 +16,19 @@
   	color: $white !important;
   	margin-bottom: 10px;
     padding: 5px 20px;
+  	-webkit-transition: .2s ease all;
   	transition: .2s ease all;
   	cursor: pointer;
       &:hover{
         background: $primaryColorLight !important;
         border: 2px solid $primaryColorLight !important;
+      	-webkit-transition: .2s ease all;
       	transition: .2s ease all;
       }
+  }
+}
+.page-id-45 {
+  .heading {
+    text-align: center;
   }
 }

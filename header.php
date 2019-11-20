@@ -19,18 +19,18 @@
 <body <?php body_class(); ?>>
 <div class = "menu">
 	<div class = "linkWrap">
-		<ul class="linkList">
+		<ul class="linkList" role="menu" aria-label="Mobile Menu">
 			<li>
-				<a class="mobileMenuLink" href = "/about/">ABOUT</a><i class="fas fa-chevron-right"></i>
+				<a class="mobileMenuLink" href = "/about/" role="menuItem">ABOUT</a><i class="fas fa-chevron-right"></i>
 			</li>
 			<li>
-				<a class="mobileMenuLink smooth-goto" href = "<?=site_url()?>/#whoWeService">SERVICES</a><i class="fas fa-chevron-right"></i>
+				<a class="mobileMenuLink smooth-goto" href = "<?=site_url()?>/#whoWeService" role="menuItem">SERVICES</a><i class="fas fa-chevron-right"></i>
 			</li>
 			<li>
-				<a class="mobileMenuLink" href = "/projects/">PROJECTS</a><i class="fas fa-chevron-right"></i>
+				<a class="mobileMenuLink" href = "/projects/" role="menuItem">PROJECTS</a><i class="fas fa-chevron-right"></i>
 			</li>
 			<li>
-				<a class="mobileMenuLink" href = "/contact/">CONTACT</a><i class="fas fa-chevron-right"></i>
+				<a class="mobileMenuLink" href = "/contact/" role="menuItem">CONTACT</a><i class="fas fa-chevron-right"></i>
 			</li>
 		</ul>
 	</div>
@@ -41,26 +41,26 @@
 	</div>
 </div>
 <div id="page" class="site">
-	<header id="masthead" class="site-header" role="navigation">
+	<header id="masthead" class="site-header"role="banner">
 		<div id="site-navigation" class="main-navigation">
 			<nav>
-				<div class="pageWidth menuLinkWrap">
+				<div class="pageWidth menuLinkWrap" role="navigation" aria-label="primary navigation">
 					<a href="<?=site_url()?>"><img src="/assets/scss/wp-content/uploads/2019/01/ChangeCatalystLogoTransparent.png" class="siteLogo" ></a>
-					<ul class="linkList2">
+					<ul class="linkList2" role="menu" aria-label="Main Menu">
 						<li>
-							<a class="menuLink" href = "/about/">ABOUT</a>
+							<a class="menuLink" href = "/about/" role="menuItem">ABOUT</a>
 						</li>
 						<li>
-							<a class="menuLink smooth-goto" href = "<?=site_url()?>/#whoWeService">SERVICES</a>
+							<a class="menuLink smooth-goto" href = "<?=site_url()?>/#whoWeService" role="menuItem">SERVICES</a>
 						</li>
 						<li>
-							<a class="menuLink" href = "/projects/">PROJECTS</a>
+							<a class="menuLink" href = "/projects/" role="menuItem">PROJECTS</a>
 						</li>
 						<li>
-							<a class="contactLink" href = "/contact/">CONTACT</a>
+							<a class="contactLink" href = "/contact/" role="menuItem">CONTACT</a>
 						</li>
 					</ul>
-					<div class = "menuButtonWrap">
+					<div class = "menuButtonWrap" aria-label="mobile menu toggle button" tabindex="0">
 						<div class = "menuTextWrap">
 							<span class = "menuText">MENU</span>
 							<span class = "menuBars">

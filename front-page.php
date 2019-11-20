@@ -7,7 +7,7 @@ get_header();
 <div id="barba-wrapper">
 	<div class="barba-container">
 		<div id="primary" class="content-area">
-			<main id="main" class="site-main">
+			<main id="main" class="site-main" role="main">
 				<?php
 				// check if the flexible content field has rows of data
 				if( have_rows('flexible_fields') ):
