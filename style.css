@@ -580,7 +580,7 @@ template {
 
 .limitWidth {
   width: 95%;
-  max-width: 1050px;
+  max-width: 900px;
   margin: 0 auto; }
 
 /*4.0 Header Styling -------------------------------------------*/
@@ -1163,7 +1163,6 @@ h6 {
   margin-bottom: 0; }
 
 /* 7.0 Button Stylings ---------------------------------------*/
-/* 7.0 Button Stylings ---------------------------------------*/
 .plainLink {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1406,7 +1405,8 @@ html {
 /* 13.0 Contact Page stylings -------------------------------------------*/
 .wpcf7 input[type=text], .wpcf7 input[type=email], .wpcf7 textarea {
   border: 1px solid #4e4e4e;
-  border-radius: 5px; }
+  border-radius: 5px;
+  width: 100%; }
 .wpcf7 textarea {
   height: 100px; }
 .wpcf7 input[type=submit] {
@@ -1481,12 +1481,6 @@ html {
   @media (min-width: 2000px) {
     .zoomContainer {
       height: 310px; } }
-  @media (min-width: 2300px) {
-    .zoomContainer {
-      height: 350px; } }
-  @media (min-width: 2500px) {
-    .zoomContainer {
-      height: 400px; } }
 
 .zoomContainer:hover .zoomImage, .zoomContainerLarge:hover .zoomImage {
   -webkit-transform: scale(1.5, 1.5);
@@ -1521,10 +1515,9 @@ html {
 
 #clientLogos h1, #clientLogos h2 {
   text-align: center; }
-#clientLogos .col30 {
-  text-align: center; }
-  #clientLogos .col30 img {
-    width: 40%; }
+#clientLogos .col30 img {
+  width: 40%;
+  margin: 0 auto; }
 
 .nav-links {
   width: 100%;

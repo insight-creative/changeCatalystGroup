@@ -53,12 +53,6 @@
 	@media (min-width: 2000px) {
 		height: 310px;
 	}
-	@media (min-width: 2300px) {
-		height: 350px;
-	}
-	@media (min-width: 2500px) {
-		height: 400px;
-	}
 }
 .zoomContainer, .zoomContainerLarge{
 	&:hover .zoomImage{
@@ -103,9 +97,9 @@
 		text-align: center;
 	}
 	.col30 {
-		text-align: center;
 		img {
 			width: 40%;
+			margin: 0 auto;
 		}
 	}
 }

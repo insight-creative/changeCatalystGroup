@@ -18,15 +18,11 @@
 	<div class="footerContact pageWidth flex-container">
 		<div class="footerBlock footerCTA">
 			<h3 class="">Is Your Organization Ready for <span class="primaryText">Change</span>?</h3>
-			<p class="strongText">The Change Catalyst Group assists our clients in embracing change to create a better, achievable future.</p>
 			<p>
 				<a href="/contact/" class="primaryButton">Contact <i class="fas fa-arrow-right arrowIcon"></i></a>
 			</p>
 		</div>
 		<div class="footerBlock">
-			<h3 class="primaryText">Contact</h3>
-			<p class="strongText">8711 E. Pinnacle Peak Road, PMB 266<br>Scottsdale, AZ  85255-3517</p>
-			<p class="strongText">(480) 695-1959</p>
 		</div>
 	</div>
 		<div id="copyright">

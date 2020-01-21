@@ -13,38 +13,41 @@ get_header();
    <div id="primary" class="content-area">
      <main id="main" class="site-main">
        <section id="clientLogos" class="paddedSection paddedTop">
-       <div class="pageWidth">
-         <h2>Some of our Clients</h2>
-       </div>
+         <div class="pageWidth">
+           <h1>Some of our Clients</h1>
+         </div>
          <div class="pageWidth flex-container">
            <div class="col30">
              <div class="blockText">
+               <img src="/assets/scss/wp-content/uploads/2019/11/smart-pad-living-logo-square.jpg" class="responsiveImage">
+               <p>Developed a six-year community development strategy that educated clients on how buildings would impact lifestyles and health of the people who inhabited them.</p>
                <p>
-                 <img src="/assets/scss/wp-content/uploads/2019/11/smart-pad-living-logo-square.jpg" class="responsiveImage">
+                 <a href="/projects/microloft-project/" class="plainLink">View the project</a>
                </p>
-               <h3>Smart Pad Living</h3>
              </div>
            </div>
            <div class="col30">
              <div class="blockText">
+               <img src="/assets/scss/wp-content/uploads/2019/11/fielding-logo-square.jpg" class="responsiveImage">
+               <p>Collaborated with the Working Group for five years to advance the university’s sustainability strategy, culminating in creating a panel discussion.</p>
                <p>
-                 <img src="/assets/scss/wp-content/uploads/2019/11/fielding-logo-square.jpg" class="responsiveImage">
+                 <a href="/projects/fielding-graduate-university-event/" class="plainLink">View the project</a>
                </p>
-               <h3>Fielding Graduate University</h3>
              </div>
            </div>
            <div class="col30">
              <div class="blockText">
+               <img src="/assets/scss/wp-content/uploads/2019/11/transpolis-logo-square.jpg" class="responsiveImage">
+               <p>Consulted with various members of the Gila River Indian Community in developing an innovation park that would include post high school engineering education and apprenticeship programs, labs for rapid prototyping, 3D printing, 5-Axis CNC machine tools, and advanced manufacturing.</p>
                <p>
-                 <img src="/assets/scss/wp-content/uploads/2019/11/transpolis-logo-square.jpg" class="responsiveImage">
+                 <a href="/projects/innovation-park/" class="plainLink">View the project</a>
                </p>
-               <h3>Transpolis</h3>
              </div>
            </div>
          </div>
        </section>
        <div class="pageWidth centerText">
-         <h1>Projects</h1>
+         <h2>Projects</h2>
        </div>
        <div class="pageWidth flexContainerWrapped centerAlignedContainer paddedSection">
          <?php

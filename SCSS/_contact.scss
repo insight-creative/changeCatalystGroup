@@ -3,6 +3,7 @@
   input[type=text], input[type=email], textarea {
     border: 1px solid $black;
     border-radius: 5px;
+    width: 100%;
   }
   textarea {
     height: 100px;
