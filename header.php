@@ -14,6 +14,20 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="/assets/scss/wp-content/themes/changeCatalystResponsive/Assets/webfonts/fontawesome-all.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+	<!-- Preconnect to Google Analytics -->
+	<link rel="dns-prefetch" href="https://www.google-analytics.com">
+	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+	<link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+	<link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-13074741-56"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-13074741-56');
+	</script>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
